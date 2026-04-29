@@ -177,6 +177,20 @@ Optional smoke tests:
 RUN_SMOKE_TESTS=true ./scripts/verify-ollama-models.sh
 ```
 
+## Download models on a new system
+
+After `ollama` is installed, pull the required model set with:
+
+```bash
+./scripts/pull-required-models.sh
+```
+
+Include the optional `gemma4:31b` model with:
+
+```bash
+INCLUDE_OPTIONAL=true ./scripts/pull-required-models.sh
+```
+
 ## Step 4: verify Open WebUI connectivity
 
 Run the connectivity check:
