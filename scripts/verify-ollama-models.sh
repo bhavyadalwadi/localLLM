@@ -3,6 +3,7 @@
 set -euo pipefail
 
 # Verify that the expected model inventory exists on the target node.
+# This works against the Ollama HTTP API so it also supports Docker-only setups.
 # Set RUN_SMOKE_TESTS=true to run lightweight prompt and embedding checks.
 
 RUN_SMOKE_TESTS="${RUN_SMOKE_TESTS:-false}"
@@ -22,21 +23,16 @@ optional_models=(
   "gemma4:31b"
 )
 
-if ! command -v ollama >/dev/null 2>&1; then
-  echo "ERROR: ollama CLI is not installed or not in PATH."
-  exit 1
-fi
-
 if ! command -v curl >/dev/null 2>&1; then
   echo "ERROR: curl is required for API checks."
   exit 1
 fi
 
 echo "Checking Ollama API at ${OLLAMA_URL} ..."
-curl -fsS "${OLLAMA_URL}/api/tags" >/dev/null
+tags_json="$(curl -fsS "${OLLAMA_URL}/api/tags")"
 
-echo "Reading local model inventory ..."
-mapfile -t installed_models < <(ollama list | awk 'NR > 1 { print $1 }')
+echo "Reading model inventory from the API ..."
+mapfile -t installed_models < <(printf '%s\n' "${tags_json}" | tr '{},' '\n' | sed -n 's/.*"model":"\([^"]*\)".*/\1/p')
 
 missing_required=0
 
@@ -59,7 +55,9 @@ done
 
 if [[ "${RUN_SMOKE_TESTS}" == "true" ]]; then
   echo "Running smoke test for llama3:8b ..."
-  ollama run llama3:8b "Reply with exactly: llama3 8b ready" >/dev/null
+  curl -fsS "${OLLAMA_URL}/api/generate" \
+    -H "Content-Type: application/json" \
+    -d '{"model":"llama3:8b","prompt":"Reply with exactly: llama3 8b ready","stream":false}' >/dev/null
 
   echo "Running embedding smoke test for nomic-embed-text ..."
   curl -fsS "${OLLAMA_URL}/api/embeddings" \
@@ -73,4 +71,3 @@ if [[ "${missing_required}" -ne 0 ]]; then
 fi
 
 echo "Ollama model inventory looks good."
-

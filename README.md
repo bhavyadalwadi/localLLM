@@ -43,6 +43,7 @@ The repo is intended to be the canonical deployment codebase. Push this to Git, 
 │   ├── backup-ollama-store.sh
 │   ├── check-open-webui-connectivity.sh
 │   ├── load-env.sh
+│   ├── preflight-target-host.sh
 │   ├── restore-ollama-store.sh
 │   └── verify-ollama-models.sh
 └── volumes/
@@ -56,6 +57,12 @@ The repo is intended to be the canonical deployment codebase. Push this to Git, 
 - `curl`
 - `rsync`
 - Ollama installed on the target host if you use Option A
+
+## Quick start paths
+
+- Current staging machine: `cp .env.staging.example .env`
+- Final target host: `cp .env.example .env`
+- First target-host deployment guide: [docs/target-host-first-pass.md](/Users/basho00/_github/_personal/Local-LLM/docs/target-host-first-pass.md)
 
 ## Step 1: prepare the environment
 
@@ -121,6 +128,12 @@ Run the inventory check:
 
 ```bash
 ./scripts/verify-ollama-models.sh
+```
+
+Run target-host preflight before the first deployment:
+
+```bash
+./scripts/preflight-target-host.sh
 ```
 
 Optional smoke tests:
