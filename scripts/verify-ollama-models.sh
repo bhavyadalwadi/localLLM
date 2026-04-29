@@ -23,6 +23,23 @@ optional_models=(
   "gemma4:31b"
 )
 
+model_present() {
+  local expected="$1"
+  local installed
+
+  for installed in "${installed_models[@]}"; do
+    if [[ "${installed}" == "${expected}" ]]; then
+      return 0
+    fi
+
+    if [[ "${expected}" != *:* && "${installed}" == "${expected}:latest" ]]; then
+      return 0
+    fi
+  done
+
+  return 1
+}
+
 if ! command -v curl >/dev/null 2>&1; then
   echo "ERROR: curl is required for API checks."
   exit 1
@@ -32,12 +49,15 @@ echo "Checking Ollama API at ${OLLAMA_URL} ..."
 tags_json="$(curl -fsS "${OLLAMA_URL}/api/tags")"
 
 echo "Reading model inventory from the API ..."
-mapfile -t installed_models < <(printf '%s\n' "${tags_json}" | tr '{},' '\n' | sed -n 's/.*"model":"\([^"]*\)".*/\1/p')
+installed_models=()
+while IFS= read -r model; do
+  installed_models+=("${model}")
+done < <(printf '%s\n' "${tags_json}" | tr '{},' '\n' | sed -n 's/.*"model":"\([^"]*\)".*/\1/p')
 
 missing_required=0
 
 for model in "${required_models[@]}"; do
-  if printf '%s\n' "${installed_models[@]}" | grep -Fxq "${model}"; then
+  if model_present "${model}"; then
     echo "OK: ${model}"
   else
     echo "MISSING: ${model}"
@@ -46,7 +66,7 @@ for model in "${required_models[@]}"; do
 done
 
 for model in "${optional_models[@]}"; do
-  if printf '%s\n' "${installed_models[@]}" | grep -Fxq "${model}"; then
+  if model_present "${model}"; then
     echo "OPTIONAL OK: ${model}"
   else
     echo "OPTIONAL MISSING: ${model}"

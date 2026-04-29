@@ -122,6 +122,41 @@ docker compose -f docker-compose.yml -f docker-compose.ollama.yml up -d
 curl http://localhost:11434/api/tags
 ```
 
+### Option C: Remote Open WebUI host
+
+Use this when Ollama runs on one machine and Open WebUI runs on a different Docker-capable host.
+
+Typical layout:
+- this Mac or another node runs Ollama on `11434`
+- a separate Linux or Docker host runs Open WebUI
+- Open WebUI points to the Ollama node over the network
+
+Example on the Open WebUI host:
+
+```bash
+cp .env.example .env
+```
+
+Set:
+
+```bash
+OLLAMA_BASE_URL=http://OLLAMA_NODE_IP:11434
+```
+
+Then start Open WebUI on the remote host:
+
+```bash
+docker compose up -d
+```
+
+Before doing this, confirm from the Open WebUI host that it can reach the Ollama node:
+
+```bash
+curl http://OLLAMA_NODE_IP:11434/api/tags
+```
+
+If security policy allows only private network access, keep this traffic on a trusted LAN or VPN.
+
 ## Step 3: verify the model inventory
 
 Run the inventory check:
@@ -156,6 +191,23 @@ Then open:
 http://localhost:3000
 ```
 
+## No-Docker note
+
+If Docker is unavailable, the host-based Ollama path still works.
+
+What still works without Docker:
+- Ollama model serving
+- model verification
+- generation and embedding smoke tests
+- backup and restore
+- repo development and migration prep
+
+What does not work from this repo without Docker:
+- the packaged Open WebUI Compose deployment
+- the Dockerized Ollama option
+
+If Docker is blocked but Python or Node package installs are allowed, a non-Docker Open WebUI install may still be possible in user space. This machine has Python, pip, Node, and npm available, so that path is worth checking if you want UI access before the final Linux deployment.
+
 ## Step 5: back up or restore the Ollama model store
 
 Back up `~/.ollama` to the backup path in `.env`:
@@ -171,6 +223,32 @@ CONFIRM_RESTORE=true ./scripts/restore-ollama-store.sh /mnt/nas/local-ai-node/ol
 ```
 
 The restore script creates a safety backup of the current target directory before copying data in.
+
+### Backup path examples
+
+Local directory:
+
+```bash
+BACKUP_ROOT_DIR=$HOME/local-ai-node/backups
+```
+
+Mounted NAS on macOS:
+
+```bash
+BACKUP_ROOT_DIR=/Volumes/MyNAS/local-ai-node-backups
+```
+
+Mounted NAS on Linux:
+
+```bash
+BACKUP_ROOT_DIR=/mnt/nas/local-ai-node-backups
+```
+
+To confirm what your current `.env` is set to:
+
+```bash
+grep -E '^(BACKUP_ROOT_DIR|OLLAMA_HOME_DIR)=' .env
+```
 
 ## Notes on migration
 
