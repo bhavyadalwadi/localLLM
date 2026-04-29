@@ -1,0 +1,26 @@
+[Unit]
+Description=Ollama Service
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=ollama
+Group=ollama
+WorkingDirectory=/var/lib/ollama
+
+# Adjust these paths and values for the target host.
+Environment=OLLAMA_HOST=0.0.0.0:11434
+Environment=OLLAMA_MODELS=/var/lib/ollama/.ollama/models
+
+ExecStart=/usr/local/bin/ollama serve
+Restart=always
+RestartSec=5
+
+# Conservative limits for a baseline CPU-oriented deployment.
+LimitNOFILE=65535
+TimeoutStopSec=30
+
+[Install]
+WantedBy=multi-user.target
+

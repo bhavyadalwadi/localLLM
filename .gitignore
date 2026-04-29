@@ -1,0 +1,20 @@
+.env
+
+# Runtime data
+volumes/open-webui-data/*
+volumes/ollama-data/*
+rag-data/chroma/*
+rag-data/faiss/*
+rag-data/documents/*
+backups/local/*
+backups/nas/*
+
+# Keep directories in the repo
+!volumes/open-webui-data/.gitkeep
+!volumes/ollama-data/.gitkeep
+!rag-data/chroma/.gitkeep
+!rag-data/faiss/.gitkeep
+!rag-data/documents/.gitkeep
+!backups/local/.gitkeep
+!backups/nas/.gitkeep
+

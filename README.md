@@ -1,0 +1,178 @@
+# Local AI Node
+
+This repository is a simple, production-friendly starting point for a target Unix/Linux Local AI Node. It prepares Open WebUI, supports Ollama either on the host or in Docker, and reserves structure for backups, RAG, routing, and later hardening work.
+
+The repo is intended to be the canonical deployment codebase. Push this to Git, migrate it to the final host by cloning, and move model data separately through backup/restore or fresh pulls.
+
+## Planned model roles
+
+- normal chat: `llama3:8b`
+- coding: `deepseek-coder:6.7b`
+- fast/light tasks: `phi3`
+- mid-tier reasoning: `mixtral:8x7b`
+- heavy reasoning: `llama3:70b`
+- vision: `llava:13b`
+- embeddings: `nomic-embed-text`
+- optional extra: `gemma4:31b`
+
+## Repository layout
+
+```text
+.
+├── .env.example
+├── .env.staging.example
+├── README.md
+├── backups/
+├── configs/
+│   ├── ollama/
+│   └── open-webui/
+├── docker-compose.yml
+├── docker-compose.ollama.yml
+├── docs/
+│   ├── model-router.md
+│   ├── migration-checklist.md
+│   ├── performance-tuning.md
+│   ├── rag-pipeline.md
+│   ├── security-review.md
+│   └── validation-checklist.md
+├── rag-data/
+│   ├── chroma/
+│   ├── documents/
+│   └── faiss/
+├── scripts/
+│   ├── backup-ollama-store.sh
+│   ├── check-open-webui-connectivity.sh
+│   ├── load-env.sh
+│   ├── restore-ollama-store.sh
+│   └── verify-ollama-models.sh
+└── volumes/
+    ├── ollama-data/
+    └── open-webui-data/
+```
+
+## Prerequisites
+
+- Docker Engine with Docker Compose plugin
+- `curl`
+- `rsync`
+- Ollama installed on the target host if you use Option A
+
+## Step 1: prepare the environment
+
+Copy the example environment file:
+
+```bash
+cp .env.example .env
+```
+
+If you are using the current staging/download machine, you can start from:
+
+```bash
+cp .env.staging.example .env
+```
+
+Edit `.env` and choose one `OLLAMA_BASE_URL`:
+
+- Option A, Ollama on the host: `http://host.docker.internal:11434`
+- Option B, Ollama in Docker Compose: `http://ollama:11434`
+
+Set a real `WEBUI_SECRET_KEY` before using this beyond a trusted local network.
+
+## Step 2: choose your Ollama deployment mode
+
+### Option A: Ollama on the host
+
+Use this when you want the model store and Ollama runtime managed directly on the Unix/Linux host. This is the default path in this repo.
+
+1. Install Ollama on the host.
+2. Restore or copy your staged model store into `~/.ollama` on the target machine.
+3. Confirm Ollama is reachable:
+
+```bash
+curl http://localhost:11434/api/tags
+```
+
+4. Start Open WebUI only:
+
+```bash
+docker compose up -d
+```
+
+### Option B: Ollama in Docker
+
+Use this when you want both services managed by Docker Compose.
+
+1. Set `OLLAMA_BASE_URL=http://ollama:11434` in `.env`.
+2. Start Open WebUI and Ollama together:
+
+```bash
+docker compose -f docker-compose.yml -f docker-compose.ollama.yml up -d
+```
+
+3. Confirm Ollama is reachable:
+
+```bash
+curl http://localhost:11434/api/tags
+```
+
+## Step 3: verify the model inventory
+
+Run the inventory check:
+
+```bash
+./scripts/verify-ollama-models.sh
+```
+
+Optional smoke tests:
+
+```bash
+RUN_SMOKE_TESTS=true ./scripts/verify-ollama-models.sh
+```
+
+## Step 4: verify Open WebUI connectivity
+
+Run the connectivity check:
+
+```bash
+./scripts/check-open-webui-connectivity.sh
+```
+
+Then open:
+
+```text
+http://localhost:3000
+```
+
+## Step 5: back up or restore the Ollama model store
+
+Back up `~/.ollama` to the backup path in `.env`:
+
+```bash
+./scripts/backup-ollama-store.sh
+```
+
+Restore from a specific backup:
+
+```bash
+CONFIRM_RESTORE=true ./scripts/restore-ollama-store.sh /mnt/nas/local-ai-node/ollama-backups/ollama-home-YYYYMMDD-HHMMSS
+```
+
+The restore script creates a safety backup of the current target directory before copying data in.
+
+## Notes on migration
+
+- Keep this repo in Git and treat it as the deployment source of truth.
+- Move model data separately from Git.
+- Host-based Ollama is the simpler path if you want direct control over `~/.ollama`.
+- Docker-based Ollama is easier to keep self-contained but may complicate migrations if you later switch storage layouts.
+- A NAS can be used for backup and migration, but it is not required and should not be the live Ollama model directory.
+
+Use [docs/migration-checklist.md](/Users/basho00/_github/_personal/Local-LLM/docs/migration-checklist.md) before moving to another host and [docs/validation-checklist.md](/Users/basho00/_github/_personal/Local-LLM/docs/validation-checklist.md) after setup.
+
+For host-based Ollama service management, see [configs/ollama/systemd-setup.md](/Users/basho00/_github/_personal/Local-LLM/configs/ollama/systemd-setup.md) and [configs/ollama/ollama.service](/Users/basho00/_github/_personal/Local-LLM/configs/ollama/ollama.service).
+
+## Future work
+
+Placeholders are included in [docs/rag-pipeline.md](/Users/basho00/_github/_personal/Local-LLM/docs/rag-pipeline.md), [docs/model-router.md](/Users/basho00/_github/_personal/Local-LLM/docs/model-router.md), [docs/security-review.md](/Users/basho00/_github/_personal/Local-LLM/docs/security-review.md), and [docs/performance-tuning.md](/Users/basho00/_github/_personal/Local-LLM/docs/performance-tuning.md).
+
+RAG is intentionally not implemented here. When you add it, start with `nomic-embed-text` plus either Chroma or FAISS and keep ingestion/persistence separate from the base Ollama/Open WebUI stack.
