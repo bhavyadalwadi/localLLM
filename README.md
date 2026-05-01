@@ -167,6 +167,18 @@ Run the inventory check:
 ./scripts/verify-ollama-models.sh
 ```
 
+Run the full first-pass bootstrap in the expected order:
+
+```bash
+./scripts/bootstrap-local-ai-node.sh
+```
+
+Include optional models in the validation flow:
+
+```bash
+EXPECT_OPTIONAL_MODELS="gemma4:31b,llava:13b" ./scripts/bootstrap-local-ai-node.sh
+```
+
 Run target-host preflight before the first deployment:
 
 ```bash
@@ -177,6 +189,7 @@ Optional smoke tests:
 
 ```bash
 RUN_SMOKE_TESTS=true ./scripts/verify-ollama-models.sh
+RUN_SMOKE_TESTS=true EXPECT_OPTIONAL_MODELS="gemma4:31b,llava:13b" ./scripts/bootstrap-local-ai-node.sh
 ```
 
 ## Download models on a new system

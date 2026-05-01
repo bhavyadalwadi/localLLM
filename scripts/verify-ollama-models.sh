@@ -10,6 +10,7 @@ set -euo pipefail
 
 RUN_SMOKE_TESTS="${RUN_SMOKE_TESTS:-false}"
 OLLAMA_URL="${OLLAMA_URL:-http://localhost:11434}"
+declare -a expected_optional_models=()
 
 required_models=(
   "llama3.1:8b"
@@ -55,7 +56,6 @@ while IFS= read -r model; do
   installed_models+=("${model}")
 done < <(printf '%s\n' "${tags_json}" | tr '{},' '\n' | sed -n 's/.*"model":"\([^"]*\)".*/\1/p')
 
-expected_optional_models=()
 if [[ -n "${EXPECT_OPTIONAL_MODELS:-}" ]]; then
   IFS=',' read -r -a expected_optional_models <<<"${EXPECT_OPTIONAL_MODELS}"
 fi
@@ -79,14 +79,16 @@ for model in "${optional_models[@]}"; do
   fi
 done
 
-for model in "${expected_optional_models[@]}"; do
-  if model_present "${model}"; then
-    echo "EXPECTED OPTIONAL OK: ${model}"
-  else
-    echo "EXPECTED OPTIONAL MISSING: ${model}"
-    missing_required=1
-  fi
-done
+if [[ "${#expected_optional_models[@]}" -gt 0 ]]; then
+  for model in "${expected_optional_models[@]}"; do
+    if model_present "${model}"; then
+      echo "EXPECTED OPTIONAL OK: ${model}"
+    else
+      echo "EXPECTED OPTIONAL MISSING: ${model}"
+      missing_required=1
+    fi
+  done
+fi
 
 if [[ "${RUN_SMOKE_TESTS}" == "true" ]]; then
   echo "Running smoke test for llama3.1:8b ..."
