@@ -1,37 +1,102 @@
 # RAG Pipeline
 
-This repo does not implement RAG yet, but the intended first version is now
-defined enough to build against.
+This repo now includes a first-pass local RAG implementation built around
+Ollama embeddings, a dependency-light JSON index, and a small local HTTP
+service.
 
-## First implementation target
+## Current implementation
 
 - embeddings model: `nomic-embed-text`
-- document source: `rag-data/documents/`
-- vector store: Chroma first, FAISS as an alternative
-- persistence: `rag-data/chroma/`
-- retrieval consumer: Open WebUI or a small script/service layer
+- source documents: `rag-data/documents/`
+- local index file: `rag-data/chroma/rag-index.json`
+- retrieval scripts:
+  - `scripts/build-rag-index.py`
+  - `scripts/query-rag.py`
+  - `scripts/rag-answer.py`
+  - `scripts/rag_service.py`
+  - `scripts/start-rag-service.sh`
+
+This is intentionally simple. It creates a local disk index that is easy to
+inspect, back up, and rebuild without introducing new service dependencies.
+
+## Build the index
+
+Place source material under `rag-data/documents/`, then run:
+
+```bash
+python3 ./scripts/build-rag-index.py
+```
+
+Useful overrides:
+
+```bash
+RAG_DOCUMENTS_DIR=docs python3 ./scripts/build-rag-index.py
+RAG_CHUNK_SIZE=1500 RAG_CHUNK_OVERLAP=250 python3 ./scripts/build-rag-index.py
+```
+
+## Query the index
+
+Inspect the top matching chunks:
+
+```bash
+python3 ./scripts/query-rag.py "How is this node supposed to be deployed?"
+```
+
+Generate an answer using retrieved context:
+
+```bash
+python3 ./scripts/rag-answer.py "What are the default model roles?"
+```
+
+Use a larger answer model when needed:
+
+```bash
+RAG_CHAT_MODEL=gemma4:31b python3 ./scripts/rag-answer.py "Summarize the security posture."
+```
+
+## Run the local RAG service
+
+Start the HTTP service:
+
+```bash
+./scripts/start-rag-service.sh
+```
+
+Health check:
+
+```bash
+curl http://127.0.0.1:8787/health
+```
+
+Build the index through the service:
+
+```bash
+curl -X POST http://127.0.0.1:8787/index/build
+```
+
+Query retrieved chunks:
+
+```bash
+curl -X POST http://127.0.0.1:8787/query \
+  -H "Content-Type: application/json" \
+  -d '{"query":"What is the deployment flow for this node?","top_k":4}'
+```
+
+Generate a grounded answer:
+
+```bash
+curl -X POST http://127.0.0.1:8787/answer \
+  -H "Content-Type: application/json" \
+  -d '{"query":"What models are part of the core stack?","top_k":4,"model":"gemma4:31b"}'
+```
 
 ## Design rules
 
 - Keep RAG separate from the base Ollama and Open WebUI deployment.
 - Do not mix ingestion state into the live model store.
-- Keep raw documents, chunks, and vector indexes in separate directories.
-- Start with local documents only.
-
-## Initial directory usage
-
-- source documents: `rag-data/documents/`
-- Chroma persistence: `rag-data/chroma/`
-- FAISS experiments: `rag-data/faiss/`
-
-## First-pass ingestion flow
-
-1. Copy source material into `rag-data/documents/`.
-2. Extract text into a normalized local representation.
-3. Chunk conservatively to avoid losing context.
-4. Generate embeddings with `nomic-embed-text`.
-5. Write vectors to Chroma.
-6. Expose retrieval to the UI or an agent layer.
+- Keep raw documents in `rag-data/documents/`.
+- Keep generated index state in `rag-data/chroma/`.
+- Start with local text documents only.
 
 ## Model routing for RAG
 
@@ -42,9 +107,11 @@ Recommended split:
 
 Do not use the larger model for ingestion. Keep ingestion simple and stable.
 
-## What not to do first
+## Next step after this baseline
 
-- do not add multiple vector stores at once
-- do not mix cloud embeddings into the first local pipeline
-- do not build agent orchestration before basic retrieval works
-- do not let RAG change the required core-model inventory
+Once this local JSON index is working for your documents, the next upgrade path
+is:
+
+1. swap the index backend to Chroma
+2. integrate the local service into the UI or agent workflows
+3. add metadata filters and incremental reindexing

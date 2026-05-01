@@ -1,4 +1,7 @@
 .env
+.DS_Store
+__pycache__/
+*.pyc
 
 # Runtime data
 volumes/open-webui-data/*
@@ -6,6 +9,7 @@ volumes/ollama-data/*
 rag-data/chroma/*
 rag-data/faiss/*
 rag-data/documents/*
+rag-data/index/*
 backups/local/*
 backups/nas/*
 
@@ -17,4 +21,3 @@ backups/nas/*
 !rag-data/documents/.gitkeep
 !backups/local/.gitkeep
 !backups/nas/.gitkeep
-

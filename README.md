@@ -228,6 +228,86 @@ new system, run:
 
 This prints the manifest path plus every blob file referenced by that model.
 
+## First RAG workflow
+
+The repo now includes a minimal local RAG path built on top of Ollama
+embeddings, a local JSON index, and a small local HTTP service.
+
+1. Put source files in `rag-data/documents/`.
+2. Build the index:
+
+```bash
+python3 ./scripts/build-rag-index.py
+```
+
+3. Inspect retrieval results:
+
+```bash
+python3 ./scripts/query-rag.py "What models are part of the core stack?"
+```
+
+4. Generate an answer from retrieved context:
+
+```bash
+python3 ./scripts/rag-answer.py "What is the deployment flow for the target host?"
+```
+
+Use `RAG_CHAT_MODEL=gemma4:31b` when you want a stronger final answer model.
+
+## How This Actually Works
+
+`rag-data/documents/` is the source-of-truth context directory for the first
+RAG implementation. Put the text material you want the system to know there:
+- notes
+- docs
+- runbooks
+- config references
+- logs you want to search
+
+The current pipeline is:
+1. `build-rag-index.py` reads files from `rag-data/documents/`
+2. it chunks the text
+3. it embeds each chunk with `nomic-embed-text`
+4. it writes a local index to `rag-data/chroma/rag-index.json`
+5. `query-rag.py` and `rag-answer.py` retrieve relevant chunks
+6. the final answer is generated with `llama3.1:8b` or `gemma4:31b`
+
+## Open WebUI Relationship
+
+Open WebUI still works, but not automatically with this custom RAG path.
+
+What Open WebUI does right now:
+- lets you chat with Ollama models manually
+- lets you choose `llama3.1:8b`, `gemma4:31b`, `llava:13b`, and others
+
+What Open WebUI does not do yet in this repo:
+- call `build-rag-index.py`
+- call `query-rag.py`
+- call `rag-answer.py`
+- automatically use `rag-data/documents/` as grounded context
+
+That means the stronger system is now split into two layers:
+- Open WebUI for direct model access
+- local RAG scripts and service for grounded answers
+
+The bridge layer is the new local RAG service:
+
+```bash
+./scripts/start-rag-service.sh
+```
+
+It exposes local endpoints for health, index build, retrieval, and grounded
+answer generation. That service is what we can wire into future agent or UI
+integration.
+
+Example:
+
+```bash
+curl -X POST http://127.0.0.1:8787/answer \
+  -H "Content-Type: application/json" \
+  -d '{"query":"What is our deployment flow?","model":"gemma4:31b"}'
+```
+
 ## Step 4: verify Open WebUI connectivity
 
 Run the connectivity check:
