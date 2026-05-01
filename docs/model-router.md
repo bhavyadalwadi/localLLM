@@ -36,6 +36,19 @@ Endpoints:
 OpenAI-style model id:
 - `local-ai-node-auto`
 
+## UI integration target
+
+Recommended UI architecture:
+- Open WebUI connects to the router's OpenAI-compatible endpoint
+- Open WebUI default selected model is `local-ai-node-auto`
+- the router decides when to use RAG, coding, light, or normal chat
+
+Recommended environment values for Open WebUI:
+- `ENABLE_OLLAMA_API=false`
+- `ENABLE_OPENAI_API=true`
+- `OPENAI_API_BASE_URL=http://host.docker.internal:8788/v1`
+- `OPENAI_API_KEY=local-ai-node`
+
 ## Current routing behavior
 
 - local repo, deployment, architecture, security, migration, and RAG questions
@@ -61,5 +74,5 @@ of auto-routing.
 - add image-routing support for `llava:13b`
 - add incremental index rebuilds instead of full rebuilds
 - expose router + RAG service behind one packaged process
-- test an Open WebUI connection against the OpenAI-style `/v1/chat/completions`
-  endpoint so the UI can talk to the router directly
+- validate Open WebUI against the router in router-only mode and document any
+  UI-side quirks such as model caching or connection persistence

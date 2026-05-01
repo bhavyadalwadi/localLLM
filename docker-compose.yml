@@ -8,6 +8,12 @@ services:
     environment:
       # Point this at Ollama on the host or at the Docker service below.
       - OLLAMA_BASE_URL=${OLLAMA_BASE_URL}
+      # Router mode can expose a single OpenAI-compatible entrypoint instead.
+      - ENABLE_OLLAMA_API=${ENABLE_OLLAMA_API:-true}
+      - ENABLE_OPENAI_API=${ENABLE_OPENAI_API:-true}
+      - OPENAI_API_BASE_URL=${OPENAI_API_BASE_URL:-http://host.docker.internal:8788/v1}
+      - OPENAI_API_KEY=${OPENAI_API_KEY:-local-ai-node}
+      - ENABLE_BASE_MODELS_CACHE=${ENABLE_BASE_MODELS_CACHE:-true}
       # Set a real secret in .env for production use.
       - WEBUI_SECRET_KEY=${WEBUI_SECRET_KEY:-change-me}
     volumes:

@@ -356,6 +356,59 @@ Router behavior today:
 This is the path to the UI talking to one endpoint directly instead of asking
 you to choose a model every time.
 
+## Open WebUI Through The Router
+
+The recommended end-state is:
+- Open WebUI talks to the router, not directly to Ollama
+- the router decides whether to use RAG, coding, light, or normal chat
+- Open WebUI uses the router's OpenAI-compatible endpoint
+- the default model in the UI becomes `local-ai-node-auto`
+
+Repo defaults now support that mode through environment variables in
+`.env.example` and `.env.staging.example`.
+
+### Recommended startup order
+
+1. Make sure Ollama is running on the host.
+2. Build the RAG index:
+
+```bash
+python3 ./scripts/build-rag-index.py
+```
+
+3. Start the router:
+
+```bash
+./scripts/start-router-service.sh
+```
+
+4. Start Open WebUI:
+
+```bash
+docker compose up -d
+```
+
+### Router-mode Open WebUI settings
+
+Recommended `.env` values:
+
+```bash
+ENABLE_OLLAMA_API=false
+ENABLE_OPENAI_API=true
+OPENAI_API_BASE_URL=http://host.docker.internal:8788/v1
+OPENAI_API_KEY=local-ai-node
+```
+
+### What you should see in the UI
+
+- an OpenAI-compatible backend provided by the local router
+- the `local-ai-node-auto` model id available from the model list
+- one default model choice in the UI that routes automatically underneath
+
+This does not eliminate the model selector from Open WebUI itself, but it means
+you can keep the UI on `local-ai-node-auto` for normal use instead of manually
+switching between `llama3.1`, `deepseek-coder`, `phi3`, and `gemma4`.
+
 ## Step 4: verify Open WebUI connectivity
 
 Run the connectivity check:
