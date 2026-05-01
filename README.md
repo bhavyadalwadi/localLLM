@@ -308,6 +308,54 @@ curl -X POST http://127.0.0.1:8787/answer \
   -d '{"query":"What is our deployment flow?","model":"gemma4:31b"}'
 ```
 
+## Smart Router API
+
+The repo now also includes a single smart router endpoint so callers do not
+need to choose a model manually every time.
+
+Start it:
+
+```bash
+./scripts/start-router-service.sh
+```
+
+Health check:
+
+```bash
+curl http://127.0.0.1:8788/health
+```
+
+Simple chat endpoint:
+
+```bash
+curl -X POST http://127.0.0.1:8788/chat \
+  -H "Content-Type: application/json" \
+  -d '{"question":"What is our target architecture?"}'
+```
+
+OpenAI-style endpoint:
+
+```bash
+curl -X POST http://127.0.0.1:8788/v1/chat/completions \
+  -H "Content-Type: application/json" \
+  -d '{
+    "model":"local-ai-node-auto",
+    "messages":[
+      {"role":"user","content":"What is our deployment flow?"}
+    ],
+    "stream":false
+  }'
+```
+
+Router behavior today:
+- repo and node questions use the RAG path
+- coding questions use `deepseek-coder:6.7b`
+- short utility prompts can use `phi3`
+- general chat falls back to `llama3.1:8b`
+
+This is the path to the UI talking to one endpoint directly instead of asking
+you to choose a model every time.
+
 ## Step 4: verify Open WebUI connectivity
 
 Run the connectivity check:

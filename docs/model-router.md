@@ -1,7 +1,8 @@
 # Model Router
 
-This repo does not implement an automated router yet, but these are the
-intended routing defaults for Open WebUI and any later agent layer.
+This repo now includes a first-pass local router service. It provides one smart
+entrypoint that can choose a route and model for the request instead of forcing
+manual model selection every time.
 
 ## Default assignments
 
@@ -21,6 +22,31 @@ intended routing defaults for Open WebUI and any later agent layer.
 - Route image tasks to `llava:13b` only when the prompt actually includes image
   understanding.
 
+## Current router service
+
+Scripts:
+- `scripts/router_service.py`
+- `scripts/start-router-service.sh`
+
+Endpoints:
+- `POST /chat`
+- `GET /v1/models`
+- `POST /v1/chat/completions`
+
+OpenAI-style model id:
+- `local-ai-node-auto`
+
+## Current routing behavior
+
+- local repo, deployment, architecture, security, migration, and RAG questions
+  go through the RAG path and default to `gemma4:31b`
+- coding questions go to `deepseek-coder:6.7b`
+- short utility prompts can go to `phi3`
+- everything else falls back to `llama3.1:8b`
+
+If a caller explicitly requests a real model id, the router honors that instead
+of auto-routing.
+
 ## Recommended first-pass UI defaults
 
 - primary default model: `llama3.1:8b`
@@ -29,11 +55,11 @@ intended routing defaults for Open WebUI and any later agent layer.
 - premium text favorite: `gemma4:31b`
 - embeddings backend: `nomic-embed-text`
 
-## Later router target
+## TODO
 
-If you add a small routing service later, keep the first version simple:
-- text chat -> `llama3.1:8b`
-- code tasks -> `deepseek-coder:6.7b`
-- low-priority utility prompts -> `phi3`
-- complex reasoning by explicit selection -> `gemma4:31b`
-- image prompts -> `llava:13b`
+- improve routing signals with conversation history and confidence thresholds
+- add image-routing support for `llava:13b`
+- add incremental index rebuilds instead of full rebuilds
+- expose router + RAG service behind one packaged process
+- test an Open WebUI connection against the OpenAI-style `/v1/chat/completions`
+  endpoint so the UI can talk to the router directly
