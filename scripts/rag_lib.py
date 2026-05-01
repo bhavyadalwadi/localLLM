@@ -5,6 +5,7 @@ from __future__ import annotations
 import json
 import math
 import os
+import re
 import time
 import urllib.error
 import urllib.request
@@ -154,7 +155,7 @@ def split_text(text: str, size: int, overlap: int) -> list[str]:
     normalized = "\n".join(line.rstrip() for line in text.splitlines())
     normalized = normalized.strip()
     if not normalized:
-      return []
+        return []
 
     chunks: list[str] = []
     start = 0
@@ -176,6 +177,66 @@ def cosine_similarity(left: list[float], right: list[float]) -> float:
     if left_norm == 0.0 or right_norm == 0.0:
         return 0.0
     return numerator / (left_norm * right_norm)
+
+
+def tokenize(text: str) -> list[str]:
+    return re.findall(r"[a-z0-9]+", text.lower())
+
+
+def lexical_overlap_score(query: str, path: str, text: str) -> float:
+    query_tokens = set(tokenize(query))
+    if not query_tokens:
+        return 0.0
+
+    path_tokens = set(tokenize(path.replace("/", " ")))
+    text_tokens = set(tokenize(text[:2000]))
+    path_overlap = len(query_tokens & path_tokens) / len(query_tokens)
+    text_overlap = len(query_tokens & text_tokens) / len(query_tokens)
+    return (path_overlap * 1.5) + text_overlap
+
+
+def rank_items(query: str, items: list[dict], limit: int, embedding_model: str | None = None) -> list[dict]:
+    query_embedding = embed_text(query, embedding_model)
+    ranked = []
+    for item in items:
+        semantic_score = cosine_similarity(query_embedding, item["embedding"])
+        lexical_score = lexical_overlap_score(query, item["path"], item["text"])
+        final_score = semantic_score + (lexical_score * 0.15)
+        ranked.append(
+            {
+                "score": final_score,
+                "semantic_score": semantic_score,
+                "lexical_score": lexical_score,
+                "path": item["path"],
+                "chunk_index": item["chunk_index"],
+                "text": item["text"],
+            }
+        )
+    ranked.sort(key=lambda item: item["score"], reverse=True)
+    return ranked[:limit]
+
+
+def build_answer_prompt(query: str, chunks: list[dict]) -> str:
+    context_sections = [
+        (
+            f"[Source: {item['path']}#chunk-{item['chunk_index']} "
+            f"score={item['score']:.4f} semantic={item['semantic_score']:.4f} "
+            f"lexical={item['lexical_score']:.4f}]\n{item['text']}"
+        )
+        for item in chunks
+    ]
+    return (
+        "You are answering from a local knowledge base. "
+        "Use only the provided context. "
+        "Give a direct, useful answer with 2-5 concrete points when possible. "
+        "Do not answer with a vague one-line label if the context supports more detail. "
+        "If the context is insufficient, say exactly what is missing. "
+        "End with a short 'Sources:' line listing the most relevant file names.\n\n"
+        f"Question:\n{query}\n\n"
+        "Context:\n"
+        f"{'\n\n'.join(context_sections)}\n\n"
+        "Answer:"
+    )
 
 
 def build_index_payload(items: list[dict]) -> dict:

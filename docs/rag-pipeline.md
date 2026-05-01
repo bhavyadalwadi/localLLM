@@ -18,6 +18,9 @@ service.
 
 This is intentionally simple. It creates a local disk index that is easy to
 inspect, back up, and rebuild without introducing new service dependencies.
+Ranking is hybrid: embeddings first, then a light lexical boost from filenames
+and chunk text so obvious deployment or security questions map to the right docs
+more reliably.
 
 ## Build the index
 

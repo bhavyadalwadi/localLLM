@@ -9,10 +9,10 @@ from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 
 from rag_lib import (
+    build_answer_prompt,
     build_index_payload,
     chunk_overlap,
     chunk_size,
-    cosine_similarity,
     documents_dir,
     embed_model,
     embed_text,
@@ -21,6 +21,7 @@ from rag_lib import (
     iter_documents,
     load_json,
     read_text_file,
+    rank_items,
     save_json,
     split_text,
     top_k,
@@ -50,36 +51,11 @@ def build_items(root: Path) -> list[dict]:
 
 
 def rank_chunks(query: str, payload: dict, limit: int) -> list[dict]:
-    query_embedding = embed_text(query, payload.get("embedding_model"))
-    ranked = sorted(
-        (
-            {
-                "score": cosine_similarity(query_embedding, item["embedding"]),
-                "path": item["path"],
-                "chunk_index": item["chunk_index"],
-                "text": item["text"],
-            }
-            for item in payload.get("items", [])
-        ),
-        key=lambda item: item["score"],
-        reverse=True,
-    )
-    return ranked[:limit]
+    return rank_items(query, payload.get("items", []), limit, payload.get("embedding_model"))
 
 
 def answer_from_chunks(query: str, chunks: list[dict], model: str) -> str:
-    context_sections = [
-        f"[Source: {item['path']}#chunk-{item['chunk_index']} score={item['score']:.4f}]\n{item['text']}"
-        for item in chunks
-    ]
-    prompt = (
-        "Answer the user's question using only the provided context. "
-        "If the context is insufficient, say so clearly.\n\n"
-        f"Question:\n{query}\n\n"
-        "Context:\n"
-        f"{'\n\n'.join(context_sections)}\n\n"
-        "Answer:"
-    )
+    prompt = build_answer_prompt(query, chunks)
     return generate_text(prompt, model)
 
 

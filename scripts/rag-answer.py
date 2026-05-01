@@ -5,7 +5,7 @@ from __future__ import annotations
 import argparse
 from pathlib import Path
 
-from rag_lib import chat_model, cosine_similarity, embed_text, generate_text, index_path, load_json, top_k
+from rag_lib import build_answer_prompt, chat_model, generate_text, index_path, load_json, rank_items, top_k
 
 
 def main() -> int:
@@ -34,36 +34,8 @@ def main() -> int:
     if not items:
         raise SystemExit("RAG index is empty. Build it first.")
 
-    query_embedding = embed_text(args.query, payload.get("embedding_model"))
-    ranked = sorted(
-        (
-            {
-                "score": cosine_similarity(query_embedding, item["embedding"]),
-                "path": item["path"],
-                "chunk_index": item["chunk_index"],
-                "text": item["text"],
-            }
-            for item in items
-        ),
-        key=lambda item: item["score"],
-        reverse=True,
-    )[: args.top_k]
-
-    context_sections = []
-    for item in ranked:
-        context_sections.append(
-            f"[Source: {item['path']}#chunk-{item['chunk_index']} score={item['score']:.4f}]\n{item['text']}"
-        )
-
-    prompt = (
-        "Answer the user's question using only the provided context. "
-        "If the context is insufficient, say so clearly.\n\n"
-        f"Question:\n{args.query}\n\n"
-        "Context:\n"
-        f"{'\n\n'.join(context_sections)}\n\n"
-        "Answer:"
-    )
-
+    ranked = rank_items(args.query, items, args.top_k, payload.get("embedding_model"))
+    prompt = build_answer_prompt(args.query, ranked)
     answer = generate_text(prompt, args.model)
     print(answer)
     print("\nSources:")
