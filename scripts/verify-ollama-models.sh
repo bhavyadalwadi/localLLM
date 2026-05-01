@@ -5,22 +5,23 @@ set -euo pipefail
 # Verify that the expected model inventory exists on the target node.
 # This works against the Ollama HTTP API so it also supports Docker-only setups.
 # Set RUN_SMOKE_TESTS=true to run lightweight prompt and embedding checks.
+# Set EXPECT_OPTIONAL_MODELS to a comma-separated list if specific optional
+# models should be treated as required on a given node.
 
 RUN_SMOKE_TESTS="${RUN_SMOKE_TESTS:-false}"
 OLLAMA_URL="${OLLAMA_URL:-http://localhost:11434}"
 
 required_models=(
-  "llama3:8b"
+  "llama3.1:8b"
   "deepseek-coder:6.7b"
   "nomic-embed-text"
   "phi3"
-  "mixtral:8x7b"
-  "llava:13b"
-  "llama3:70b"
 )
 
 optional_models=(
+  "llava:13b"
   "gemma4:31b"
+  "qwen3:30b"
 )
 
 model_present() {
@@ -54,6 +55,11 @@ while IFS= read -r model; do
   installed_models+=("${model}")
 done < <(printf '%s\n' "${tags_json}" | tr '{},' '\n' | sed -n 's/.*"model":"\([^"]*\)".*/\1/p')
 
+expected_optional_models=()
+if [[ -n "${EXPECT_OPTIONAL_MODELS:-}" ]]; then
+  IFS=',' read -r -a expected_optional_models <<<"${EXPECT_OPTIONAL_MODELS}"
+fi
+
 missing_required=0
 
 for model in "${required_models[@]}"; do
@@ -73,11 +79,20 @@ for model in "${optional_models[@]}"; do
   fi
 done
 
+for model in "${expected_optional_models[@]}"; do
+  if model_present "${model}"; then
+    echo "EXPECTED OPTIONAL OK: ${model}"
+  else
+    echo "EXPECTED OPTIONAL MISSING: ${model}"
+    missing_required=1
+  fi
+done
+
 if [[ "${RUN_SMOKE_TESTS}" == "true" ]]; then
-  echo "Running smoke test for llama3:8b ..."
+  echo "Running smoke test for llama3.1:8b ..."
   curl -fsS "${OLLAMA_URL}/api/generate" \
     -H "Content-Type: application/json" \
-    -d '{"model":"llama3:8b","prompt":"Reply with exactly: llama3 8b ready","stream":false}' >/dev/null
+    -d '{"model":"llama3.1:8b","prompt":"Reply with exactly: llama3.1 8b ready","stream":false}' >/dev/null
 
   echo "Running embedding smoke test for nomic-embed-text ..."
   curl -fsS "${OLLAMA_URL}/api/embeddings" \

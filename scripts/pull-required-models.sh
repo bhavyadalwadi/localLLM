@@ -8,19 +8,20 @@ set -euo pipefail
 #
 # Optional:
 #   INCLUDE_OPTIONAL=true ./scripts/pull-required-models.sh
+#   OPTIONAL_MODELS="gemma4:31b" ./scripts/pull-required-models.sh
+#   OPTIONAL_MODELS="llava:13b,qwen3:30b" ./scripts/pull-required-models.sh
 
 required_models=(
-  "llama3:8b"
+  "llama3.1:8b"
   "deepseek-coder:6.7b"
   "nomic-embed-text"
   "phi3"
-  "mixtral:8x7b"
-  "llava:13b"
-  "llama3:70b"
 )
 
 optional_models=(
+  "llava:13b"
   "gemma4:31b"
+  "qwen3:30b"
 )
 
 if ! command -v ollama >/dev/null 2>&1; then
@@ -38,10 +39,17 @@ for model in "${required_models[@]}"; do
   ollama pull "${model}"
 done
 
-if [[ "${INCLUDE_OPTIONAL:-false}" == "true" ]]; then
+selected_optional_models=()
+if [[ -n "${OPTIONAL_MODELS:-}" ]]; then
+  IFS=',' read -r -a selected_optional_models <<<"${OPTIONAL_MODELS}"
+elif [[ "${INCLUDE_OPTIONAL:-false}" == "true" ]]; then
+  selected_optional_models=("${optional_models[@]}")
+fi
+
+if [[ "${#selected_optional_models[@]}" -gt 0 ]]; then
   echo
   echo "Pulling optional models ..."
-  for model in "${optional_models[@]}"; do
+  for model in "${selected_optional_models[@]}"; do
     echo
     echo "==> Pulling ${model}"
     ollama pull "${model}"
@@ -54,4 +62,3 @@ ollama list
 
 echo
 echo "Done."
-

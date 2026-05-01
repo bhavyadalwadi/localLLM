@@ -23,7 +23,8 @@ Run this after local setup or after migration to a new host.
 ## Operational checks
 
 - confirm the expected models appear in Open WebUI
-- confirm a basic chat works with `llama3:8b`
+- confirm a basic chat works with `llama3.1:8b`
 - confirm a coding prompt works with `deepseek-coder:6.7b`
 - confirm embedding API responses work for `nomic-embed-text`
-
+- if installed, confirm the selected optional large model responds
+- if installed, confirm vision prompts work with `llava:13b`

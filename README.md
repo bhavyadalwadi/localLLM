@@ -6,14 +6,16 @@ The repo is intended to be the canonical deployment codebase. Push this to Git, 
 
 ## Planned model roles
 
-- normal chat: `llama3:8b`
+- normal chat: `llama3.1:8b`
 - coding: `deepseek-coder:6.7b`
 - fast/light tasks: `phi3`
-- mid-tier reasoning: `mixtral:8x7b`
-- heavy reasoning: `llama3:70b`
-- vision: `llava:13b`
 - embeddings: `nomic-embed-text`
-- optional extra: `gemma4:31b`
+- optional larger text model: `gemma4:31b` or `qwen3:30b`
+- optional vision: `llava:13b`
+
+This repo now treats the four-model core set as the required baseline. Larger
+text models and vision are optional so the node stays responsive while Docker,
+storage, monitoring, and later RAG services share the machine.
 
 ## Repository layout
 
@@ -179,17 +181,39 @@ RUN_SMOKE_TESTS=true ./scripts/verify-ollama-models.sh
 
 ## Download models on a new system
 
-After `ollama` is installed, pull the required model set with:
+After `ollama` is installed, pull the required core model set with:
 
 ```bash
 ./scripts/pull-required-models.sh
 ```
 
-Include the optional `gemma4:31b` model with:
+Pull a specific optional model with:
 
 ```bash
-INCLUDE_OPTIONAL=true ./scripts/pull-required-models.sh
+OPTIONAL_MODELS="gemma4:31b" ./scripts/pull-required-models.sh
 ```
+
+Other valid optional pulls:
+
+```bash
+OPTIONAL_MODELS="qwen3:30b" ./scripts/pull-required-models.sh
+OPTIONAL_MODELS="llava:13b" ./scripts/pull-required-models.sh
+```
+
+Avoid pulling multiple heavyweight text models unless you have a specific need
+to compare them. The intended default is one fast general model, one coding
+model, one lightweight fallback, one embedding model, and optionally one larger
+text model plus vision.
+
+To inspect the exact manifest and blob files for a model before moving it to a
+new system, run:
+
+```bash
+./scripts/show-model-files.sh gemma4:31b
+./scripts/show-model-files.sh llava:13b
+```
+
+This prints the manifest path plus every blob file referenced by that model.
 
 ## Step 4: verify Open WebUI connectivity
 
@@ -278,6 +302,6 @@ For host-based Ollama service management, see [configs/ollama/systemd-setup.md](
 
 ## Future work
 
-Placeholders are included in [docs/rag-pipeline.md](/Users/basho00/_github/_personal/Local-LLM/docs/rag-pipeline.md), [docs/model-router.md](/Users/basho00/_github/_personal/Local-LLM/docs/model-router.md), [docs/security-review.md](/Users/basho00/_github/_personal/Local-LLM/docs/security-review.md), and [docs/performance-tuning.md](/Users/basho00/_github/_personal/Local-LLM/docs/performance-tuning.md).
+Operational guidance is included in [docs/rag-pipeline.md](/Users/basho00/_github/_personal/Local-LLM/docs/rag-pipeline.md), [docs/model-router.md](/Users/basho00/_github/_personal/Local-LLM/docs/model-router.md), [docs/security-review.md](/Users/basho00/_github/_personal/Local-LLM/docs/security-review.md), and [docs/performance-tuning.md](/Users/basho00/_github/_personal/Local-LLM/docs/performance-tuning.md).
 
 RAG is intentionally not implemented here. When you add it, start with `nomic-embed-text` plus either Chroma or FAISS and keep ingestion/persistence separate from the base Ollama/Open WebUI stack.
