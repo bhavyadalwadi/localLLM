@@ -107,6 +107,8 @@ curl http://localhost:11434/api/tags
 docker compose up -d
 ```
 
+5. In Open WebUI admin settings, enable the Ollama connection for `http://host.docker.internal:11434` if the model dropdown is empty.
+
 ### Option B: Ollama in Docker
 
 Use this when you want both services managed by Docker Compose.
@@ -123,6 +125,8 @@ docker compose -f docker-compose.yml -f docker-compose.ollama.yml up -d
 ```bash
 curl http://localhost:11434/api/tags
 ```
+
+4. In Open WebUI admin settings, enable the Ollama connection for `http://ollama:11434` if the model dropdown is empty.
 
 ### Option C: Remote Open WebUI host
 
@@ -160,6 +164,8 @@ curl http://OLLAMA_NODE_IP:11434/api/tags
 If security policy allows only private network access, keep this traffic on a trusted LAN or VPN.
 
 ## Step 3: verify the model inventory
+
+If Open WebUI loads but shows no models, check `Admin Settings -> Connections` and make sure the configured Ollama API connection is enabled.
 
 Run the inventory check:
 
