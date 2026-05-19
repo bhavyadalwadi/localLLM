@@ -8,6 +8,15 @@ Run this after local setup or after migration to a new host.
 - `RUN_SMOKE_TESTS=true ./scripts/verify-ollama-models.sh`
 - `./scripts/check-open-webui-connectivity.sh`
 
+## Router mode
+
+- `./scripts/start-router-service.sh`
+- `./scripts/check-router-connectivity.sh`
+- `RUN_SMOKE_TESTS=true ./scripts/check-router-connectivity.sh`
+- in `Admin Settings -> Connections`, enable `http://host.docker.internal:8788/v1` if it exists but is disabled
+- confirm `local-ai-node-auto` appears in Open WebUI
+- confirm a basic prompt works through `local-ai-node-auto`
+
 ## Option A: host Ollama
 
 - `curl http://localhost:11434/api/tags`

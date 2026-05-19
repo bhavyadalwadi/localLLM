@@ -27,6 +27,7 @@ manual model selection every time.
 Scripts:
 - `scripts/router_service.py`
 - `scripts/start-router-service.sh`
+- `scripts/check-router-connectivity.sh`
 
 Endpoints:
 - `POST /chat`
@@ -48,6 +49,12 @@ Recommended environment values for Open WebUI:
 - `ENABLE_OPENAI_API=true`
 - `OPENAI_API_BASE_URL=http://host.docker.internal:8788/v1`
 - `OPENAI_API_KEY=local-ai-node`
+
+Recommended startup validation:
+- start the router with `./scripts/start-router-service.sh`
+- validate it with `./scripts/check-router-connectivity.sh`
+- run `RUN_SMOKE_TESTS=true ./scripts/check-router-connectivity.sh` for a live completion check
+- in Open WebUI admin settings, enable the OpenAI connection for `http://host.docker.internal:8788/v1` if it exists but is disabled
 
 ## Current routing behavior
 
@@ -74,5 +81,5 @@ of auto-routing.
 - add image-routing support for `llava:13b`
 - add incremental index rebuilds instead of full rebuilds
 - expose router + RAG service behind one packaged process
-- validate Open WebUI against the router in router-only mode and document any
-  UI-side quirks such as model caching or connection persistence
+- document any remaining UI-side quirks such as model caching or connection
+  persistence after router mode is used more heavily

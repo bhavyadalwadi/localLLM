@@ -325,6 +325,12 @@ Start it:
 ./scripts/start-router-service.sh
 ```
 
+Connectivity check:
+
+```bash
+./scripts/check-router-connectivity.sh
+```
+
 Health check:
 
 ```bash
@@ -388,7 +394,14 @@ python3 ./scripts/build-rag-index.py
 ./scripts/start-router-service.sh
 ```
 
-4. Start Open WebUI:
+4. Validate the router:
+
+```bash
+./scripts/check-router-connectivity.sh
+RUN_SMOKE_TESTS=true ./scripts/check-router-connectivity.sh
+```
+
+5. Start Open WebUI:
 
 ```bash
 docker compose up -d
@@ -410,6 +423,7 @@ OPENAI_API_KEY=local-ai-node
 - an OpenAI-compatible backend provided by the local router
 - the `local-ai-node-auto` model id available from the model list
 - one default model choice in the UI that routes automatically underneath
+- in `Admin Settings -> Connections`, the OpenAI connection for `http://host.docker.internal:8788/v1` enabled if it exists but is disabled
 
 This does not eliminate the model selector from Open WebUI itself, but it means
 you can keep the UI on `local-ai-node-auto` for normal use instead of manually
