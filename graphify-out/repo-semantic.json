@@ -1,0 +1,85 @@
+{
+  "repo": "Local-LLM",
+  "title": "Local AI Node",
+  "purpose": "Local AI Node is a production-friendly self-hosted LLM stack centered on Open WebUI, Ollama, model routing, and future RAG and backup workflows.",
+  "domains": [
+    "ai",
+    "devops",
+    "tooling"
+  ],
+  "tech_stack": [
+    "Docker",
+    "Shell",
+    "Ollama",
+    "Open WebUI"
+  ],
+  "features": [
+    "Docker-based Open WebUI deployment with Ollama on the host, in Docker, or on a remote node",
+    "Defined core model roles for chat, coding, embeddings, optional larger models, and optional vision",
+    "Bootstrap, preflight, and verification scripts for target-host deployment and model inventory checks",
+    "Planned model-router and RAG scaffolding with dedicated docs and runtime folders",
+    "Backup and restore workflow for the Ollama model store and local AI node data"
+  ],
+  "pending_state": "documented",
+  "pending_items": [
+    "improve routing signals with conversation history and confidence thresholds",
+    "add image-routing support for `llava:13b`",
+    "add incremental index rebuilds instead of full rebuilds",
+    "expose router + RAG service behind one packaged process",
+    "document any remaining UI-side quirks such as model caching or connection"
+  ],
+  "status_confidence": "high",
+  "main_modules": [
+    "scripts",
+    "docs",
+    "configs",
+    "rag-data",
+    "backups"
+  ],
+  "key_flows": [
+    "graphify-out/GRAPH_REPORT.md",
+    "docker-compose.yml"
+  ],
+  "known_outputs": [
+    "graphify-out/graph.json",
+    "graphify-out/graph.html",
+    "graphify-out/GRAPH_REPORT.md"
+  ],
+  "current_work_guess": "The active direction is a more capable local router with better signal handling, image routing, and a cleaner packaged runtime.",
+  "likely_entrypoints": [
+    "README.md",
+    "docker-compose.yml",
+    "docs/model-router.md",
+    "scripts/bootstrap-local-ai-node.sh"
+  ],
+  "notable_docs": [
+    "README.md",
+    "docs/model-router.md",
+    "docs/target-host-first-pass.md",
+    "docs/security-review.md"
+  ],
+  "graph_stats": "278 nodes \u00b7 361 edges \u00b7 35 communities (28 shown, 7 thin omitted)",
+  "god_nodes": [
+    "Local AI Node",
+    "Target Host First Pass",
+    "generate_text()",
+    "build_items()",
+    "build_items()"
+  ],
+  "llm_start_here": [
+    "README.md",
+    "docs/target-host-first-pass.md",
+    "docs/model-router.md",
+    "docker-compose.yml"
+  ],
+  "suggested_next_steps": [
+    "Improve router confidence and conversation-history handling",
+    "Add image-routing support and validate the optional vision path",
+    "Package router and RAG behavior behind a cleaner single-process operator flow"
+  ],
+  "evidence_files": [
+    "README.md",
+    "docs/model-router.md",
+    "docs/target-host-first-pass.md"
+  ]
+}

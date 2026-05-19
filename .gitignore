@@ -1,5 +1,6 @@
 .env
 .DS_Store
+Thumbs.db
 __pycache__/
 *.pyc
 
@@ -21,3 +22,6 @@ backups/nas/*
 !rag-data/documents/.gitkeep
 !backups/local/.gitkeep
 !backups/nas/.gitkeep
+graphify-out/cache/
+graphify-out/manifest.json
+graphify-out/cost.json

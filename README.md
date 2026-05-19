@@ -17,6 +17,11 @@ This repo now treats the four-model core set as the required baseline. Larger
 text models and vision are optional so the node stays responsive while Docker,
 storage, monitoring, and later RAG services share the machine.
 
+## Screenshots
+
+![Local AI Node workflow overview](screenshots/workflow-overview.svg)
+![Target host first pass](screenshots/target-host-first-pass.svg)
+
 ## Repository layout
 
 ```text
@@ -519,3 +524,20 @@ For host-based Ollama service management, see [configs/ollama/systemd-setup.md](
 Operational guidance is included in [docs/rag-pipeline.md](/Users/basho00/_github/_personal/Local-LLM/docs/rag-pipeline.md), [docs/model-router.md](/Users/basho00/_github/_personal/Local-LLM/docs/model-router.md), [docs/security-review.md](/Users/basho00/_github/_personal/Local-LLM/docs/security-review.md), and [docs/performance-tuning.md](/Users/basho00/_github/_personal/Local-LLM/docs/performance-tuning.md).
 
 RAG is intentionally not implemented here. When you add it, start with `nomic-embed-text` plus either Chroma or FAISS and keep ingestion/persistence separate from the base Ollama/Open WebUI stack.
+
+## Quick Repo Summary
+
+- Purpose: This repository is a simple, production-friendly starting point for a target Unix/Linux Local AI Node.
+- Stack: Docker
+- Status confidence: high
+- Pending: improve routing signals with conversation history and confidence thresholds; add image-routing support for `llava:13b`; add incremental index rebuilds instead of full rebuilds
+
+## LLM Start Here
+- `README.md`
+- `graphify-out/GRAPH_REPORT.md`
+- `docker-compose.yml`
+- `graphify-out/repo-semantic-summary.md`
+
+## License
+
+This repository is proprietary and released under [All Rights Reserved](LICENSE).

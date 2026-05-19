@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="900" viewBox="0 0 1440 900" fill="none">
+  <rect width="1440" height="900" fill="#08111F"/>
+  <text x="96" y="96" fill="#F8FAFC" font-size="44" font-family="Arial, sans-serif" font-weight="700">Target Host First Pass</text>
+  <text x="96" y="138" fill="#94A3B8" font-size="24" font-family="Arial, sans-serif">Minimal deployment sequence for a production-style local AI workstation.</text>
+
+  <line x1="180" y1="240" x2="1260" y2="240" stroke="#1E293B" stroke-width="8" stroke-linecap="round"/>
+
+  <g font-family="Arial, sans-serif">
+    <circle cx="210" cy="240" r="28" fill="#14B8A6"/>
+    <text x="201" y="248" fill="#04111C" font-size="20" font-weight="700">1</text>
+    <rect x="120" y="300" width="180" height="180" rx="24" fill="#111827" stroke="#334155"/>
+    <text x="146" y="350" fill="#E2E8F0" font-size="24" font-weight="700">Clone Repo</text>
+    <text x="146" y="392" fill="#CBD5E1" font-size="18">Copy env</text>
+    <text x="146" y="420" fill="#CBD5E1" font-size="18">choose host</text>
+    <text x="146" y="448" fill="#CBD5E1" font-size="18">or Docker Ollama</text>
+
+    <circle cx="480" cy="240" r="28" fill="#38BDF8"/>
+    <text x="471" y="248" fill="#04111C" font-size="20" font-weight="700">2</text>
+    <rect x="390" y="300" width="180" height="180" rx="24" fill="#111827" stroke="#334155"/>
+    <text x="416" y="350" fill="#E2E8F0" font-size="24" font-weight="700">Preflight</text>
+    <text x="416" y="392" fill="#CBD5E1" font-size="18">validate host</text>
+    <text x="416" y="420" fill="#CBD5E1" font-size="18">check Docker</text>
+    <text x="416" y="448" fill="#CBD5E1" font-size="18">check paths</text>
+
+    <circle cx="750" cy="240" r="28" fill="#818CF8"/>
+    <text x="741" y="248" fill="#04111C" font-size="20" font-weight="700">3</text>
+    <rect x="660" y="300" width="180" height="180" rx="24" fill="#111827" stroke="#334155"/>
+    <text x="688" y="350" fill="#E2E8F0" font-size="24" font-weight="700">Models</text>
+    <text x="688" y="392" fill="#CBD5E1" font-size="18">verify inventory</text>
+    <text x="688" y="420" fill="#CBD5E1" font-size="18">restore or pull</text>
+    <text x="688" y="448" fill="#CBD5E1" font-size="18">optional models</text>
+
+    <circle cx="1020" cy="240" r="28" fill="#F59E0B"/>
+    <text x="1011" y="248" fill="#04111C" font-size="20" font-weight="700">4</text>
+    <rect x="930" y="300" width="180" height="180" rx="24" fill="#111827" stroke="#334155"/>
+    <text x="956" y="350" fill="#E2E8F0" font-size="24" font-weight="700">Start UI</text>
+    <text x="956" y="392" fill="#CBD5E1" font-size="18">docker compose</text>
+    <text x="956" y="420" fill="#CBD5E1" font-size="18">Open WebUI</text>
+    <text x="956" y="448" fill="#CBD5E1" font-size="18">connections on</text>
+
+    <circle cx="1230" cy="240" r="28" fill="#FB7185"/>
+    <text x="1221" y="248" fill="#04111C" font-size="20" font-weight="700">5</text>
+    <rect x="1140" y="300" width="180" height="180" rx="24" fill="#111827" stroke="#334155"/>
+    <text x="1166" y="350" fill="#E2E8F0" font-size="24" font-weight="700">Validate</text>
+    <text x="1166" y="392" fill="#CBD5E1" font-size="18">smoke tests</text>
+    <text x="1166" y="420" fill="#CBD5E1" font-size="18">model roles</text>
+    <text x="1166" y="448" fill="#CBD5E1" font-size="18">routing defaults</text>
+  </g>
+
+  <rect x="96" y="610" width="1248" height="180" rx="28" fill="#111827" stroke="#334155"/>
+  <text x="132" y="668" fill="#F8FAFC" font-size="28" font-family="Arial, sans-serif" font-weight="700">Operational intent</text>
+  <text x="132" y="714" fill="#CBD5E1" font-size="22" font-family="Arial, sans-serif">Keep Ollama close to the host, keep Open WebUI easy to re-deploy, and keep model data and backups portable.</text>
+  <text x="132" y="748" fill="#2DD4BF" font-size="20" font-family="Arial, sans-serif">This repo is meant to be cloned onto the final machine, not treated as a throwaway staging folder.</text>
+</svg>
