@@ -7,6 +7,8 @@ import math
 import os
 import re
 import time
+import base64
+import hashlib
 import urllib.error
 import urllib.request
 from pathlib import Path
@@ -134,6 +136,40 @@ def generate_text(prompt: str, model: str | None = None) -> str:
     return output.strip()
 
 
+def normalize_image_input(image_ref: str) -> str:
+    if image_ref.startswith("data:"):
+        _, _, encoded = image_ref.partition(",")
+        if not encoded:
+            raise RuntimeError("Image data URL did not include encoded content.")
+        return encoded.strip()
+
+    if image_ref.startswith(("http://", "https://")):
+        try:
+            with urllib.request.urlopen(image_ref) as response:
+                return base64.b64encode(response.read()).decode("utf-8")
+        except urllib.error.URLError as exc:
+            raise RuntimeError(f"Could not fetch image URL {image_ref}: {exc.reason}") from exc
+
+    path = Path(image_ref.replace("file://", "", 1)).expanduser()
+    if not path.exists():
+        raise RuntimeError(f"Image path does not exist: {image_ref}")
+    return base64.b64encode(path.read_bytes()).decode("utf-8")
+
+
+def generate_text_with_images(prompt: str, images: list[str], model: str | None = None) -> str:
+    payload = {
+        "model": model or chat_model(),
+        "prompt": prompt,
+        "images": [normalize_image_input(image) for image in images],
+        "stream": False,
+    }
+    response = post_json(f"{ollama_url()}/api/generate", payload)
+    output = response.get("response")
+    if not isinstance(output, str):
+        raise RuntimeError("Generation response did not include text.")
+    return output.strip()
+
+
 def iter_documents(root: Path) -> Iterable[Path]:
     for path in sorted(root.rglob("*")):
         if not path.is_file():
@@ -149,6 +185,12 @@ def iter_documents(root: Path) -> Iterable[Path]:
 
 def read_text_file(path: Path) -> str:
     return path.read_text(encoding="utf-8", errors="ignore").strip()
+
+
+def file_fingerprint(path: Path) -> str:
+    stat = path.stat()
+    payload = f"{path.resolve()}::{stat.st_mtime_ns}::{stat.st_size}"
+    return hashlib.sha256(payload.encode("utf-8")).hexdigest()
 
 
 def split_text(text: str, size: int, overlap: int) -> list[str]:
@@ -248,3 +290,26 @@ def build_index_payload(items: list[dict]) -> dict:
         "chunk_overlap": chunk_overlap(),
         "items": items,
     }
+
+
+def index_settings_match(payload: dict) -> bool:
+    return (
+        payload.get("embedding_model") == embed_model()
+        and payload.get("chunk_size") == chunk_size()
+        and payload.get("chunk_overlap") == chunk_overlap()
+    )
+
+
+def build_existing_item_map(payload: dict) -> dict[tuple[str, str, int], dict]:
+    existing: dict[tuple[str, str, int], dict] = {}
+    if not index_settings_match(payload):
+        return existing
+
+    for item in payload.get("items", []):
+        source_hash = item.get("source_hash")
+        path = item.get("path")
+        chunk_index = item.get("chunk_index")
+        if not isinstance(source_hash, str) or not isinstance(path, str) or not isinstance(chunk_index, int):
+            continue
+        existing[(path, source_hash, chunk_index)] = item
+    return existing

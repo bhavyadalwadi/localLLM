@@ -1,8 +1,8 @@
 # Local AI Node
 
-This repository is a simple, production-friendly starting point for a target Unix/Linux Local AI Node. It prepares Open WebUI, supports Ollama either on the host or in Docker, and reserves structure for backups, RAG, routing, and later hardening work.
+This repository is a simple, production-friendly starting point for a target Unix/Linux Local AI Node. Its primary job is to run Ollama plus Open WebUI cleanly, with host-based Ollama as the default path and Dockerized Ollama as an explicit alternative.
 
-The repo is intended to be the canonical deployment codebase. Push this to Git, migrate it to the final host by cloning, and move model data separately through backup/restore or fresh pulls.
+The repo is intended to be the canonical deployment codebase. Push this to Git, migrate it to the final host by cloning, and move model data separately through backup/restore or fresh pulls. Router, RAG, and related automation stay secondary to the base node flow.
 
 ## Planned model roles
 
@@ -70,6 +70,7 @@ storage, monitoring, and later RAG services share the machine.
 - Current staging machine: `cp .env.staging.example .env`
 - Final target host: `cp .env.example .env`
 - First target-host deployment guide: [docs/target-host-first-pass.md](/Users/basho00/_github/_personal/Local-LLM/docs/target-host-first-pass.md)
+- Primary operating flow: preflight, pull/restore models, verify inventory, start Open WebUI, validate connectivity
 
 ## Step 1: prepare the environment
 
@@ -178,19 +179,33 @@ Run the inventory check:
 ./scripts/verify-ollama-models.sh
 ```
 
-Run the full first-pass bootstrap in the expected order:
+If the host needs the default core model set first:
+
+```bash
+./scripts/pull-required-models.sh
+```
+
+The primary operator flow for this repo is:
+
+1. `./scripts/preflight-target-host.sh`
+2. `./scripts/pull-required-models.sh` if the host needs fresh models
+3. `./scripts/verify-ollama-models.sh`
+4. `docker compose up -d`
+5. `./scripts/check-open-webui-connectivity.sh`
+
+Use the bootstrap wrapper only if you want one convenience command for the same first-pass flow:
 
 ```bash
 ./scripts/bootstrap-local-ai-node.sh
 ```
 
-Include optional models in the validation flow:
+Include optional models in the convenience flow:
 
 ```bash
 EXPECT_OPTIONAL_MODELS="gemma4:31b,llava:13b" ./scripts/bootstrap-local-ai-node.sh
 ```
 
-Run target-host preflight before the first deployment:
+Run target-host preflight directly before the first deployment:
 
 ```bash
 ./scripts/preflight-target-host.sh
@@ -330,6 +345,12 @@ Start it:
 ./scripts/start-router-service.sh
 ```
 
+Packaged router + RAG operator flow:
+
+```bash
+./scripts/start-router-rag-stack.sh
+```
+
 Connectivity check:
 
 ```bash
@@ -393,10 +414,10 @@ Repo defaults now support that mode through environment variables in
 python3 ./scripts/build-rag-index.py
 ```
 
-3. Start the router:
+3. Start the packaged router + RAG stack:
 
 ```bash
-./scripts/start-router-service.sh
+./scripts/start-router-rag-stack.sh
 ```
 
 4. Validate the router:
@@ -519,18 +540,25 @@ Use [docs/migration-checklist.md](/Users/basho00/_github/_personal/Local-LLM/doc
 
 For host-based Ollama service management, see [configs/ollama/systemd-setup.md](/Users/basho00/_github/_personal/Local-LLM/configs/ollama/systemd-setup.md) and [configs/ollama/ollama.service](/Users/basho00/_github/_personal/Local-LLM/configs/ollama/ollama.service).
 
-## Future work
+## Secondary add-ons and future work
 
-Operational guidance is included in [docs/rag-pipeline.md](/Users/basho00/_github/_personal/Local-LLM/docs/rag-pipeline.md), [docs/model-router.md](/Users/basho00/_github/_personal/Local-LLM/docs/model-router.md), [docs/security-review.md](/Users/basho00/_github/_personal/Local-LLM/docs/security-review.md), and [docs/performance-tuning.md](/Users/basho00/_github/_personal/Local-LLM/docs/performance-tuning.md).
+The base repo goal is still a reliable Ollama + Open WebUI node. The router and RAG docs below are add-on tracks once the base stack is stable:
+
+- [docs/model-router.md](/Users/basho00/_github/_personal/Local-LLM/docs/model-router.md)
+- [docs/rag-pipeline.md](/Users/basho00/_github/_personal/Local-LLM/docs/rag-pipeline.md)
+- [docs/security-review.md](/Users/basho00/_github/_personal/Local-LLM/docs/security-review.md)
+- [docs/performance-tuning.md](/Users/basho00/_github/_personal/Local-LLM/docs/performance-tuning.md)
 
 RAG is intentionally not implemented here. When you add it, start with `nomic-embed-text` plus either Chroma or FAISS and keep ingestion/persistence separate from the base Ollama/Open WebUI stack.
 
 ## Quick Repo Summary
 
 - Purpose: This repository is a simple, production-friendly starting point for a target Unix/Linux Local AI Node.
+- Primary path: host-based Ollama plus Dockerized Open WebUI.
 - Stack: Docker
-- Status confidence: high
-- Pending: improve routing signals with conversation history and confidence thresholds; add image-routing support for `llava:13b`; add incremental index rebuilds instead of full rebuilds
+- Base node status: ready for the core Ollama + Open WebUI flow.
+- Add-on work still open: router signal improvements, `llava:13b` image routing, incremental index rebuilds, and a cleaner packaged router/RAG process.
+- Add-on work still open: heavier router/Open WebUI behavior docs.
 
 ## LLM Start Here
 - `README.md`

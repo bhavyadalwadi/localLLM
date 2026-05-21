@@ -2,7 +2,9 @@
 
 set -euo pipefail
 
-# Orchestrate the common Local AI Node setup and validation flow.
+# Convenience wrapper for the common Local AI Node setup and validation flow.
+# The primary operator path remains preflight, pull/restore, verify, then start
+# services directly with the smaller scripts in this repo.
 # Usage examples:
 #   ./scripts/bootstrap-local-ai-node.sh
 #   OPTIONAL_MODELS="gemma4:31b,llava:13b" ./scripts/bootstrap-local-ai-node.sh
@@ -25,6 +27,12 @@ EXPECT_OPTIONAL_MODELS="${EXPECT_OPTIONAL_MODELS:-}"
 usage() {
   cat <<'EOF'
 Usage: ./scripts/bootstrap-local-ai-node.sh [options]
+
+Convenience wrapper around:
+  ./scripts/preflight-target-host.sh
+  ./scripts/pull-required-models.sh
+  ./scripts/verify-ollama-models.sh
+  docker compose up -d
 
 Options:
   --pull                Pull the required model set before validation.

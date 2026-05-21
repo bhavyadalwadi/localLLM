@@ -10,7 +10,16 @@ from http import HTTPStatus
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 
-from rag_lib import build_answer_prompt, chat_model, generate_text, index_path, load_json, rank_items, top_k
+from rag_lib import (
+    build_answer_prompt,
+    chat_model,
+    generate_text,
+    generate_text_with_images,
+    index_path,
+    load_json,
+    rank_items,
+    top_k,
+)
 
 
 AUTO_MODEL_NAME = "local-ai-node-auto"
@@ -40,6 +49,12 @@ def default_model() -> str:
     return os.environ.get("ROUTER_DEFAULT_MODEL", chat_model())
 
 
+def vision_model() -> str:
+    import os
+
+    return os.environ.get("ROUTER_VISION_MODEL", "llava:13b")
+
+
 def message_to_text(message: dict) -> str:
     content = message.get("content", "")
     if isinstance(content, str):
@@ -53,11 +68,53 @@ def message_to_text(message: dict) -> str:
     return ""
 
 
+def message_image_refs(message: dict) -> list[str]:
+    content = message.get("content", "")
+    if not isinstance(content, list):
+        return []
+
+    images = []
+    for item in content:
+        if not isinstance(item, dict):
+            continue
+        if item.get("type") not in {"image_url", "input_image"}:
+            continue
+
+        image_url = item.get("image_url")
+        if isinstance(image_url, dict):
+            url = str(image_url.get("url", "")).strip()
+        else:
+            url = str(image_url or item.get("image") or "").strip()
+        if url:
+            images.append(url)
+    return images
+
+
 def extract_last_user_text(messages: list[dict]) -> str:
     for message in reversed(messages):
         if message.get("role") == "user":
             return message_to_text(message).strip()
     return ""
+
+
+def extract_last_user_images(messages: list[dict]) -> list[str]:
+    for message in reversed(messages):
+        if message.get("role") == "user":
+            images = message_image_refs(message)
+            if images:
+                return images
+    return []
+
+
+def extract_recent_conversation_text(messages: list[dict], limit: int = 6) -> str:
+    recent = messages[-limit:]
+    parts = []
+    for message in recent:
+        text = message_to_text(message).strip()
+        if not text:
+            continue
+        parts.append(text)
+    return "\n".join(parts).strip()
 
 
 def render_messages_as_prompt(messages: list[dict]) -> str:
@@ -71,8 +128,13 @@ def render_messages_as_prompt(messages: list[dict]) -> str:
     return "\n\n".join(sections).strip()
 
 
-def classify_route(query: str) -> tuple[str, str, str]:
+def count_keyword_hits(text: str, keywords: set[str]) -> int:
+    return sum(1 for keyword in keywords if keyword in text)
+
+
+def classify_route(query: str, conversation_text: str = "") -> tuple[str, str, str]:
     lowered = query.lower()
+    lowered_conversation = conversation_text.lower()
     code_keywords = {
         "code",
         "python",
@@ -111,13 +173,22 @@ def classify_route(query: str) -> tuple[str, str, str]:
     }
     light_keywords = {"quick", "brief", "one line", "short answer"}
 
-    if any(keyword in lowered for keyword in code_keywords):
-        return ("code", code_model(), "matched coding keywords")
-    if any(keyword in lowered for keyword in rag_keywords):
-        return ("rag", rag_model(), "matched local-knowledge keywords")
+    code_score = count_keyword_hits(lowered, code_keywords) * 2 + count_keyword_hits(lowered_conversation, code_keywords)
+    rag_score = count_keyword_hits(lowered, rag_keywords) * 2 + count_keyword_hits(lowered_conversation, rag_keywords)
+
+    if code_score >= 2 and code_score > rag_score:
+        return ("code", code_model(), f"coding score {code_score}")
+    if rag_score >= 2:
+        return ("rag", rag_model(), f"local-knowledge score {rag_score}")
     if len(lowered.split()) <= 8 or any(keyword in lowered for keyword in light_keywords):
         return ("light", light_model(), "short utility prompt")
     return ("chat", default_model(), "default chat fallback")
+
+
+def classify_route_with_images(query: str, conversation_text: str, image_refs: list[str]) -> tuple[str, str, str]:
+    if image_refs:
+        return ("vision", vision_model(), f"image input detected ({len(image_refs)} image(s))")
+    return classify_route(query, conversation_text)
 
 
 def build_rag_response(index_file: Path, query: str, model: str, limit: int) -> tuple[str, list[dict]]:
@@ -131,22 +202,33 @@ def build_rag_response(index_file: Path, query: str, model: str, limit: int) -> 
     return answer, chunks
 
 
-def build_direct_response(messages: list[dict], model: str) -> str:
+def build_direct_response(messages: list[dict], model: str, image_refs: list[str] | None = None) -> str:
     prompt = (
         "Respond directly to the conversation below. "
         "Be concise but useful. If the user is asking about the local node or repo, "
         "do not invent facts that are not present in the conversation.\n\n"
         f"{render_messages_as_prompt(messages)}\n\nASSISTANT:"
     )
+    if image_refs:
+        prompt = (
+            "The conversation includes image input. Use the images together with the text. "
+            "If the user asks what is in the image, answer from the image rather than guessing.\n\n"
+            f"{prompt}"
+        )
+        return generate_text_with_images(prompt, image_refs, model)
     return generate_text(prompt, model)
 
 
 def build_chat_result(server: "RouterServer", messages: list[dict], preferred_model: str | None = None, limit: int | None = None) -> dict:
     query = extract_last_user_text(messages)
-    if not query:
+    image_refs = extract_last_user_images(messages)
+    if not query and not image_refs:
         raise ValueError("No user message found.")
+    if not query and image_refs:
+        query = "Describe the provided image."
 
-    route, selected_model, reason = classify_route(query)
+    conversation_text = extract_recent_conversation_text(messages)
+    route, selected_model, reason = classify_route_with_images(query, conversation_text, image_refs)
     if preferred_model and preferred_model not in {AUTO_MODEL_NAME, ""}:
         selected_model = preferred_model
         route = "manual"
@@ -169,7 +251,7 @@ def build_chat_result(server: "RouterServer", messages: list[dict], preferred_mo
             route = "chat"
             selected_model = default_model()
             reason = "RAG requested but index missing; fell back to default chat"
-        answer = build_direct_response(messages, selected_model)
+        answer = build_direct_response(messages, selected_model, image_refs=image_refs)
         sources = []
 
     return {
@@ -230,6 +312,7 @@ class RouterHandler(BaseHTTPRequestHandler):
                         {"id": code_model(), "object": "model", "owned_by": "local"},
                         {"id": light_model(), "object": "model", "owned_by": "local"},
                         {"id": rag_model(), "object": "model", "owned_by": "local"},
+                        {"id": vision_model(), "object": "model", "owned_by": "local"},
                     ],
                 }
             )

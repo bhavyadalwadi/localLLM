@@ -64,23 +64,31 @@ ollama list
 ./scripts/preflight-target-host.sh
 ```
 
-## 5. Validate or restore the model inventory
+## 5. Pull, restore, or verify the model inventory
 
-If the target host already has the intended models:
+Primary operator flow:
+
+1. run preflight
+2. pull models or restore a copied store
+3. verify inventory
+4. start Open WebUI
+5. validate connectivity
+
+If the host already has the intended models, verify them directly:
 
 ```bash
 ./scripts/verify-ollama-models.sh
 EXPECT_OPTIONAL_MODELS="gemma4:31b,llava:13b" ./scripts/verify-ollama-models.sh
 ```
 
-If the host needs fresh pulls:
+If the host needs fresh pulls, use the required model script:
 
 ```bash
 ./scripts/pull-required-models.sh
 OPTIONAL_MODELS="gemma4:31b,llava:13b" ./scripts/pull-required-models.sh
 ```
 
-If the host needs a copied Ollama store:
+If the host needs a copied Ollama store, restore it and then re-run verification:
 
 ```bash
 CONFIRM_RESTORE=true ./scripts/restore-ollama-store.sh /path/to/ollama-home-backup
@@ -114,6 +122,15 @@ In Open WebUI, confirm:
 - embeddings are available through `nomic-embed-text`
 - `gemma4:31b` responds if installed
 - `llava:13b` responds to image prompts if installed
+
+Optional convenience path:
+
+```bash
+./scripts/bootstrap-local-ai-node.sh
+EXPECT_OPTIONAL_MODELS="gemma4:31b,llava:13b" ./scripts/bootstrap-local-ai-node.sh
+```
+
+Treat the bootstrap script as a wrapper around the steps above, not as the required operational primitive.
 
 ## 8. Set the first routing defaults
 
