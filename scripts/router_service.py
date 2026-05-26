@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import re
 import time
 import uuid
 from http import HTTPStatus
@@ -11,6 +12,7 @@ from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 
 from rag_lib import (
+    RagRuntime,
     build_answer_prompt,
     chat_model,
     generate_text,
@@ -117,6 +119,19 @@ def extract_recent_conversation_text(messages: list[dict], limit: int = 6) -> st
     return "\n".join(parts).strip()
 
 
+def extract_recent_history(messages: list[dict], limit: int = 6) -> list[tuple[str, str]]:
+    recent = messages[-limit:]
+    if recent and recent[-1].get("role") == "user":
+        recent = recent[:-1]
+
+    history: list[tuple[str, str]] = []
+    for message in recent:
+        text = message_to_text(message).strip()
+        if text:
+            history.append((str(message.get("role", "user")), text))
+    return history
+
+
 def render_messages_as_prompt(messages: list[dict]) -> str:
     sections = []
     for message in messages:
@@ -132,9 +147,56 @@ def count_keyword_hits(text: str, keywords: set[str]) -> int:
     return sum(1 for keyword in keywords if keyword in text)
 
 
-def classify_route(query: str, conversation_text: str = "") -> tuple[str, str, str]:
+def weighted_history_score(history: list[tuple[str, str]], keywords: set[str]) -> float:
+    total = 0.0
+    for index, (role, text) in enumerate(reversed(history)):
+        weight = max(0.4, 1.5 - (index * 0.25))
+        if role == "assistant":
+            weight *= 0.8
+        total += count_keyword_hits(text.lower(), keywords) * weight
+    return total
+
+
+def is_follow_up_query(query: str) -> bool:
     lowered = query.lower()
-    lowered_conversation = conversation_text.lower()
+    if not lowered:
+        return False
+
+    follow_up_phrases = {
+        "what about",
+        "how about",
+        "keep going",
+        "go on",
+        "continue",
+        "same thing",
+        "same for",
+        "that one",
+        "this one",
+    }
+    if any(phrase in lowered for phrase in follow_up_phrases):
+        return True
+
+    tokens = re.findall(r"[a-z0-9']+", lowered)
+    if not tokens:
+        return False
+    referential_tokens = {
+        "that",
+        "this",
+        "it",
+        "those",
+        "these",
+        "they",
+        "them",
+        "same",
+        "also",
+        "instead",
+        "again",
+    }
+    return len(tokens) <= 10 and any(token in referential_tokens for token in tokens)
+
+
+def classify_route(query: str, messages: list[dict]) -> tuple[str, str, str]:
+    lowered = query.lower()
     code_keywords = {
         "code",
         "python",
@@ -173,26 +235,46 @@ def classify_route(query: str, conversation_text: str = "") -> tuple[str, str, s
     }
     light_keywords = {"quick", "brief", "one line", "short answer"}
 
-    code_score = count_keyword_hits(lowered, code_keywords) * 2 + count_keyword_hits(lowered_conversation, code_keywords)
-    rag_score = count_keyword_hits(lowered, rag_keywords) * 2 + count_keyword_hits(lowered_conversation, rag_keywords)
+    history = extract_recent_history(messages)
+    follow_up = is_follow_up_query(query)
 
-    if code_score >= 2 and code_score > rag_score:
-        return ("code", code_model(), f"coding score {code_score}")
-    if rag_score >= 2:
-        return ("rag", rag_model(), f"local-knowledge score {rag_score}")
+    code_query_score = count_keyword_hits(lowered, code_keywords) * 3
+    rag_query_score = count_keyword_hits(lowered, rag_keywords) * 3
+    code_score = code_query_score + weighted_history_score(history, code_keywords)
+    rag_score = rag_query_score + weighted_history_score(history, rag_keywords)
+
+    if code_query_score >= 3 and code_score > rag_score + 1:
+        return ("code", code_model(), f"coding score {code_score:.1f}")
+    if rag_query_score >= 3 and rag_score > code_score + 1:
+        return ("rag", rag_model(), f"local-knowledge score {rag_score:.1f}")
+
+    if follow_up:
+        if code_score >= 2.5 and code_score > rag_score + 0.5:
+            return ("code", code_model(), f"follow-up coding score {code_score:.1f}")
+        if rag_score >= 2.5 and rag_score > code_score + 0.5:
+            return ("rag", rag_model(), f"follow-up local-knowledge score {rag_score:.1f}")
+
+    if code_query_score > 0 and code_score >= 3 and code_score > rag_score + 0.5:
+        return ("code", code_model(), f"coding score {code_score:.1f}")
+    if rag_query_score > 0 and rag_score >= 3 and rag_score > code_score + 0.5:
+        return ("rag", rag_model(), f"local-knowledge score {rag_score:.1f}")
+
     if len(lowered.split()) <= 8 or any(keyword in lowered for keyword in light_keywords):
         return ("light", light_model(), "short utility prompt")
     return ("chat", default_model(), "default chat fallback")
 
 
-def classify_route_with_images(query: str, conversation_text: str, image_refs: list[str]) -> tuple[str, str, str]:
+def classify_route_with_images(query: str, messages: list[dict], image_refs: list[str]) -> tuple[str, str, str]:
     if image_refs:
         return ("vision", vision_model(), f"image input detected ({len(image_refs)} image(s))")
-    return classify_route(query, conversation_text)
+    return classify_route(query, messages)
 
 
-def build_rag_response(index_file: Path, query: str, model: str, limit: int) -> tuple[str, list[dict]]:
-    payload = load_json(index_file)
+def build_rag_response(server: "RouterServer", query: str, model: str, limit: int) -> tuple[str, list[dict]]:
+    if server.rag_runtime is not None:
+        return server.rag_runtime.answer(query, model=model, limit=limit)
+
+    payload = load_json(server.index_file)
     items = payload.get("items", [])
     if not items:
         raise RuntimeError("RAG index is empty. Build it first.")
@@ -227,15 +309,14 @@ def build_chat_result(server: "RouterServer", messages: list[dict], preferred_mo
     if not query and image_refs:
         query = "Describe the provided image."
 
-    conversation_text = extract_recent_conversation_text(messages)
-    route, selected_model, reason = classify_route_with_images(query, conversation_text, image_refs)
+    route, selected_model, reason = classify_route_with_images(query, messages, image_refs)
     if preferred_model and preferred_model not in {AUTO_MODEL_NAME, ""}:
         selected_model = preferred_model
         route = "manual"
         reason = "explicit model override"
 
-    if route == "rag" and server.index_file.exists():
-        answer, chunks = build_rag_response(server.index_file, query, selected_model, limit or top_k())
+    if route == "rag" and server.index_exists():
+        answer, chunks = build_rag_response(server, query, selected_model, limit or top_k())
         sources = [
             {
                 "path": item["path"],
@@ -247,7 +328,7 @@ def build_chat_result(server: "RouterServer", messages: list[dict], preferred_mo
             for item in chunks
         ]
     else:
-        if route == "rag" and not server.index_file.exists():
+        if route == "rag" and not server.index_exists():
             route = "chat"
             selected_model = default_model()
             reason = "RAG requested but index missing; fell back to default chat"
@@ -416,9 +497,21 @@ class RouterHandler(BaseHTTPRequestHandler):
 
 
 class RouterServer(ThreadingHTTPServer):
-    def __init__(self, server_address: tuple[str, int], handler: type[RouterHandler], index_file: Path) -> None:
+    def __init__(
+        self,
+        server_address: tuple[str, int],
+        handler: type[RouterHandler],
+        index_file: Path,
+        rag_runtime: RagRuntime | None = None,
+    ) -> None:
         super().__init__(server_address, handler)
         self.index_file = index_file
+        self.rag_runtime = rag_runtime
+
+    def index_exists(self) -> bool:
+        if self.rag_runtime is not None:
+            return self.rag_runtime.index_file.exists()
+        return self.index_file.exists()
 
 
 def main() -> int:

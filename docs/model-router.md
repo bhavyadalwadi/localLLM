@@ -4,6 +4,24 @@ This repo now includes a first-pass local router service. It provides one smart
 entrypoint that can choose a route and model for the request instead of forcing
 manual model selection every time.
 
+## Current plan
+
+- Keep the base repo centered on a reliable Ollama + Open WebUI node.
+- Keep router and RAG as add-on behavior, not a broader platform.
+- Keep the router as the OpenAI-compatible front door.
+- Keep the runtime operationally simple enough to validate on another machine.
+
+## Current status
+
+- The base node plan is unchanged.
+- Router heuristics are implemented.
+- RAG index build, query, and grounded-answer flow are implemented.
+- The packaged router + RAG path now has a single-process runtime:
+  - `scripts/local_ai_runtime.py`
+  - `scripts/start-local-ai-runtime.sh`
+- `scripts/start-router-rag-stack.sh` remains as a thin compatibility launcher.
+- The next step is validation on another system, not more feature expansion.
+
 ## Default assignments
 
 - normal chat: `llama3.1:8b`
@@ -26,6 +44,8 @@ manual model selection every time.
 
 Scripts:
 - `scripts/router_service.py`
+- `scripts/local_ai_runtime.py`
+- `scripts/start-local-ai-runtime.sh`
 - `scripts/start-router-service.sh`
 - `scripts/start-router-rag-stack.sh`
 - `scripts/check-router-connectivity.sh`
@@ -53,7 +73,8 @@ Recommended environment values for Open WebUI:
 
 Recommended startup validation:
 - start the router with `./scripts/start-router-service.sh`
-- or start the packaged router + RAG flow with `./scripts/start-router-rag-stack.sh`
+- or start the single-process runtime with `./scripts/start-local-ai-runtime.sh`
+- `./scripts/start-router-rag-stack.sh` is still valid as a compatibility wrapper
 - validate it with `./scripts/check-router-connectivity.sh`
 - run `RUN_SMOKE_TESTS=true ./scripts/check-router-connectivity.sh` for a live completion check
 - in Open WebUI admin settings, enable the OpenAI connection for `http://host.docker.internal:8788/v1` if it exists but is disabled
@@ -355,7 +376,8 @@ Expected output shape:
 ## Detailed test plan
 
 1. Start the stack.
-   - Run `./scripts/start-router-rag-stack.sh`
+   - Run `./scripts/start-local-ai-runtime.sh`
+   - Or run `./scripts/start-router-rag-stack.sh` if you want the old entrypoint name
    - Run `./scripts/check-router-connectivity.sh`
 
 2. Validate base router health.
@@ -396,4 +418,5 @@ Expected output shape:
 - [x] `llava:13b` image routing
 - [x] incremental index rebuilds
 - [x] packaged router + RAG operator flow
+- [x] single-process packaged runtime
 - [x] heavier router/Open WebUI behavior docs

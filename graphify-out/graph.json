@@ -18,7 +18,7 @@
       "source_file": "scripts/rag-answer.py",
       "source_location": "L1",
       "id": "scripts_rag_answer_py",
-      "community": 2,
+      "community": 0,
       "norm_label": "rag-answer.py"
     },
     {
@@ -27,7 +27,7 @@
       "source_file": "scripts/rag-answer.py",
       "source_location": "L11",
       "id": "scripts_rag_answer_main",
-      "community": 2,
+      "community": 0,
       "norm_label": "main()"
     },
     {
@@ -36,7 +36,7 @@
       "source_file": "scripts/query-rag.py",
       "source_location": "L1",
       "id": "scripts_query_rag_py",
-      "community": 2,
+      "community": 0,
       "norm_label": "query-rag.py"
     },
     {
@@ -45,7 +45,7 @@
       "source_file": "scripts/query-rag.py",
       "source_location": "L11",
       "id": "scripts_query_rag_main",
-      "community": 2,
+      "community": 0,
       "norm_label": "main()"
     },
     {
@@ -61,7 +61,7 @@
       "label": "env_path()",
       "file_type": "code",
       "source_file": "scripts/rag_lib.py",
-      "source_location": "L45",
+      "source_location": "L47",
       "id": "scripts_rag_lib_env_path",
       "community": 0,
       "norm_label": "env_path()"
@@ -70,7 +70,7 @@
       "label": "ollama_url()",
       "file_type": "code",
       "source_file": "scripts/rag_lib.py",
-      "source_location": "L49",
+      "source_location": "L51",
       "id": "scripts_rag_lib_ollama_url",
       "community": 0,
       "norm_label": "ollama_url()"
@@ -79,7 +79,7 @@
       "label": "embed_model()",
       "file_type": "code",
       "source_file": "scripts/rag_lib.py",
-      "source_location": "L53",
+      "source_location": "L55",
       "id": "scripts_rag_lib_embed_model",
       "community": 0,
       "norm_label": "embed_model()"
@@ -88,16 +88,16 @@
       "label": "chat_model()",
       "file_type": "code",
       "source_file": "scripts/rag_lib.py",
-      "source_location": "L57",
+      "source_location": "L59",
       "id": "scripts_rag_lib_chat_model",
-      "community": 2,
+      "community": 0,
       "norm_label": "chat_model()"
     },
     {
       "label": "documents_dir()",
       "file_type": "code",
       "source_file": "scripts/rag_lib.py",
-      "source_location": "L61",
+      "source_location": "L63",
       "id": "scripts_rag_lib_documents_dir",
       "community": 0,
       "norm_label": "documents_dir()"
@@ -106,7 +106,7 @@
       "label": "index_dir()",
       "file_type": "code",
       "source_file": "scripts/rag_lib.py",
-      "source_location": "L65",
+      "source_location": "L67",
       "id": "scripts_rag_lib_index_dir",
       "community": 0,
       "norm_label": "index_dir()"
@@ -115,7 +115,7 @@
       "label": "index_path()",
       "file_type": "code",
       "source_file": "scripts/rag_lib.py",
-      "source_location": "L69",
+      "source_location": "L71",
       "id": "scripts_rag_lib_index_path",
       "community": 0,
       "norm_label": "index_path()"
@@ -124,7 +124,7 @@
       "label": "chunk_size()",
       "file_type": "code",
       "source_file": "scripts/rag_lib.py",
-      "source_location": "L73",
+      "source_location": "L75",
       "id": "scripts_rag_lib_chunk_size",
       "community": 0,
       "norm_label": "chunk_size()"
@@ -133,7 +133,7 @@
       "label": "chunk_overlap()",
       "file_type": "code",
       "source_file": "scripts/rag_lib.py",
-      "source_location": "L77",
+      "source_location": "L79",
       "id": "scripts_rag_lib_chunk_overlap",
       "community": 0,
       "norm_label": "chunk_overlap()"
@@ -142,16 +142,16 @@
       "label": "top_k()",
       "file_type": "code",
       "source_file": "scripts/rag_lib.py",
-      "source_location": "L81",
+      "source_location": "L83",
       "id": "scripts_rag_lib_top_k",
-      "community": 2,
+      "community": 0,
       "norm_label": "top_k()"
     },
     {
       "label": "max_file_bytes()",
       "file_type": "code",
       "source_file": "scripts/rag_lib.py",
-      "source_location": "L85",
+      "source_location": "L87",
       "id": "scripts_rag_lib_max_file_bytes",
       "community": 0,
       "norm_label": "max_file_bytes()"
@@ -160,16 +160,16 @@
       "label": "load_json()",
       "file_type": "code",
       "source_file": "scripts/rag_lib.py",
-      "source_location": "L89",
+      "source_location": "L91",
       "id": "scripts_rag_lib_load_json",
-      "community": 2,
+      "community": 0,
       "norm_label": "load_json()"
     },
     {
       "label": "save_json()",
       "file_type": "code",
       "source_file": "scripts/rag_lib.py",
-      "source_location": "L94",
+      "source_location": "L96",
       "id": "scripts_rag_lib_save_json",
       "community": 0,
       "norm_label": "save_json()"
@@ -178,7 +178,7 @@
       "label": "post_json()",
       "file_type": "code",
       "source_file": "scripts/rag_lib.py",
-      "source_location": "L101",
+      "source_location": "L103",
       "id": "scripts_rag_lib_post_json",
       "community": 0,
       "norm_label": "post_json()"
@@ -187,7 +187,7 @@
       "label": "embed_text()",
       "file_type": "code",
       "source_file": "scripts/rag_lib.py",
-      "source_location": "L119",
+      "source_location": "L121",
       "id": "scripts_rag_lib_embed_text",
       "community": 0,
       "norm_label": "embed_text()"
@@ -196,16 +196,34 @@
       "label": "generate_text()",
       "file_type": "code",
       "source_file": "scripts/rag_lib.py",
-      "source_location": "L128",
+      "source_location": "L130",
       "id": "scripts_rag_lib_generate_text",
-      "community": 2,
+      "community": 0,
       "norm_label": "generate_text()"
+    },
+    {
+      "label": "normalize_image_input()",
+      "file_type": "code",
+      "source_file": "scripts/rag_lib.py",
+      "source_location": "L139",
+      "id": "scripts_rag_lib_normalize_image_input",
+      "community": 0,
+      "norm_label": "normalize_image_input()"
+    },
+    {
+      "label": "generate_text_with_images()",
+      "file_type": "code",
+      "source_file": "scripts/rag_lib.py",
+      "source_location": "L159",
+      "id": "scripts_rag_lib_generate_text_with_images",
+      "community": 0,
+      "norm_label": "generate_text_with_images()"
     },
     {
       "label": "iter_documents()",
       "file_type": "code",
       "source_file": "scripts/rag_lib.py",
-      "source_location": "L137",
+      "source_location": "L173",
       "id": "scripts_rag_lib_iter_documents",
       "community": 0,
       "norm_label": "iter_documents()"
@@ -214,16 +232,25 @@
       "label": "read_text_file()",
       "file_type": "code",
       "source_file": "scripts/rag_lib.py",
-      "source_location": "L150",
+      "source_location": "L186",
       "id": "scripts_rag_lib_read_text_file",
       "community": 0,
       "norm_label": "read_text_file()"
     },
     {
+      "label": "file_fingerprint()",
+      "file_type": "code",
+      "source_file": "scripts/rag_lib.py",
+      "source_location": "L190",
+      "id": "scripts_rag_lib_file_fingerprint",
+      "community": 0,
+      "norm_label": "file_fingerprint()"
+    },
+    {
       "label": "split_text()",
       "file_type": "code",
       "source_file": "scripts/rag_lib.py",
-      "source_location": "L154",
+      "source_location": "L196",
       "id": "scripts_rag_lib_split_text",
       "community": 0,
       "norm_label": "split_text()"
@@ -232,7 +259,7 @@
       "label": "cosine_similarity()",
       "file_type": "code",
       "source_file": "scripts/rag_lib.py",
-      "source_location": "L173",
+      "source_location": "L215",
       "id": "scripts_rag_lib_cosine_similarity",
       "community": 0,
       "norm_label": "cosine_similarity()"
@@ -241,7 +268,7 @@
       "label": "tokenize()",
       "file_type": "code",
       "source_file": "scripts/rag_lib.py",
-      "source_location": "L182",
+      "source_location": "L224",
       "id": "scripts_rag_lib_tokenize",
       "community": 0,
       "norm_label": "tokenize()"
@@ -250,7 +277,7 @@
       "label": "lexical_overlap_score()",
       "file_type": "code",
       "source_file": "scripts/rag_lib.py",
-      "source_location": "L186",
+      "source_location": "L228",
       "id": "scripts_rag_lib_lexical_overlap_score",
       "community": 0,
       "norm_label": "lexical_overlap_score()"
@@ -259,7 +286,7 @@
       "label": "rank_items()",
       "file_type": "code",
       "source_file": "scripts/rag_lib.py",
-      "source_location": "L198",
+      "source_location": "L240",
       "id": "scripts_rag_lib_rank_items",
       "community": 0,
       "norm_label": "rank_items()"
@@ -268,19 +295,118 @@
       "label": "build_answer_prompt()",
       "file_type": "code",
       "source_file": "scripts/rag_lib.py",
-      "source_location": "L219",
+      "source_location": "L261",
       "id": "scripts_rag_lib_build_answer_prompt",
-      "community": 2,
+      "community": 14,
       "norm_label": "build_answer_prompt()"
     },
     {
       "label": "build_index_payload()",
       "file_type": "code",
       "source_file": "scripts/rag_lib.py",
-      "source_location": "L242",
+      "source_location": "L284",
       "id": "scripts_rag_lib_build_index_payload",
       "community": 0,
       "norm_label": "build_index_payload()"
+    },
+    {
+      "label": "index_settings_match()",
+      "file_type": "code",
+      "source_file": "scripts/rag_lib.py",
+      "source_location": "L295",
+      "id": "scripts_rag_lib_index_settings_match",
+      "community": 0,
+      "norm_label": "index_settings_match()"
+    },
+    {
+      "label": "build_existing_item_map()",
+      "file_type": "code",
+      "source_file": "scripts/rag_lib.py",
+      "source_location": "L303",
+      "id": "scripts_rag_lib_build_existing_item_map",
+      "community": 0,
+      "norm_label": "build_existing_item_map()"
+    },
+    {
+      "label": "build_items()",
+      "file_type": "code",
+      "source_file": "scripts/rag_lib.py",
+      "source_location": "L318",
+      "id": "scripts_rag_lib_build_items",
+      "community": 0,
+      "norm_label": "build_items()"
+    },
+    {
+      "label": "RagRuntime",
+      "file_type": "code",
+      "source_file": "scripts/rag_lib.py",
+      "source_location": "L350",
+      "id": "scripts_rag_lib_ragruntime",
+      "community": 12,
+      "norm_label": "ragruntime"
+    },
+    {
+      "label": ".__init__()",
+      "file_type": "code",
+      "source_file": "scripts/rag_lib.py",
+      "source_location": "L351",
+      "id": "scripts_rag_lib_ragruntime_init",
+      "community": 12,
+      "norm_label": ".__init__()"
+    },
+    {
+      "label": ".load_index()",
+      "file_type": "code",
+      "source_file": "scripts/rag_lib.py",
+      "source_location": "L356",
+      "id": "scripts_rag_lib_ragruntime_load_index",
+      "community": 12,
+      "norm_label": ".load_index()"
+    },
+    {
+      "label": ".rebuild_index()",
+      "file_type": "code",
+      "source_file": "scripts/rag_lib.py",
+      "source_location": "L361",
+      "id": "scripts_rag_lib_ragruntime_rebuild_index",
+      "community": 0,
+      "norm_label": ".rebuild_index()"
+    },
+    {
+      "label": ".ensure_index()",
+      "file_type": "code",
+      "source_file": "scripts/rag_lib.py",
+      "source_location": "L374",
+      "id": "scripts_rag_lib_ragruntime_ensure_index",
+      "community": 12,
+      "norm_label": ".ensure_index()"
+    },
+    {
+      "label": ".status()",
+      "file_type": "code",
+      "source_file": "scripts/rag_lib.py",
+      "source_location": "L381",
+      "id": "scripts_rag_lib_ragruntime_status",
+      "community": 12,
+      "norm_label": ".status()"
+    },
+    {
+      "label": ".query()",
+      "file_type": "code",
+      "source_file": "scripts/rag_lib.py",
+      "source_location": "L392",
+      "id": "scripts_rag_lib_ragruntime_query",
+      "community": 12,
+      "norm_label": ".query()"
+    },
+    {
+      "label": ".answer()",
+      "file_type": "code",
+      "source_file": "scripts/rag_lib.py",
+      "source_location": "L396",
+      "id": "scripts_rag_lib_ragruntime_answer",
+      "community": 12,
+      "norm_label": ".answer()"
     },
     {
       "label": "rag_service.py",
@@ -288,14 +414,14 @@
       "source_file": "scripts/rag_service.py",
       "source_location": "L1",
       "id": "scripts_rag_service_py",
-      "community": 0,
+      "community": 14,
       "norm_label": "rag_service.py"
     },
     {
       "label": "build_items()",
       "file_type": "code",
       "source_file": "scripts/rag_service.py",
-      "source_location": "L31",
+      "source_location": "L33",
       "id": "scripts_rag_service_build_items",
       "community": 0,
       "norm_label": "build_items()"
@@ -304,25 +430,25 @@
       "label": "rank_chunks()",
       "file_type": "code",
       "source_file": "scripts/rag_service.py",
-      "source_location": "L53",
+      "source_location": "L62",
       "id": "scripts_rag_service_rank_chunks",
-      "community": 0,
+      "community": 14,
       "norm_label": "rank_chunks()"
     },
     {
       "label": "answer_from_chunks()",
       "file_type": "code",
       "source_file": "scripts/rag_service.py",
-      "source_location": "L57",
+      "source_location": "L66",
       "id": "scripts_rag_service_answer_from_chunks",
-      "community": 2,
+      "community": 14,
       "norm_label": "answer_from_chunks()"
     },
     {
       "label": "RagHandler",
       "file_type": "code",
       "source_file": "scripts/rag_service.py",
-      "source_location": "L62",
+      "source_location": "L71",
       "id": "scripts_rag_service_raghandler",
       "community": 14,
       "norm_label": "raghandler"
@@ -340,7 +466,7 @@
       "label": ".do_GET()",
       "file_type": "code",
       "source_file": "scripts/rag_service.py",
-      "source_location": "L65",
+      "source_location": "L74",
       "id": "scripts_rag_service_raghandler_do_get",
       "community": 14,
       "norm_label": ".do_get()"
@@ -349,7 +475,7 @@
       "label": ".do_POST()",
       "file_type": "code",
       "source_file": "scripts/rag_service.py",
-      "source_location": "L90",
+      "source_location": "L99",
       "id": "scripts_rag_service_raghandler_do_post",
       "community": 14,
       "norm_label": ".do_post()"
@@ -358,7 +484,7 @@
       "label": ".read_json()",
       "file_type": "code",
       "source_file": "scripts/rag_service.py",
-      "source_location": "L143",
+      "source_location": "L152",
       "id": "scripts_rag_service_raghandler_read_json",
       "community": 14,
       "norm_label": ".read_json()"
@@ -367,7 +493,7 @@
       "label": ".send_json()",
       "file_type": "code",
       "source_file": "scripts/rag_service.py",
-      "source_location": "L150",
+      "source_location": "L159",
       "id": "scripts_rag_service_raghandler_send_json",
       "community": 14,
       "norm_label": ".send_json()"
@@ -376,7 +502,7 @@
       "label": ".log_message()",
       "file_type": "code",
       "source_file": "scripts/rag_service.py",
-      "source_location": "L158",
+      "source_location": "L167",
       "id": "scripts_rag_service_raghandler_log_message",
       "community": 14,
       "norm_label": ".log_message()"
@@ -385,9 +511,9 @@
       "label": "RagServer",
       "file_type": "code",
       "source_file": "scripts/rag_service.py",
-      "source_location": "L162",
+      "source_location": "L171",
       "id": "scripts_rag_service_ragserver",
-      "community": 0,
+      "community": 14,
       "norm_label": "ragserver"
     },
     {
@@ -403,16 +529,16 @@
       "label": ".__init__()",
       "file_type": "code",
       "source_file": "scripts/rag_service.py",
-      "source_location": "L163",
+      "source_location": "L172",
       "id": "scripts_rag_service_ragserver_init",
-      "community": 0,
+      "community": 14,
       "norm_label": ".__init__()"
     },
     {
       "label": ".load_index()",
       "file_type": "code",
       "source_file": "scripts/rag_service.py",
-      "source_location": "L169",
+      "source_location": "L178",
       "id": "scripts_rag_service_ragserver_load_index",
       "community": 14,
       "norm_label": ".load_index()"
@@ -421,7 +547,7 @@
       "label": ".rebuild_index()",
       "file_type": "code",
       "source_file": "scripts/rag_service.py",
-      "source_location": "L174",
+      "source_location": "L183",
       "id": "scripts_rag_service_ragserver_rebuild_index",
       "community": 0,
       "norm_label": ".rebuild_index()"
@@ -430,9 +556,9 @@
       "label": "main()",
       "file_type": "code",
       "source_file": "scripts/rag_service.py",
-      "source_location": "L181",
+      "source_location": "L193",
       "id": "scripts_rag_service_main",
-      "community": 0,
+      "community": 14,
       "norm_label": "main()"
     },
     {
@@ -448,7 +574,7 @@
       "label": "usage()",
       "file_type": "code",
       "source_file": "scripts/bootstrap-local-ai-node.sh",
-      "source_location": "L25",
+      "source_location": "L27",
       "id": "scripts_bootstrap_local_ai_node_usage",
       "community": 21,
       "norm_label": "usage()"
@@ -461,6 +587,96 @@
       "id": "scripts_pull_required_models_sh",
       "community": 26,
       "norm_label": "pull-required-models.sh"
+    },
+    {
+      "label": "local_ai_runtime.py",
+      "file_type": "code",
+      "source_file": "scripts/local_ai_runtime.py",
+      "source_location": "L1",
+      "id": "scripts_local_ai_runtime_py",
+      "community": 12,
+      "norm_label": "local_ai_runtime.py"
+    },
+    {
+      "label": "LocalAIRuntimeHandler",
+      "file_type": "code",
+      "source_file": "scripts/local_ai_runtime.py",
+      "source_location": "L25",
+      "id": "scripts_local_ai_runtime_localairuntimehandler",
+      "community": 2,
+      "norm_label": "localairuntimehandler"
+    },
+    {
+      "label": "RouterHandler",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "id": "routerhandler",
+      "community": 2,
+      "norm_label": "routerhandler"
+    },
+    {
+      "label": ".do_GET()",
+      "file_type": "code",
+      "source_file": "scripts/local_ai_runtime.py",
+      "source_location": "L28",
+      "id": "scripts_local_ai_runtime_localairuntimehandler_do_get",
+      "community": 2,
+      "norm_label": ".do_get()"
+    },
+    {
+      "label": ".do_POST()",
+      "file_type": "code",
+      "source_file": "scripts/local_ai_runtime.py",
+      "source_location": "L51",
+      "id": "scripts_local_ai_runtime_localairuntimehandler_do_post",
+      "community": 2,
+      "norm_label": ".do_post()"
+    },
+    {
+      "label": "LocalAIRuntimeServer",
+      "file_type": "code",
+      "source_file": "scripts/local_ai_runtime.py",
+      "source_location": "L138",
+      "id": "scripts_local_ai_runtime_localairuntimeserver",
+      "community": 12,
+      "norm_label": "localairuntimeserver"
+    },
+    {
+      "label": "RouterServer",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "id": "routerserver",
+      "community": 12,
+      "norm_label": "routerserver"
+    },
+    {
+      "label": ".__init__()",
+      "file_type": "code",
+      "source_file": "scripts/local_ai_runtime.py",
+      "source_location": "L139",
+      "id": "scripts_local_ai_runtime_localairuntimeserver_init",
+      "community": 12,
+      "norm_label": ".__init__()"
+    },
+    {
+      "label": ".index_status_payload()",
+      "file_type": "code",
+      "source_file": "scripts/local_ai_runtime.py",
+      "source_location": "L148",
+      "id": "scripts_local_ai_runtime_localairuntimeserver_index_status_payload",
+      "community": 12,
+      "norm_label": ".index_status_payload()"
+    },
+    {
+      "label": "main()",
+      "file_type": "code",
+      "source_file": "scripts/local_ai_runtime.py",
+      "source_location": "L160",
+      "id": "scripts_local_ai_runtime_main",
+      "community": 12,
+      "norm_label": "main()"
     },
     {
       "label": "start-rag-service.sh",
@@ -481,19 +697,10 @@
       "norm_label": "build-rag-index.py"
     },
     {
-      "label": "build_items()",
-      "file_type": "code",
-      "source_file": "scripts/build-rag-index.py",
-      "source_location": "L23",
-      "id": "scripts_build_rag_index_build_items",
-      "community": 0,
-      "norm_label": "build_items()"
-    },
-    {
       "label": "main()",
       "file_type": "code",
       "source_file": "scripts/build-rag-index.py",
-      "source_location": "L46",
+      "source_location": "L20",
       "id": "scripts_build_rag_index_main",
       "community": 0,
       "norm_label": "main()"
@@ -547,7 +754,7 @@
       "label": "code_model()",
       "file_type": "code",
       "source_file": "scripts/router_service.py",
-      "source_location": "L19",
+      "source_location": "L30",
       "id": "scripts_router_service_code_model",
       "community": 2,
       "norm_label": "code_model()"
@@ -556,7 +763,7 @@
       "label": "light_model()",
       "file_type": "code",
       "source_file": "scripts/router_service.py",
-      "source_location": "L25",
+      "source_location": "L36",
       "id": "scripts_router_service_light_model",
       "community": 2,
       "norm_label": "light_model()"
@@ -565,7 +772,7 @@
       "label": "rag_model()",
       "file_type": "code",
       "source_file": "scripts/router_service.py",
-      "source_location": "L31",
+      "source_location": "L42",
       "id": "scripts_router_service_rag_model",
       "community": 2,
       "norm_label": "rag_model()"
@@ -574,52 +781,133 @@
       "label": "default_model()",
       "file_type": "code",
       "source_file": "scripts/router_service.py",
-      "source_location": "L37",
+      "source_location": "L48",
       "id": "scripts_router_service_default_model",
       "community": 2,
       "norm_label": "default_model()"
     },
     {
+      "label": "vision_model()",
+      "file_type": "code",
+      "source_file": "scripts/router_service.py",
+      "source_location": "L54",
+      "id": "scripts_router_service_vision_model",
+      "community": 2,
+      "norm_label": "vision_model()"
+    },
+    {
       "label": "message_to_text()",
       "file_type": "code",
       "source_file": "scripts/router_service.py",
-      "source_location": "L43",
+      "source_location": "L60",
       "id": "scripts_router_service_message_to_text",
       "community": 2,
       "norm_label": "message_to_text()"
     },
     {
+      "label": "message_image_refs()",
+      "file_type": "code",
+      "source_file": "scripts/router_service.py",
+      "source_location": "L73",
+      "id": "scripts_router_service_message_image_refs",
+      "community": 2,
+      "norm_label": "message_image_refs()"
+    },
+    {
       "label": "extract_last_user_text()",
       "file_type": "code",
       "source_file": "scripts/router_service.py",
-      "source_location": "L56",
+      "source_location": "L95",
       "id": "scripts_router_service_extract_last_user_text",
       "community": 2,
       "norm_label": "extract_last_user_text()"
     },
     {
+      "label": "extract_last_user_images()",
+      "file_type": "code",
+      "source_file": "scripts/router_service.py",
+      "source_location": "L102",
+      "id": "scripts_router_service_extract_last_user_images",
+      "community": 2,
+      "norm_label": "extract_last_user_images()"
+    },
+    {
+      "label": "extract_recent_conversation_text()",
+      "file_type": "code",
+      "source_file": "scripts/router_service.py",
+      "source_location": "L111",
+      "id": "scripts_router_service_extract_recent_conversation_text",
+      "community": 2,
+      "norm_label": "extract_recent_conversation_text()"
+    },
+    {
+      "label": "extract_recent_history()",
+      "file_type": "code",
+      "source_file": "scripts/router_service.py",
+      "source_location": "L122",
+      "id": "scripts_router_service_extract_recent_history",
+      "community": 2,
+      "norm_label": "extract_recent_history()"
+    },
+    {
       "label": "render_messages_as_prompt()",
       "file_type": "code",
       "source_file": "scripts/router_service.py",
-      "source_location": "L63",
+      "source_location": "L135",
       "id": "scripts_router_service_render_messages_as_prompt",
       "community": 2,
       "norm_label": "render_messages_as_prompt()"
     },
     {
+      "label": "count_keyword_hits()",
+      "file_type": "code",
+      "source_file": "scripts/router_service.py",
+      "source_location": "L146",
+      "id": "scripts_router_service_count_keyword_hits",
+      "community": 2,
+      "norm_label": "count_keyword_hits()"
+    },
+    {
+      "label": "weighted_history_score()",
+      "file_type": "code",
+      "source_file": "scripts/router_service.py",
+      "source_location": "L150",
+      "id": "scripts_router_service_weighted_history_score",
+      "community": 2,
+      "norm_label": "weighted_history_score()"
+    },
+    {
+      "label": "is_follow_up_query()",
+      "file_type": "code",
+      "source_file": "scripts/router_service.py",
+      "source_location": "L160",
+      "id": "scripts_router_service_is_follow_up_query",
+      "community": 2,
+      "norm_label": "is_follow_up_query()"
+    },
+    {
       "label": "classify_route()",
       "file_type": "code",
       "source_file": "scripts/router_service.py",
-      "source_location": "L74",
+      "source_location": "L198",
       "id": "scripts_router_service_classify_route",
       "community": 2,
       "norm_label": "classify_route()"
     },
     {
+      "label": "classify_route_with_images()",
+      "file_type": "code",
+      "source_file": "scripts/router_service.py",
+      "source_location": "L267",
+      "id": "scripts_router_service_classify_route_with_images",
+      "community": 2,
+      "norm_label": "classify_route_with_images()"
+    },
+    {
       "label": "build_rag_response()",
       "file_type": "code",
       "source_file": "scripts/router_service.py",
-      "source_location": "L123",
+      "source_location": "L273",
       "id": "scripts_router_service_build_rag_response",
       "community": 2,
       "norm_label": "build_rag_response()"
@@ -628,7 +916,7 @@
       "label": "build_direct_response()",
       "file_type": "code",
       "source_file": "scripts/router_service.py",
-      "source_location": "L134",
+      "source_location": "L287",
       "id": "scripts_router_service_build_direct_response",
       "community": 2,
       "norm_label": "build_direct_response()"
@@ -637,7 +925,7 @@
       "label": "build_chat_result()",
       "file_type": "code",
       "source_file": "scripts/router_service.py",
-      "source_location": "L144",
+      "source_location": "L304",
       "id": "scripts_router_service_build_chat_result",
       "community": 2,
       "norm_label": "build_chat_result()"
@@ -646,7 +934,7 @@
       "label": "openai_chat_response()",
       "file_type": "code",
       "source_file": "scripts/router_service.py",
-      "source_location": "L184",
+      "source_location": "L347",
       "id": "scripts_router_service_openai_chat_response",
       "community": 2,
       "norm_label": "openai_chat_response()"
@@ -655,7 +943,7 @@
       "label": "RouterHandler",
       "file_type": "code",
       "source_file": "scripts/router_service.py",
-      "source_location": "L206",
+      "source_location": "L369",
       "id": "scripts_router_service_routerhandler",
       "community": 2,
       "norm_label": "routerhandler"
@@ -664,7 +952,7 @@
       "label": ".do_GET()",
       "file_type": "code",
       "source_file": "scripts/router_service.py",
-      "source_location": "L209",
+      "source_location": "L372",
       "id": "scripts_router_service_routerhandler_do_get",
       "community": 2,
       "norm_label": ".do_get()"
@@ -673,7 +961,7 @@
       "label": ".do_POST()",
       "file_type": "code",
       "source_file": "scripts/router_service.py",
-      "source_location": "L240",
+      "source_location": "L404",
       "id": "scripts_router_service_routerhandler_do_post",
       "community": 2,
       "norm_label": ".do_post()"
@@ -682,7 +970,7 @@
       "label": ".read_json()",
       "file_type": "code",
       "source_file": "scripts/router_service.py",
-      "source_location": "L278",
+      "source_location": "L442",
       "id": "scripts_router_service_routerhandler_read_json",
       "community": 2,
       "norm_label": ".read_json()"
@@ -691,7 +979,7 @@
       "label": ".send_json()",
       "file_type": "code",
       "source_file": "scripts/router_service.py",
-      "source_location": "L285",
+      "source_location": "L449",
       "id": "scripts_router_service_routerhandler_send_json",
       "community": 2,
       "norm_label": ".send_json()"
@@ -700,7 +988,7 @@
       "label": ".send_openai_stream()",
       "file_type": "code",
       "source_file": "scripts/router_service.py",
-      "source_location": "L293",
+      "source_location": "L457",
       "id": "scripts_router_service_routerhandler_send_openai_stream",
       "community": 2,
       "norm_label": ".send_openai_stream()"
@@ -709,7 +997,7 @@
       "label": ".log_message()",
       "file_type": "code",
       "source_file": "scripts/router_service.py",
-      "source_location": "L331",
+      "source_location": "L495",
       "id": "scripts_router_service_routerhandler_log_message",
       "community": 2,
       "norm_label": ".log_message()"
@@ -718,27 +1006,36 @@
       "label": "RouterServer",
       "file_type": "code",
       "source_file": "scripts/router_service.py",
-      "source_location": "L335",
+      "source_location": "L499",
       "id": "scripts_router_service_routerserver",
-      "community": 5,
+      "community": 2,
       "norm_label": "routerserver"
     },
     {
       "label": ".__init__()",
       "file_type": "code",
       "source_file": "scripts/router_service.py",
-      "source_location": "L336",
+      "source_location": "L500",
       "id": "scripts_router_service_routerserver_init",
-      "community": 5,
+      "community": 2,
       "norm_label": ".__init__()"
+    },
+    {
+      "label": ".index_exists()",
+      "file_type": "code",
+      "source_file": "scripts/router_service.py",
+      "source_location": "L511",
+      "id": "scripts_router_service_routerserver_index_exists",
+      "community": 2,
+      "norm_label": ".index_exists()"
     },
     {
       "label": "main()",
       "file_type": "code",
       "source_file": "scripts/router_service.py",
-      "source_location": "L341",
+      "source_location": "L517",
       "id": "scripts_router_service_main",
-      "community": 5,
+      "community": 2,
       "norm_label": "main()"
     },
     {
@@ -776,6 +1073,15 @@
       "id": "scripts_load_env_sh",
       "community": 33,
       "norm_label": "load-env.sh"
+    },
+    {
+      "label": "start-router-rag-stack.sh",
+      "file_type": "code",
+      "source_file": "scripts/start-router-rag-stack.sh",
+      "source_location": "L1",
+      "id": "scripts_start_router_rag_stack_sh",
+      "community": 35,
+      "norm_label": "start-router-rag-stack.sh"
     },
     {
       "label": "check-router-connectivity.sh",
@@ -880,7 +1186,7 @@
       "label": "Step 1: prepare the environment",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L74",
+      "source_location": "L75",
       "id": "local_llm_readme_step_1_prepare_the_environment",
       "community": 1,
       "norm_label": "step 1: prepare the environment"
@@ -889,7 +1195,7 @@
       "label": "code:bash (cp .env.example .env)",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L78",
+      "source_location": "L79",
       "id": "local_llm_readme_codeblock_2",
       "community": 1,
       "norm_label": "code:bash (cp .env.example .env)"
@@ -898,7 +1204,7 @@
       "label": "code:bash (cp .env.staging.example .env)",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L84",
+      "source_location": "L85",
       "id": "local_llm_readme_codeblock_3",
       "community": 1,
       "norm_label": "code:bash (cp .env.staging.example .env)"
@@ -907,7 +1213,7 @@
       "label": "Step 2: choose your Ollama deployment mode",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L95",
+      "source_location": "L96",
       "id": "local_llm_readme_step_2_choose_your_ollama_deployment_mode",
       "community": 6,
       "norm_label": "step 2: choose your ollama deployment mode"
@@ -916,7 +1222,7 @@
       "label": "Option A: Ollama on the host",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L97",
+      "source_location": "L98",
       "id": "local_llm_readme_option_a_ollama_on_the_host",
       "community": 6,
       "norm_label": "option a: ollama on the host"
@@ -925,7 +1231,7 @@
       "label": "code:bash (curl http://localhost:11434/api/tags)",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L105",
+      "source_location": "L106",
       "id": "local_llm_readme_codeblock_4",
       "community": 6,
       "norm_label": "code:bash (curl http://localhost:11434/api/tags)"
@@ -934,7 +1240,7 @@
       "label": "code:bash (docker compose up -d)",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L111",
+      "source_location": "L112",
       "id": "local_llm_readme_codeblock_5",
       "community": 6,
       "norm_label": "code:bash (docker compose up -d)"
@@ -943,7 +1249,7 @@
       "label": "Option B: Ollama in Docker",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L117",
+      "source_location": "L118",
       "id": "local_llm_readme_option_b_ollama_in_docker",
       "community": 6,
       "norm_label": "option b: ollama in docker"
@@ -952,7 +1258,7 @@
       "label": "code:bash (docker compose -f docker-compose.yml -f docker-compose.ollam)",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L124",
+      "source_location": "L125",
       "id": "local_llm_readme_codeblock_6",
       "community": 6,
       "norm_label": "code:bash (docker compose -f docker-compose.yml -f docker-compose.ollam)"
@@ -961,7 +1267,7 @@
       "label": "code:bash (curl http://localhost:11434/api/tags)",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L130",
+      "source_location": "L131",
       "id": "local_llm_readme_codeblock_7",
       "community": 6,
       "norm_label": "code:bash (curl http://localhost:11434/api/tags)"
@@ -970,7 +1276,7 @@
       "label": "Option C: Remote Open WebUI host",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L136",
+      "source_location": "L137",
       "id": "local_llm_readme_option_c_remote_open_webui_host",
       "community": 6,
       "norm_label": "option c: remote open webui host"
@@ -979,7 +1285,7 @@
       "label": "code:bash (cp .env.example .env)",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L147",
+      "source_location": "L148",
       "id": "local_llm_readme_codeblock_8",
       "community": 6,
       "norm_label": "code:bash (cp .env.example .env)"
@@ -988,7 +1294,7 @@
       "label": "code:bash (OLLAMA_BASE_URL=http://OLLAMA_NODE_IP:11434)",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L153",
+      "source_location": "L154",
       "id": "local_llm_readme_codeblock_9",
       "community": 6,
       "norm_label": "code:bash (ollama_base_url=http://ollama_node_ip:11434)"
@@ -997,7 +1303,7 @@
       "label": "code:bash (docker compose up -d)",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L159",
+      "source_location": "L160",
       "id": "local_llm_readme_codeblock_10",
       "community": 6,
       "norm_label": "code:bash (docker compose up -d)"
@@ -1006,7 +1312,7 @@
       "label": "code:bash (curl http://OLLAMA_NODE_IP:11434/api/tags)",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L165",
+      "source_location": "L166",
       "id": "local_llm_readme_codeblock_11",
       "community": 6,
       "norm_label": "code:bash (curl http://ollama_node_ip:11434/api/tags)"
@@ -1015,61 +1321,70 @@
       "label": "Step 3: verify the model inventory",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L171",
+      "source_location": "L172",
       "id": "local_llm_readme_step_3_verify_the_model_inventory",
-      "community": 35,
+      "community": 1,
       "norm_label": "step 3: verify the model inventory"
     },
     {
       "label": "code:bash (./scripts/verify-ollama-models.sh)",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L177",
+      "source_location": "L178",
       "id": "local_llm_readme_codeblock_12",
-      "community": 35,
+      "community": 1,
       "norm_label": "code:bash (./scripts/verify-ollama-models.sh)"
+    },
+    {
+      "label": "code:bash (./scripts/pull-required-models.sh)",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L184",
+      "id": "local_llm_readme_codeblock_13",
+      "community": 1,
+      "norm_label": "code:bash (./scripts/pull-required-models.sh)"
     },
     {
       "label": "code:bash (./scripts/bootstrap-local-ai-node.sh)",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L183",
-      "id": "local_llm_readme_codeblock_13",
-      "community": 35,
+      "source_location": "L198",
+      "id": "local_llm_readme_codeblock_14",
+      "community": 1,
       "norm_label": "code:bash (./scripts/bootstrap-local-ai-node.sh)"
     },
     {
       "label": "code:bash (EXPECT_OPTIONAL_MODELS=\"gemma4:31b,llava:13b\" ./scripts/boot)",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L189",
-      "id": "local_llm_readme_codeblock_14",
-      "community": 35,
+      "source_location": "L204",
+      "id": "local_llm_readme_codeblock_15",
+      "community": 1,
       "norm_label": "code:bash (expect_optional_models=\"gemma4:31b,llava:13b\" ./scripts/boot)"
     },
     {
       "label": "code:bash (./scripts/preflight-target-host.sh)",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L195",
-      "id": "local_llm_readme_codeblock_15",
-      "community": 35,
+      "source_location": "L210",
+      "id": "local_llm_readme_codeblock_16",
+      "community": 1,
       "norm_label": "code:bash (./scripts/preflight-target-host.sh)"
     },
     {
       "label": "code:bash (RUN_SMOKE_TESTS=true ./scripts/verify-ollama-models.sh)",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L201",
-      "id": "local_llm_readme_codeblock_16",
-      "community": 35,
+      "source_location": "L216",
+      "id": "local_llm_readme_codeblock_17",
+      "community": 1,
       "norm_label": "code:bash (run_smoke_tests=true ./scripts/verify-ollama-models.sh)"
     },
     {
       "label": "Download models on a new system",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L206",
+      "source_location": "L221",
       "id": "local_llm_readme_download_models_on_a_new_system",
       "community": 1,
       "norm_label": "download models on a new system"
@@ -1078,8 +1393,8 @@
       "label": "code:bash (./scripts/pull-required-models.sh)",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L210",
-      "id": "local_llm_readme_codeblock_17",
+      "source_location": "L225",
+      "id": "local_llm_readme_codeblock_18",
       "community": 1,
       "norm_label": "code:bash (./scripts/pull-required-models.sh)"
     },
@@ -1087,8 +1402,8 @@
       "label": "code:bash (OPTIONAL_MODELS=\"gemma4:31b\" ./scripts/pull-required-models.)",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L216",
-      "id": "local_llm_readme_codeblock_18",
+      "source_location": "L231",
+      "id": "local_llm_readme_codeblock_19",
       "community": 1,
       "norm_label": "code:bash (optional_models=\"gemma4:31b\" ./scripts/pull-required-models.)"
     },
@@ -1096,8 +1411,8 @@
       "label": "code:bash (OPTIONAL_MODELS=\"qwen3:30b\" ./scripts/pull-required-models.s)",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L222",
-      "id": "local_llm_readme_codeblock_19",
+      "source_location": "L237",
+      "id": "local_llm_readme_codeblock_20",
       "community": 1,
       "norm_label": "code:bash (optional_models=\"qwen3:30b\" ./scripts/pull-required-models.s)"
     },
@@ -1105,8 +1420,8 @@
       "label": "code:bash (./scripts/show-model-files.sh gemma4:31b)",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L235",
-      "id": "local_llm_readme_codeblock_20",
+      "source_location": "L250",
+      "id": "local_llm_readme_codeblock_21",
       "community": 1,
       "norm_label": "code:bash (./scripts/show-model-files.sh gemma4:31b)"
     },
@@ -1114,7 +1429,7 @@
       "label": "First RAG workflow",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L242",
+      "source_location": "L257",
       "id": "local_llm_readme_first_rag_workflow",
       "community": 1,
       "norm_label": "first rag workflow"
@@ -1123,8 +1438,8 @@
       "label": "code:bash (python3 ./scripts/build-rag-index.py)",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L250",
-      "id": "local_llm_readme_codeblock_21",
+      "source_location": "L265",
+      "id": "local_llm_readme_codeblock_22",
       "community": 1,
       "norm_label": "code:bash (python3 ./scripts/build-rag-index.py)"
     },
@@ -1132,8 +1447,8 @@
       "label": "code:bash (python3 ./scripts/query-rag.py \"What models are part of the )",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L256",
-      "id": "local_llm_readme_codeblock_22",
+      "source_location": "L271",
+      "id": "local_llm_readme_codeblock_23",
       "community": 1,
       "norm_label": "code:bash (python3 ./scripts/query-rag.py \"what models are part of the )"
     },
@@ -1141,8 +1456,8 @@
       "label": "code:bash (python3 ./scripts/rag-answer.py \"What is the deployment flow)",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L262",
-      "id": "local_llm_readme_codeblock_23",
+      "source_location": "L277",
+      "id": "local_llm_readme_codeblock_24",
       "community": 1,
       "norm_label": "code:bash (python3 ./scripts/rag-answer.py \"what is the deployment flow)"
     },
@@ -1150,7 +1465,7 @@
       "label": "How This Actually Works",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L268",
+      "source_location": "L283",
       "id": "local_llm_readme_how_this_actually_works",
       "community": 1,
       "norm_label": "how this actually works"
@@ -1159,7 +1474,7 @@
       "label": "Open WebUI Relationship",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L286",
+      "source_location": "L301",
       "id": "local_llm_readme_open_webui_relationship",
       "community": 1,
       "norm_label": "open webui relationship"
@@ -1168,8 +1483,8 @@
       "label": "code:bash (./scripts/start-rag-service.sh)",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L306",
-      "id": "local_llm_readme_codeblock_24",
+      "source_location": "L321",
+      "id": "local_llm_readme_codeblock_25",
       "community": 1,
       "norm_label": "code:bash (./scripts/start-rag-service.sh)"
     },
@@ -1177,8 +1492,8 @@
       "label": "code:bash (curl -X POST http://127.0.0.1:8787/answer \\)",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L316",
-      "id": "local_llm_readme_codeblock_25",
+      "source_location": "L331",
+      "id": "local_llm_readme_codeblock_26",
       "community": 1,
       "norm_label": "code:bash (curl -x post http://127.0.0.1:8787/answer \\)"
     },
@@ -1186,61 +1501,70 @@
       "label": "Smart Router API",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L322",
+      "source_location": "L337",
       "id": "local_llm_readme_smart_router_api",
-      "community": 1,
+      "community": 9,
       "norm_label": "smart router api"
     },
     {
       "label": "code:bash (./scripts/start-router-service.sh)",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L329",
-      "id": "local_llm_readme_codeblock_26",
-      "community": 1,
+      "source_location": "L344",
+      "id": "local_llm_readme_codeblock_27",
+      "community": 9,
       "norm_label": "code:bash (./scripts/start-router-service.sh)"
+    },
+    {
+      "label": "code:bash (./scripts/start-router-rag-stack.sh)",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L350",
+      "id": "local_llm_readme_codeblock_28",
+      "community": 9,
+      "norm_label": "code:bash (./scripts/start-router-rag-stack.sh)"
     },
     {
       "label": "code:bash (./scripts/check-router-connectivity.sh)",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L335",
-      "id": "local_llm_readme_codeblock_27",
-      "community": 1,
+      "source_location": "L356",
+      "id": "local_llm_readme_codeblock_29",
+      "community": 9,
       "norm_label": "code:bash (./scripts/check-router-connectivity.sh)"
     },
     {
       "label": "code:bash (curl http://127.0.0.1:8788/health)",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L341",
-      "id": "local_llm_readme_codeblock_28",
-      "community": 1,
+      "source_location": "L362",
+      "id": "local_llm_readme_codeblock_30",
+      "community": 9,
       "norm_label": "code:bash (curl http://127.0.0.1:8788/health)"
     },
     {
       "label": "code:bash (curl -X POST http://127.0.0.1:8788/chat \\)",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L347",
-      "id": "local_llm_readme_codeblock_29",
-      "community": 1,
+      "source_location": "L368",
+      "id": "local_llm_readme_codeblock_31",
+      "community": 9,
       "norm_label": "code:bash (curl -x post http://127.0.0.1:8788/chat \\)"
     },
     {
       "label": "code:bash (curl -X POST http://127.0.0.1:8788/v1/chat/completions \\)",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L355",
-      "id": "local_llm_readme_codeblock_30",
-      "community": 1,
+      "source_location": "L376",
+      "id": "local_llm_readme_codeblock_32",
+      "community": 9,
       "norm_label": "code:bash (curl -x post http://127.0.0.1:8788/v1/chat/completions \\)"
     },
     {
       "label": "Open WebUI Through The Router",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L376",
+      "source_location": "L397",
       "id": "local_llm_readme_open_webui_through_the_router",
       "community": 9,
       "norm_label": "open webui through the router"
@@ -1249,7 +1573,7 @@
       "label": "Recommended startup order",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L387",
+      "source_location": "L408",
       "id": "local_llm_readme_recommended_startup_order",
       "community": 9,
       "norm_label": "recommended startup order"
@@ -1258,26 +1582,26 @@
       "label": "code:bash (python3 ./scripts/build-rag-index.py)",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L392",
-      "id": "local_llm_readme_codeblock_31",
+      "source_location": "L413",
+      "id": "local_llm_readme_codeblock_33",
       "community": 9,
       "norm_label": "code:bash (python3 ./scripts/build-rag-index.py)"
     },
     {
-      "label": "code:bash (./scripts/start-router-service.sh)",
+      "label": "code:bash (./scripts/start-router-rag-stack.sh)",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L398",
-      "id": "local_llm_readme_codeblock_32",
+      "source_location": "L419",
+      "id": "local_llm_readme_codeblock_34",
       "community": 9,
-      "norm_label": "code:bash (./scripts/start-router-service.sh)"
+      "norm_label": "code:bash (./scripts/start-router-rag-stack.sh)"
     },
     {
       "label": "code:bash (./scripts/check-router-connectivity.sh)",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L404",
-      "id": "local_llm_readme_codeblock_33",
+      "source_location": "L425",
+      "id": "local_llm_readme_codeblock_35",
       "community": 9,
       "norm_label": "code:bash (./scripts/check-router-connectivity.sh)"
     },
@@ -1285,8 +1609,8 @@
       "label": "code:bash (docker compose up -d)",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L411",
-      "id": "local_llm_readme_codeblock_34",
+      "source_location": "L432",
+      "id": "local_llm_readme_codeblock_36",
       "community": 9,
       "norm_label": "code:bash (docker compose up -d)"
     },
@@ -1294,7 +1618,7 @@
       "label": "Router-mode Open WebUI settings",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L415",
+      "source_location": "L436",
       "id": "local_llm_readme_router_mode_open_webui_settings",
       "community": 9,
       "norm_label": "router-mode open webui settings"
@@ -1303,8 +1627,8 @@
       "label": "code:bash (ENABLE_OLLAMA_API=false)",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L419",
-      "id": "local_llm_readme_codeblock_35",
+      "source_location": "L440",
+      "id": "local_llm_readme_codeblock_37",
       "community": 9,
       "norm_label": "code:bash (enable_ollama_api=false)"
     },
@@ -1312,7 +1636,7 @@
       "label": "What you should see in the UI",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L426",
+      "source_location": "L447",
       "id": "local_llm_readme_what_you_should_see_in_the_ui",
       "community": 9,
       "norm_label": "what you should see in the ui"
@@ -1321,34 +1645,34 @@
       "label": "Step 4: verify Open WebUI connectivity",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L437",
+      "source_location": "L458",
       "id": "local_llm_readme_step_4_verify_open_webui_connectivity",
-      "community": 1,
+      "community": 9,
       "norm_label": "step 4: verify open webui connectivity"
     },
     {
       "label": "code:bash (./scripts/check-open-webui-connectivity.sh)",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L441",
-      "id": "local_llm_readme_codeblock_36",
-      "community": 1,
+      "source_location": "L462",
+      "id": "local_llm_readme_codeblock_38",
+      "community": 9,
       "norm_label": "code:bash (./scripts/check-open-webui-connectivity.sh)"
     },
     {
       "label": "code:text (http://localhost:3000)",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L447",
-      "id": "local_llm_readme_codeblock_37",
-      "community": 1,
+      "source_location": "L468",
+      "id": "local_llm_readme_codeblock_39",
+      "community": 9,
       "norm_label": "code:text (http://localhost:3000)"
     },
     {
       "label": "No-Docker note",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L451",
+      "source_location": "L472",
       "id": "local_llm_readme_no_docker_note",
       "community": 1,
       "norm_label": "no-docker note"
@@ -1357,97 +1681,97 @@
       "label": "Step 5: back up or restore the Ollama model store",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L468",
+      "source_location": "L489",
       "id": "local_llm_readme_step_5_back_up_or_restore_the_ollama_model_store",
-      "community": 12,
+      "community": 9,
       "norm_label": "step 5: back up or restore the ollama model store"
     },
     {
       "label": "code:bash (./scripts/backup-ollama-store.sh)",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L472",
-      "id": "local_llm_readme_codeblock_38",
-      "community": 12,
+      "source_location": "L493",
+      "id": "local_llm_readme_codeblock_40",
+      "community": 9,
       "norm_label": "code:bash (./scripts/backup-ollama-store.sh)"
     },
     {
       "label": "code:bash (CONFIRM_RESTORE=true ./scripts/restore-ollama-store.sh /mnt/)",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L478",
-      "id": "local_llm_readme_codeblock_39",
-      "community": 12,
+      "source_location": "L499",
+      "id": "local_llm_readme_codeblock_41",
+      "community": 9,
       "norm_label": "code:bash (confirm_restore=true ./scripts/restore-ollama-store.sh /mnt/)"
     },
     {
       "label": "Backup path examples",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L484",
+      "source_location": "L505",
       "id": "local_llm_readme_backup_path_examples",
-      "community": 12,
+      "community": 9,
       "norm_label": "backup path examples"
     },
     {
       "label": "code:bash (BACKUP_ROOT_DIR=$HOME/local-ai-node/backups)",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L488",
-      "id": "local_llm_readme_codeblock_40",
-      "community": 12,
+      "source_location": "L509",
+      "id": "local_llm_readme_codeblock_42",
+      "community": 9,
       "norm_label": "code:bash (backup_root_dir=$home/local-ai-node/backups)"
     },
     {
       "label": "code:bash (BACKUP_ROOT_DIR=/Volumes/MyNAS/local-ai-node-backups)",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L494",
-      "id": "local_llm_readme_codeblock_41",
-      "community": 12,
+      "source_location": "L515",
+      "id": "local_llm_readme_codeblock_43",
+      "community": 9,
       "norm_label": "code:bash (backup_root_dir=/volumes/mynas/local-ai-node-backups)"
     },
     {
       "label": "code:bash (BACKUP_ROOT_DIR=/mnt/nas/local-ai-node-backups)",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L500",
-      "id": "local_llm_readme_codeblock_42",
-      "community": 12,
+      "source_location": "L521",
+      "id": "local_llm_readme_codeblock_44",
+      "community": 9,
       "norm_label": "code:bash (backup_root_dir=/mnt/nas/local-ai-node-backups)"
     },
     {
       "label": "code:bash (grep -E '^(BACKUP_ROOT_DIR|OLLAMA_HOME_DIR)=' .env)",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L506",
-      "id": "local_llm_readme_codeblock_43",
-      "community": 12,
+      "source_location": "L527",
+      "id": "local_llm_readme_codeblock_45",
+      "community": 9,
       "norm_label": "code:bash (grep -e '^(backup_root_dir|ollama_home_dir)=' .env)"
     },
     {
       "label": "Notes on migration",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L510",
+      "source_location": "L531",
       "id": "local_llm_readme_notes_on_migration",
       "community": 1,
       "norm_label": "notes on migration"
     },
     {
-      "label": "Future work",
+      "label": "Secondary add-ons and future work",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L522",
-      "id": "local_llm_readme_future_work",
+      "source_location": "L543",
+      "id": "local_llm_readme_secondary_add_ons_and_future_work",
       "community": 1,
-      "norm_label": "future work"
+      "norm_label": "secondary add-ons and future work"
     },
     {
       "label": "Quick Repo Summary",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L528",
+      "source_location": "L554",
       "id": "local_llm_readme_quick_repo_summary",
       "community": 1,
       "norm_label": "quick repo summary"
@@ -1456,7 +1780,7 @@
       "label": "LLM Start Here",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L535",
+      "source_location": "L563",
       "id": "local_llm_readme_llm_start_here",
       "community": 1,
       "norm_label": "llm start here"
@@ -1465,7 +1789,7 @@
       "label": "License",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L541",
+      "source_location": "L569",
       "id": "local_llm_readme_license",
       "community": 1,
       "norm_label": "license"
@@ -1732,19 +2056,19 @@
       "norm_label": "code:bash (./scripts/preflight-target-host.sh)"
     },
     {
-      "label": "5. Validate or restore the model inventory",
+      "label": "5. Pull, restore, or verify the model inventory",
       "file_type": "document",
       "source_file": "docs/target-host-first-pass.md",
       "source_location": "L67",
-      "id": "docs_target_host_first_pass_5_validate_or_restore_the_model_inventory",
+      "id": "docs_target_host_first_pass_5_pull_restore_or_verify_the_model_inventory",
       "community": 3,
-      "norm_label": "5. validate or restore the model inventory"
+      "norm_label": "5. pull, restore, or verify the model inventory"
     },
     {
       "label": "code:bash (./scripts/verify-ollama-models.sh)",
       "file_type": "document",
       "source_file": "docs/target-host-first-pass.md",
-      "source_location": "L71",
+      "source_location": "L79",
       "id": "docs_target_host_first_pass_codeblock_6",
       "community": 3,
       "norm_label": "code:bash (./scripts/verify-ollama-models.sh)"
@@ -1753,7 +2077,7 @@
       "label": "code:bash (./scripts/pull-required-models.sh)",
       "file_type": "document",
       "source_file": "docs/target-host-first-pass.md",
-      "source_location": "L78",
+      "source_location": "L86",
       "id": "docs_target_host_first_pass_codeblock_7",
       "community": 3,
       "norm_label": "code:bash (./scripts/pull-required-models.sh)"
@@ -1762,7 +2086,7 @@
       "label": "code:bash (CONFIRM_RESTORE=true ./scripts/restore-ollama-store.sh /path)",
       "file_type": "document",
       "source_file": "docs/target-host-first-pass.md",
-      "source_location": "L85",
+      "source_location": "L93",
       "id": "docs_target_host_first_pass_codeblock_8",
       "community": 3,
       "norm_label": "code:bash (confirm_restore=true ./scripts/restore-ollama-store.sh /path)"
@@ -1771,7 +2095,7 @@
       "label": "6. Start Open WebUI",
       "file_type": "document",
       "source_file": "docs/target-host-first-pass.md",
-      "source_location": "L91",
+      "source_location": "L99",
       "id": "docs_target_host_first_pass_6_start_open_webui",
       "community": 3,
       "norm_label": "6. start open webui"
@@ -1780,7 +2104,7 @@
       "label": "code:bash (docker compose up -d)",
       "file_type": "document",
       "source_file": "docs/target-host-first-pass.md",
-      "source_location": "L93",
+      "source_location": "L101",
       "id": "docs_target_host_first_pass_codeblock_9",
       "community": 3,
       "norm_label": "code:bash (docker compose up -d)"
@@ -1789,7 +2113,7 @@
       "label": "code:bash (docker compose -f docker-compose.yml -f docker-compose.ollam)",
       "file_type": "document",
       "source_file": "docs/target-host-first-pass.md",
-      "source_location": "L100",
+      "source_location": "L108",
       "id": "docs_target_host_first_pass_codeblock_10",
       "community": 3,
       "norm_label": "code:bash (docker compose -f docker-compose.yml -f docker-compose.ollam)"
@@ -1798,7 +2122,7 @@
       "label": "7. Validate the stack",
       "file_type": "document",
       "source_file": "docs/target-host-first-pass.md",
-      "source_location": "L104",
+      "source_location": "L112",
       "id": "docs_target_host_first_pass_7_validate_the_stack",
       "community": 3,
       "norm_label": "7. validate the stack"
@@ -1807,16 +2131,25 @@
       "label": "code:bash (./scripts/check-open-webui-connectivity.sh)",
       "file_type": "document",
       "source_file": "docs/target-host-first-pass.md",
-      "source_location": "L106",
+      "source_location": "L114",
       "id": "docs_target_host_first_pass_codeblock_11",
       "community": 3,
       "norm_label": "code:bash (./scripts/check-open-webui-connectivity.sh)"
     },
     {
+      "label": "code:bash (./scripts/bootstrap-local-ai-node.sh)",
+      "file_type": "document",
+      "source_file": "docs/target-host-first-pass.md",
+      "source_location": "L128",
+      "id": "docs_target_host_first_pass_codeblock_12",
+      "community": 3,
+      "norm_label": "code:bash (./scripts/bootstrap-local-ai-node.sh)"
+    },
+    {
       "label": "8. Set the first routing defaults",
       "file_type": "document",
       "source_file": "docs/target-host-first-pass.md",
-      "source_location": "L118",
+      "source_location": "L135",
       "id": "docs_target_host_first_pass_8_set_the_first_routing_defaults",
       "community": 3,
       "norm_label": "8. set the first routing defaults"
@@ -1870,7 +2203,7 @@
       "label": "UI integration target",
       "file_type": "document",
       "source_file": "docs/model-router.md",
-      "source_location": "L40",
+      "source_location": "L41",
       "id": "docs_model_router_ui_integration_target",
       "community": 7,
       "norm_label": "ui integration target"
@@ -1879,7 +2212,7 @@
       "label": "Current routing behavior",
       "file_type": "document",
       "source_file": "docs/model-router.md",
-      "source_location": "L59",
+      "source_location": "L61",
       "id": "docs_model_router_current_routing_behavior",
       "community": 7,
       "norm_label": "current routing behavior"
@@ -1888,19 +2221,226 @@
       "label": "Recommended first-pass UI defaults",
       "file_type": "document",
       "source_file": "docs/model-router.md",
-      "source_location": "L70",
+      "source_location": "L77",
       "id": "docs_model_router_recommended_first_pass_ui_defaults",
       "community": 7,
       "norm_label": "recommended first-pass ui defaults"
     },
     {
-      "label": "TODO",
+      "label": "Open WebUI behavior notes",
       "file_type": "document",
       "source_file": "docs/model-router.md",
-      "source_location": "L78",
-      "id": "docs_model_router_todo",
+      "source_location": "L85",
+      "id": "docs_model_router_open_webui_behavior_notes",
       "community": 7,
-      "norm_label": "todo"
+      "norm_label": "open webui behavior notes"
+    },
+    {
+      "label": "Router-mode troubleshooting",
+      "file_type": "document",
+      "source_file": "docs/model-router.md",
+      "source_location": "L96",
+      "id": "docs_model_router_router_mode_troubleshooting",
+      "community": 7,
+      "norm_label": "router-mode troubleshooting"
+    },
+    {
+      "label": "Step-by-step validation scenarios",
+      "file_type": "document",
+      "source_file": "docs/model-router.md",
+      "source_location": "L109",
+      "id": "docs_model_router_step_by_step_validation_scenarios",
+      "community": 7,
+      "norm_label": "step-by-step validation scenarios"
+    },
+    {
+      "label": "code:bash (./scripts/check-router-connectivity.sh)",
+      "file_type": "document",
+      "source_file": "docs/model-router.md",
+      "source_location": "L113",
+      "id": "docs_model_router_codeblock_1",
+      "community": 7,
+      "norm_label": "code:bash (./scripts/check-router-connectivity.sh)"
+    },
+    {
+      "label": "Scenario 1: General chat fallback",
+      "file_type": "document",
+      "source_file": "docs/model-router.md",
+      "source_location": "L120",
+      "id": "docs_model_router_scenario_1_general_chat_fallback",
+      "community": 7,
+      "norm_label": "scenario 1: general chat fallback"
+    },
+    {
+      "label": "code:bash (curl -X POST http://127.0.0.1:8788/v1/chat/completions \\)",
+      "file_type": "document",
+      "source_file": "docs/model-router.md",
+      "source_location": "L124",
+      "id": "docs_model_router_codeblock_2",
+      "community": 7,
+      "norm_label": "code:bash (curl -x post http://127.0.0.1:8788/v1/chat/completions \\)"
+    },
+    {
+      "label": "Scenario 2: Coding route",
+      "file_type": "document",
+      "source_file": "docs/model-router.md",
+      "source_location": "L145",
+      "id": "docs_model_router_scenario_2_coding_route",
+      "community": 7,
+      "norm_label": "scenario 2: coding route"
+    },
+    {
+      "label": "code:bash (curl -X POST http://127.0.0.1:8788/v1/chat/completions \\)",
+      "file_type": "document",
+      "source_file": "docs/model-router.md",
+      "source_location": "L149",
+      "id": "docs_model_router_codeblock_3",
+      "community": 7,
+      "norm_label": "code:bash (curl -x post http://127.0.0.1:8788/v1/chat/completions \\)"
+    },
+    {
+      "label": "Scenario 3: Light/short route",
+      "file_type": "document",
+      "source_file": "docs/model-router.md",
+      "source_location": "L170",
+      "id": "docs_model_router_scenario_3_light_short_route",
+      "community": 7,
+      "norm_label": "scenario 3: light/short route"
+    },
+    {
+      "label": "code:bash (curl -X POST http://127.0.0.1:8788/v1/chat/completions \\)",
+      "file_type": "document",
+      "source_file": "docs/model-router.md",
+      "source_location": "L174",
+      "id": "docs_model_router_codeblock_4",
+      "community": 7,
+      "norm_label": "code:bash (curl -x post http://127.0.0.1:8788/v1/chat/completions \\)"
+    },
+    {
+      "label": "Scenario 4: RAG route for repo knowledge",
+      "file_type": "document",
+      "source_file": "docs/model-router.md",
+      "source_location": "L195",
+      "id": "docs_model_router_scenario_4_rag_route_for_repo_knowledge",
+      "community": 7,
+      "norm_label": "scenario 4: rag route for repo knowledge"
+    },
+    {
+      "label": "code:bash (curl -X POST http://127.0.0.1:8788/v1/chat/completions \\)",
+      "file_type": "document",
+      "source_file": "docs/model-router.md",
+      "source_location": "L202",
+      "id": "docs_model_router_codeblock_5",
+      "community": 7,
+      "norm_label": "code:bash (curl -x post http://127.0.0.1:8788/v1/chat/completions \\)"
+    },
+    {
+      "label": "Scenario 5: RAG fallback when index is missing",
+      "file_type": "document",
+      "source_file": "docs/model-router.md",
+      "source_location": "L223",
+      "id": "docs_model_router_scenario_5_rag_fallback_when_index_is_missing",
+      "community": 7,
+      "norm_label": "scenario 5: rag fallback when index is missing"
+    },
+    {
+      "label": "code:bash (curl -X POST http://127.0.0.1:8788/v1/chat/completions \\)",
+      "file_type": "document",
+      "source_file": "docs/model-router.md",
+      "source_location": "L230",
+      "id": "docs_model_router_codeblock_6",
+      "community": 7,
+      "norm_label": "code:bash (curl -x post http://127.0.0.1:8788/v1/chat/completions \\)"
+    },
+    {
+      "label": "Scenario 6: Vision route with image input",
+      "file_type": "document",
+      "source_file": "docs/model-router.md",
+      "source_location": "L250",
+      "id": "docs_model_router_scenario_6_vision_route_with_image_input",
+      "community": 7,
+      "norm_label": "scenario 6: vision route with image input"
+    },
+    {
+      "label": "code:json ({)",
+      "file_type": "document",
+      "source_file": "docs/model-router.md",
+      "source_location": "L257",
+      "id": "docs_model_router_codeblock_7",
+      "community": 7,
+      "norm_label": "code:json ({)"
+    },
+    {
+      "label": "Scenario 7: Recent conversation influences routing",
+      "file_type": "document",
+      "source_file": "docs/model-router.md",
+      "source_location": "L282",
+      "id": "docs_model_router_scenario_7_recent_conversation_influences_routing",
+      "community": 7,
+      "norm_label": "scenario 7: recent conversation influences routing"
+    },
+    {
+      "label": "code:bash (curl -X POST http://127.0.0.1:8788/v1/chat/completions \\)",
+      "file_type": "document",
+      "source_file": "docs/model-router.md",
+      "source_location": "L286",
+      "id": "docs_model_router_codeblock_8",
+      "community": 7,
+      "norm_label": "code:bash (curl -x post http://127.0.0.1:8788/v1/chat/completions \\)"
+    },
+    {
+      "label": "Scenario 8: Weak keyword should not force RAG",
+      "file_type": "document",
+      "source_file": "docs/model-router.md",
+      "source_location": "L308",
+      "id": "docs_model_router_scenario_8_weak_keyword_should_not_force_rag",
+      "community": 7,
+      "norm_label": "scenario 8: weak keyword should not force rag"
+    },
+    {
+      "label": "code:bash (curl -X POST http://127.0.0.1:8788/v1/chat/completions \\)",
+      "file_type": "document",
+      "source_file": "docs/model-router.md",
+      "source_location": "L312",
+      "id": "docs_model_router_codeblock_9",
+      "community": 7,
+      "norm_label": "code:bash (curl -x post http://127.0.0.1:8788/v1/chat/completions \\)"
+    },
+    {
+      "label": "Scenario 9: Manual model override",
+      "file_type": "document",
+      "source_file": "docs/model-router.md",
+      "source_location": "L331",
+      "id": "docs_model_router_scenario_9_manual_model_override",
+      "community": 7,
+      "norm_label": "scenario 9: manual model override"
+    },
+    {
+      "label": "code:bash (curl -X POST http://127.0.0.1:8788/v1/chat/completions \\)",
+      "file_type": "document",
+      "source_file": "docs/model-router.md",
+      "source_location": "L335",
+      "id": "docs_model_router_codeblock_10",
+      "community": 7,
+      "norm_label": "code:bash (curl -x post http://127.0.0.1:8788/v1/chat/completions \\)"
+    },
+    {
+      "label": "Detailed test plan",
+      "file_type": "document",
+      "source_file": "docs/model-router.md",
+      "source_location": "L355",
+      "id": "docs_model_router_detailed_test_plan",
+      "community": 7,
+      "norm_label": "detailed test plan"
+    },
+    {
+      "label": "Status",
+      "file_type": "document",
+      "source_file": "docs/model-router.md",
+      "source_location": "L392",
+      "id": "docs_model_router_status",
+      "community": 7,
+      "norm_label": "status"
     },
     {
       "label": "validation-checklist.md",
@@ -1939,10 +2479,19 @@
       "norm_label": "router mode"
     },
     {
+      "label": "Scenario checks",
+      "file_type": "document",
+      "source_file": "docs/validation-checklist.md",
+      "source_location": "L25",
+      "id": "docs_validation_checklist_scenario_checks",
+      "community": 13,
+      "norm_label": "scenario checks"
+    },
+    {
       "label": "Option A: host Ollama",
       "file_type": "document",
       "source_file": "docs/validation-checklist.md",
-      "source_location": "L20",
+      "source_location": "L46",
       "id": "docs_validation_checklist_option_a_host_ollama",
       "community": 13,
       "norm_label": "option a: host ollama"
@@ -1951,7 +2500,7 @@
       "label": "Option B: Docker Ollama",
       "file_type": "document",
       "source_file": "docs/validation-checklist.md",
-      "source_location": "L27",
+      "source_location": "L53",
       "id": "docs_validation_checklist_option_b_docker_ollama",
       "community": 13,
       "norm_label": "option b: docker ollama"
@@ -1960,7 +2509,7 @@
       "label": "Operational checks",
       "file_type": "document",
       "source_file": "docs/validation-checklist.md",
-      "source_location": "L34",
+      "source_location": "L60",
       "id": "docs_validation_checklist_operational_checks",
       "community": 13,
       "norm_label": "operational checks"
@@ -2360,6 +2909,42 @@
       "id": "backups_readme_backups",
       "community": 18,
       "norm_label": "backups"
+    },
+    {
+      "label": "build_items()",
+      "file_type": "code",
+      "source_file": "scripts/build-rag-index.py",
+      "source_location": "L23",
+      "community": 0,
+      "norm_label": "build_items()",
+      "id": "scripts_build_rag_index_build_items"
+    },
+    {
+      "label": "Future work",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L522",
+      "community": 1,
+      "norm_label": "future work",
+      "id": "local_llm_readme_future_work"
+    },
+    {
+      "label": "5. Validate or restore the model inventory",
+      "file_type": "document",
+      "source_file": "docs/target-host-first-pass.md",
+      "source_location": "L67",
+      "community": 3,
+      "norm_label": "5. validate or restore the model inventory",
+      "id": "docs_target_host_first_pass_5_validate_or_restore_the_model_inventory"
+    },
+    {
+      "label": "TODO",
+      "file_type": "document",
+      "source_file": "docs/model-router.md",
+      "source_location": "L78",
+      "community": 7,
+      "norm_label": "todo",
+      "id": "docs_model_router_todo"
     },
     {
       "label": "check-idea-capture-service.sh",
@@ -2859,6 +3444,26 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "scripts/rag_lib.py",
+      "source_location": "L139",
+      "weight": 1.0,
+      "source": "scripts_rag_lib_py",
+      "target": "scripts_rag_lib_normalize_image_input",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/rag_lib.py",
+      "source_location": "L159",
+      "weight": 1.0,
+      "source": "scripts_rag_lib_py",
+      "target": "scripts_rag_lib_generate_text_with_images",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/rag_lib.py",
       "source_location": "L137",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -2874,6 +3479,16 @@
       "confidence_score": 1.0,
       "source": "scripts_rag_lib_py",
       "target": "scripts_rag_lib_read_text_file"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/rag_lib.py",
+      "source_location": "L190",
+      "weight": 1.0,
+      "source": "scripts_rag_lib_py",
+      "target": "scripts_rag_lib_file_fingerprint",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -2946,6 +3561,46 @@
       "target": "scripts_rag_lib_build_index_payload"
     },
     {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/rag_lib.py",
+      "source_location": "L295",
+      "weight": 1.0,
+      "source": "scripts_rag_lib_py",
+      "target": "scripts_rag_lib_index_settings_match",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/rag_lib.py",
+      "source_location": "L303",
+      "weight": 1.0,
+      "source": "scripts_rag_lib_py",
+      "target": "scripts_rag_lib_build_existing_item_map",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/rag_lib.py",
+      "source_location": "L318",
+      "weight": 1.0,
+      "source": "scripts_rag_lib_py",
+      "target": "scripts_rag_lib_build_items",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/rag_lib.py",
+      "source_location": "L350",
+      "weight": 1.0,
+      "source": "scripts_rag_lib_py",
+      "target": "scripts_rag_lib_ragruntime",
+      "confidence_score": 1.0
+    },
+    {
       "relation": "calls",
       "context": "call",
       "confidence": "EXTRACTED",
@@ -2994,6 +3649,17 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "scripts/rag_lib.py",
+      "source_location": "L166",
+      "weight": 1.0,
+      "source": "scripts_rag_lib_generate_text_with_images",
+      "target": "scripts_rag_lib_ollama_url",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/rag_lib.py",
       "source_location": "L120",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -3014,23 +3680,34 @@
     {
       "relation": "calls",
       "context": "call",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "scripts/rag_service.py",
-      "source_location": "L40",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/rag_lib.py",
+      "source_location": "L297",
       "weight": 1.0,
-      "source": "scripts_rag_service_build_items",
-      "target": "scripts_rag_lib_embed_model"
+      "source": "scripts_rag_lib_index_settings_match",
+      "target": "scripts_rag_lib_embed_model",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/rag_lib.py",
+      "source_location": "L336",
+      "weight": 1.0,
+      "source": "scripts_rag_lib_build_items",
+      "target": "scripts_rag_lib_embed_model",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
       "context": "call",
       "confidence": "INFERRED",
       "confidence_score": 0.8,
-      "source_file": "scripts/build-rag-index.py",
-      "source_location": "L33",
+      "source_file": "scripts/rag_service.py",
+      "source_location": "L40",
       "weight": 1.0,
-      "source": "scripts_build_rag_index_build_items",
+      "source": "scripts_rag_service_build_items",
       "target": "scripts_rag_lib_embed_model"
     },
     {
@@ -3047,6 +3724,17 @@
     {
       "relation": "calls",
       "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "scripts/build-rag-index.py",
+      "source_location": "L33",
+      "weight": 1.0,
+      "source": "scripts_build_rag_index_build_items",
+      "target": "scripts_rag_lib_embed_model"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "scripts/rag_lib.py",
       "source_location": "L129",
@@ -3054,6 +3742,17 @@
       "confidence_score": 1.0,
       "source": "scripts_rag_lib_generate_text",
       "target": "scripts_rag_lib_chat_model"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/rag_lib.py",
+      "source_location": "L161",
+      "weight": 1.0,
+      "source": "scripts_rag_lib_generate_text_with_images",
+      "target": "scripts_rag_lib_chat_model",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -3086,6 +3785,17 @@
       "source_location": "L185",
       "weight": 1.0,
       "source": "scripts_rag_service_main",
+      "target": "scripts_rag_lib_documents_dir"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "scripts/local_ai_runtime.py",
+      "source_location": "L164",
+      "weight": 1.0,
+      "source": "scripts_local_ai_runtime_main",
       "target": "scripts_rag_lib_documents_dir"
     },
     {
@@ -3126,6 +3836,17 @@
       "context": "call",
       "confidence": "INFERRED",
       "confidence_score": 0.8,
+      "source_file": "scripts/local_ai_runtime.py",
+      "source_location": "L165",
+      "weight": 1.0,
+      "source": "scripts_local_ai_runtime_main",
+      "target": "scripts_rag_lib_index_path"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
       "source_file": "scripts/build-rag-index.py",
       "source_location": "L55",
       "weight": 1.0,
@@ -3153,6 +3874,28 @@
       "confidence_score": 1.0,
       "source": "scripts_rag_lib_build_index_payload",
       "target": "scripts_rag_lib_chunk_size"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/rag_lib.py",
+      "source_location": "L298",
+      "weight": 1.0,
+      "source": "scripts_rag_lib_index_settings_match",
+      "target": "scripts_rag_lib_chunk_size",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/rag_lib.py",
+      "source_location": "L324",
+      "weight": 1.0,
+      "source": "scripts_rag_lib_build_items",
+      "target": "scripts_rag_lib_chunk_size",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -3190,6 +3933,28 @@
     {
       "relation": "calls",
       "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/rag_lib.py",
+      "source_location": "L299",
+      "weight": 1.0,
+      "source": "scripts_rag_lib_index_settings_match",
+      "target": "scripts_rag_lib_chunk_overlap",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/rag_lib.py",
+      "source_location": "L324",
+      "weight": 1.0,
+      "source": "scripts_rag_lib_build_items",
+      "target": "scripts_rag_lib_chunk_overlap",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
       "confidence": "INFERRED",
       "confidence_score": 0.8,
       "source_file": "scripts/rag_service.py",
@@ -3212,12 +3977,34 @@
     {
       "relation": "calls",
       "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/rag_lib.py",
+      "source_location": "L397",
+      "weight": 1.0,
+      "source": "scripts_rag_lib_ragruntime_answer",
+      "target": "scripts_rag_lib_top_k",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
       "confidence": "INFERRED",
       "confidence_score": 0.8,
       "source_file": "scripts/rag_service.py",
       "source_location": "L109",
       "weight": 1.0,
       "source": "scripts_rag_service_raghandler_do_post",
+      "target": "scripts_rag_lib_top_k"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "scripts/local_ai_runtime.py",
+      "source_location": "L69",
+      "weight": 1.0,
+      "source": "scripts_local_ai_runtime_localairuntimehandler_do_post",
       "target": "scripts_rag_lib_top_k"
     },
     {
@@ -3256,6 +4043,28 @@
     {
       "relation": "calls",
       "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/rag_lib.py",
+      "source_location": "L359",
+      "weight": 1.0,
+      "source": "scripts_rag_lib_ragruntime_load_index",
+      "target": "scripts_rag_lib_load_json",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/rag_lib.py",
+      "source_location": "L367",
+      "weight": 1.0,
+      "source": "scripts_rag_lib_ragruntime_rebuild_index",
+      "target": "scripts_rag_lib_load_json",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
       "confidence": "INFERRED",
       "confidence_score": 0.8,
       "source_file": "scripts/rag_service.py",
@@ -3269,11 +4078,44 @@
       "context": "call",
       "confidence": "INFERRED",
       "confidence_score": 0.8,
+      "source_file": "scripts/rag_service.py",
+      "source_location": "L186",
+      "weight": 1.0,
+      "source": "scripts_rag_service_ragserver_rebuild_index",
+      "target": "scripts_rag_lib_load_json"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "scripts/build-rag-index.py",
+      "source_location": "L45",
+      "weight": 1.0,
+      "source": "scripts_build_rag_index_main",
+      "target": "scripts_rag_lib_load_json"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
       "source_file": "scripts/router_service.py",
       "source_location": "L124",
       "weight": 1.0,
       "source": "scripts_router_service_build_rag_response",
       "target": "scripts_rag_lib_load_json"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/rag_lib.py",
+      "source_location": "L371",
+      "weight": 1.0,
+      "source": "scripts_rag_lib_ragruntime_rebuild_index",
+      "target": "scripts_rag_lib_save_json",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -3324,11 +4166,33 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "scripts/rag_lib.py",
+      "source_location": "L166",
+      "weight": 1.0,
+      "source": "scripts_rag_lib_generate_text_with_images",
+      "target": "scripts_rag_lib_post_json",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/rag_lib.py",
       "source_location": "L199",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "scripts_rag_lib_rank_items",
       "target": "scripts_rag_lib_embed_text"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/rag_lib.py",
+      "source_location": "L336",
+      "weight": 1.0,
+      "source": "scripts_rag_lib_build_items",
+      "target": "scripts_rag_lib_embed_text",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -3351,6 +4215,17 @@
       "weight": 1.0,
       "source": "scripts_build_rag_index_build_items",
       "target": "scripts_rag_lib_embed_text"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/rag_lib.py",
+      "source_location": "L399",
+      "weight": 1.0,
+      "source": "scripts_rag_lib_ragruntime_answer",
+      "target": "scripts_rag_lib_generate_text",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -3399,6 +4274,39 @@
     {
       "relation": "calls",
       "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/rag_lib.py",
+      "source_location": "L163",
+      "weight": 1.0,
+      "source": "scripts_rag_lib_generate_text_with_images",
+      "target": "scripts_rag_lib_normalize_image_input",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "scripts/router_service.py",
+      "source_location": "L300",
+      "weight": 1.0,
+      "source": "scripts_router_service_build_direct_response",
+      "target": "scripts_rag_lib_generate_text_with_images"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/rag_lib.py",
+      "source_location": "L322",
+      "weight": 1.0,
+      "source": "scripts_rag_lib_build_items",
+      "target": "scripts_rag_lib_iter_documents",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
       "confidence": "INFERRED",
       "confidence_score": 0.8,
       "source_file": "scripts/rag_service.py",
@@ -3421,6 +4329,17 @@
     {
       "relation": "calls",
       "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/rag_lib.py",
+      "source_location": "L323",
+      "weight": 1.0,
+      "source": "scripts_rag_lib_build_items",
+      "target": "scripts_rag_lib_read_text_file",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
       "confidence": "INFERRED",
       "confidence_score": 0.8,
       "source_file": "scripts/rag_service.py",
@@ -3439,6 +4358,39 @@
       "weight": 1.0,
       "source": "scripts_build_rag_index_build_items",
       "target": "scripts_rag_lib_read_text_file"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/rag_lib.py",
+      "source_location": "L329",
+      "weight": 1.0,
+      "source": "scripts_rag_lib_build_items",
+      "target": "scripts_rag_lib_file_fingerprint",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "scripts/rag_service.py",
+      "source_location": "L42",
+      "weight": 1.0,
+      "source": "scripts_rag_service_build_items",
+      "target": "scripts_rag_lib_file_fingerprint"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/rag_lib.py",
+      "source_location": "L324",
+      "weight": 1.0,
+      "source": "scripts_rag_lib_build_items",
+      "target": "scripts_rag_lib_split_text",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -3498,6 +4450,17 @@
     {
       "relation": "calls",
       "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/rag_lib.py",
+      "source_location": "L394",
+      "weight": 1.0,
+      "source": "scripts_rag_lib_ragruntime_query",
+      "target": "scripts_rag_lib_rank_items",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
       "confidence": "INFERRED",
       "confidence_score": 0.8,
       "source_file": "scripts/rag_service.py",
@@ -3516,6 +4479,17 @@
       "weight": 1.0,
       "source": "scripts_router_service_build_rag_response",
       "target": "scripts_rag_lib_rank_items"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/rag_lib.py",
+      "source_location": "L398",
+      "weight": 1.0,
+      "source": "scripts_rag_lib_ragruntime_answer",
+      "target": "scripts_rag_lib_build_answer_prompt",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -3542,6 +4516,17 @@
     {
       "relation": "calls",
       "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/rag_lib.py",
+      "source_location": "L370",
+      "weight": 1.0,
+      "source": "scripts_rag_lib_ragruntime_rebuild_index",
+      "target": "scripts_rag_lib_build_index_payload",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
       "confidence": "INFERRED",
       "confidence_score": 0.8,
       "source_file": "scripts/rag_service.py",
@@ -3560,6 +4545,237 @@
       "weight": 1.0,
       "source": "scripts_build_rag_index_main",
       "target": "scripts_rag_lib_build_index_payload"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/rag_lib.py",
+      "source_location": "L305",
+      "weight": 1.0,
+      "source": "scripts_rag_lib_build_existing_item_map",
+      "target": "scripts_rag_lib_index_settings_match",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/rag_lib.py",
+      "source_location": "L367",
+      "weight": 1.0,
+      "source": "scripts_rag_lib_ragruntime_rebuild_index",
+      "target": "scripts_rag_lib_build_existing_item_map",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "scripts/rag_service.py",
+      "source_location": "L186",
+      "weight": 1.0,
+      "source": "scripts_rag_service_ragserver_rebuild_index",
+      "target": "scripts_rag_lib_build_existing_item_map"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "scripts/build-rag-index.py",
+      "source_location": "L45",
+      "weight": 1.0,
+      "source": "scripts_build_rag_index_main",
+      "target": "scripts_rag_lib_build_existing_item_map"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/rag_lib.py",
+      "source_location": "L369",
+      "weight": 1.0,
+      "source": "scripts_rag_lib_ragruntime_rebuild_index",
+      "target": "scripts_rag_lib_build_items",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/rag_lib.py",
+      "source_location": "L351",
+      "weight": 1.0,
+      "source": "scripts_rag_lib_ragruntime",
+      "target": "scripts_rag_lib_ragruntime_init",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/rag_lib.py",
+      "source_location": "L356",
+      "weight": 1.0,
+      "source": "scripts_rag_lib_ragruntime",
+      "target": "scripts_rag_lib_ragruntime_load_index",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/rag_lib.py",
+      "source_location": "L361",
+      "weight": 1.0,
+      "source": "scripts_rag_lib_ragruntime",
+      "target": "scripts_rag_lib_ragruntime_rebuild_index",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/rag_lib.py",
+      "source_location": "L374",
+      "weight": 1.0,
+      "source": "scripts_rag_lib_ragruntime",
+      "target": "scripts_rag_lib_ragruntime_ensure_index",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/rag_lib.py",
+      "source_location": "L381",
+      "weight": 1.0,
+      "source": "scripts_rag_lib_ragruntime",
+      "target": "scripts_rag_lib_ragruntime_status",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/rag_lib.py",
+      "source_location": "L392",
+      "weight": 1.0,
+      "source": "scripts_rag_lib_ragruntime",
+      "target": "scripts_rag_lib_ragruntime_query",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/rag_lib.py",
+      "source_location": "L396",
+      "weight": 1.0,
+      "source": "scripts_rag_lib_ragruntime",
+      "target": "scripts_rag_lib_ragruntime_answer",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "scripts/local_ai_runtime.py",
+      "source_location": "L10",
+      "weight": 0.8,
+      "source": "scripts_local_ai_runtime_localairuntimehandler",
+      "target": "scripts_rag_lib_ragruntime",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "scripts/local_ai_runtime.py",
+      "source_location": "L10",
+      "weight": 0.8,
+      "source": "scripts_local_ai_runtime_localairuntimeserver",
+      "target": "scripts_rag_lib_ragruntime",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "scripts/router_service.py",
+      "source_location": "L14",
+      "weight": 0.8,
+      "source": "scripts_router_service_routerhandler",
+      "target": "scripts_rag_lib_ragruntime",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "scripts/router_service.py",
+      "source_location": "L14",
+      "weight": 0.8,
+      "source": "scripts_router_service_routerserver",
+      "target": "scripts_rag_lib_ragruntime",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "scripts/local_ai_runtime.py",
+      "source_location": "L172",
+      "weight": 1.0,
+      "source": "scripts_local_ai_runtime_main",
+      "target": "scripts_rag_lib_ragruntime"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/rag_lib.py",
+      "source_location": "L376",
+      "weight": 1.0,
+      "source": "scripts_rag_lib_ragruntime_ensure_index",
+      "target": "scripts_rag_lib_ragruntime_load_index",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/rag_lib.py",
+      "source_location": "L382",
+      "weight": 1.0,
+      "source": "scripts_rag_lib_ragruntime_status",
+      "target": "scripts_rag_lib_ragruntime_load_index",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/rag_lib.py",
+      "source_location": "L393",
+      "weight": 1.0,
+      "source": "scripts_rag_lib_ragruntime_query",
+      "target": "scripts_rag_lib_ragruntime_load_index",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/rag_lib.py",
+      "source_location": "L379",
+      "weight": 1.0,
+      "source": "scripts_rag_lib_ragruntime_ensure_index",
+      "target": "scripts_rag_lib_ragruntime_rebuild_index",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/rag_lib.py",
+      "source_location": "L397",
+      "weight": 1.0,
+      "source": "scripts_rag_lib_ragruntime_answer",
+      "target": "scripts_rag_lib_ragruntime_query",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -3884,12 +5100,242 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "scripts/build-rag-index.py",
-      "source_location": "L23",
+      "source_file": "scripts/local_ai_runtime.py",
+      "source_location": "L25",
       "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "scripts_build_rag_index_py",
-      "target": "scripts_build_rag_index_build_items"
+      "source": "scripts_local_ai_runtime_py",
+      "target": "scripts_local_ai_runtime_localairuntimehandler",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/local_ai_runtime.py",
+      "source_location": "L138",
+      "weight": 1.0,
+      "source": "scripts_local_ai_runtime_py",
+      "target": "scripts_local_ai_runtime_localairuntimeserver",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/local_ai_runtime.py",
+      "source_location": "L160",
+      "weight": 1.0,
+      "source": "scripts_local_ai_runtime_py",
+      "target": "scripts_local_ai_runtime_main",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/local_ai_runtime.py",
+      "source_location": "L25",
+      "weight": 1.0,
+      "source": "scripts_local_ai_runtime_localairuntimehandler",
+      "target": "routerhandler",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/local_ai_runtime.py",
+      "source_location": "L28",
+      "weight": 1.0,
+      "source": "scripts_local_ai_runtime_localairuntimehandler",
+      "target": "scripts_local_ai_runtime_localairuntimehandler_do_get",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/local_ai_runtime.py",
+      "source_location": "L51",
+      "weight": 1.0,
+      "source": "scripts_local_ai_runtime_localairuntimehandler",
+      "target": "scripts_local_ai_runtime_localairuntimehandler_do_post",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "scripts/local_ai_runtime.py",
+      "source_location": "L11",
+      "weight": 0.8,
+      "source": "scripts_local_ai_runtime_localairuntimehandler",
+      "target": "scripts_router_service_routerhandler",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "scripts/local_ai_runtime.py",
+      "source_location": "L11",
+      "weight": 0.8,
+      "source": "scripts_local_ai_runtime_localairuntimehandler",
+      "target": "scripts_router_service_routerserver",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/local_ai_runtime.py",
+      "source_location": "L30",
+      "weight": 1.0,
+      "source": "scripts_local_ai_runtime_localairuntimehandler_do_get",
+      "target": "scripts_local_ai_runtime_localairuntimeserver_index_status_payload",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "scripts/local_ai_runtime.py",
+      "source_location": "L36",
+      "weight": 1.0,
+      "source": "scripts_local_ai_runtime_localairuntimehandler_do_get",
+      "target": "scripts_router_service_default_model"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "scripts/local_ai_runtime.py",
+      "source_location": "L37",
+      "weight": 1.0,
+      "source": "scripts_local_ai_runtime_localairuntimehandler_do_get",
+      "target": "scripts_router_service_code_model"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "scripts/local_ai_runtime.py",
+      "source_location": "L38",
+      "weight": 1.0,
+      "source": "scripts_local_ai_runtime_localairuntimehandler_do_get",
+      "target": "scripts_router_service_light_model"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "scripts/local_ai_runtime.py",
+      "source_location": "L39",
+      "weight": 1.0,
+      "source": "scripts_local_ai_runtime_localairuntimehandler_do_get",
+      "target": "scripts_router_service_rag_model"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "scripts/local_ai_runtime.py",
+      "source_location": "L40",
+      "weight": 1.0,
+      "source": "scripts_local_ai_runtime_localairuntimehandler_do_get",
+      "target": "scripts_router_service_vision_model"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "scripts/local_ai_runtime.py",
+      "source_location": "L108",
+      "weight": 1.0,
+      "source": "scripts_local_ai_runtime_localairuntimehandler_do_post",
+      "target": "scripts_router_service_build_chat_result"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "scripts/local_ai_runtime.py",
+      "source_location": "L132",
+      "weight": 1.0,
+      "source": "scripts_local_ai_runtime_localairuntimehandler_do_post",
+      "target": "scripts_router_service_openai_chat_response"
+    },
+    {
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/local_ai_runtime.py",
+      "source_location": "L138",
+      "weight": 1.0,
+      "source": "scripts_local_ai_runtime_localairuntimeserver",
+      "target": "routerserver",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/local_ai_runtime.py",
+      "source_location": "L139",
+      "weight": 1.0,
+      "source": "scripts_local_ai_runtime_localairuntimeserver",
+      "target": "scripts_local_ai_runtime_localairuntimeserver_init",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/local_ai_runtime.py",
+      "source_location": "L148",
+      "weight": 1.0,
+      "source": "scripts_local_ai_runtime_localairuntimeserver",
+      "target": "scripts_local_ai_runtime_localairuntimeserver_index_status_payload",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/local_ai_runtime.py",
+      "source_location": "L175",
+      "weight": 1.0,
+      "source": "scripts_local_ai_runtime_main",
+      "target": "scripts_local_ai_runtime_localairuntimeserver",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "scripts/local_ai_runtime.py",
+      "source_location": "L11",
+      "weight": 0.8,
+      "source": "scripts_local_ai_runtime_localairuntimeserver",
+      "target": "scripts_router_service_routerhandler",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "scripts/local_ai_runtime.py",
+      "source_location": "L11",
+      "weight": 0.8,
+      "source": "scripts_local_ai_runtime_localairuntimeserver",
+      "target": "scripts_router_service_routerserver",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "scripts/local_ai_runtime.py",
+      "source_location": "L166",
+      "weight": 1.0,
+      "source": "scripts_local_ai_runtime_main",
+      "target": "scripts_router_service_rag_model"
     },
     {
       "relation": "contains",
@@ -3900,6 +5346,16 @@
       "confidence_score": 1.0,
       "source": "scripts_build_rag_index_py",
       "target": "scripts_build_rag_index_main"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/build-rag-index.py",
+      "source_location": "L23",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_build_rag_index_py",
+      "target": "scripts_build_rag_index_build_items"
     },
     {
       "relation": "calls",
@@ -3976,11 +5432,31 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "scripts/router_service.py",
+      "source_location": "L54",
+      "weight": 1.0,
+      "source": "scripts_router_service_py",
+      "target": "scripts_router_service_vision_model",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/router_service.py",
       "source_location": "L43",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "scripts_router_service_py",
       "target": "scripts_router_service_message_to_text"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/router_service.py",
+      "source_location": "L73",
+      "weight": 1.0,
+      "source": "scripts_router_service_py",
+      "target": "scripts_router_service_message_image_refs",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -3996,6 +5472,36 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "scripts/router_service.py",
+      "source_location": "L102",
+      "weight": 1.0,
+      "source": "scripts_router_service_py",
+      "target": "scripts_router_service_extract_last_user_images",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/router_service.py",
+      "source_location": "L111",
+      "weight": 1.0,
+      "source": "scripts_router_service_py",
+      "target": "scripts_router_service_extract_recent_conversation_text",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/router_service.py",
+      "source_location": "L122",
+      "weight": 1.0,
+      "source": "scripts_router_service_py",
+      "target": "scripts_router_service_extract_recent_history",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/router_service.py",
       "source_location": "L63",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -4006,11 +5512,51 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "scripts/router_service.py",
+      "source_location": "L146",
+      "weight": 1.0,
+      "source": "scripts_router_service_py",
+      "target": "scripts_router_service_count_keyword_hits",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/router_service.py",
+      "source_location": "L150",
+      "weight": 1.0,
+      "source": "scripts_router_service_py",
+      "target": "scripts_router_service_weighted_history_score",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/router_service.py",
+      "source_location": "L160",
+      "weight": 1.0,
+      "source": "scripts_router_service_py",
+      "target": "scripts_router_service_is_follow_up_query",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/router_service.py",
       "source_location": "L74",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "scripts_router_service_py",
       "target": "scripts_router_service_classify_route"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/router_service.py",
+      "source_location": "L267",
+      "weight": 1.0,
+      "source": "scripts_router_service_py",
+      "target": "scripts_router_service_classify_route_with_images",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -4186,11 +5732,55 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "scripts/router_service.py",
+      "source_location": "L269",
+      "weight": 1.0,
+      "source": "scripts_router_service_classify_route_with_images",
+      "target": "scripts_router_service_vision_model",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/router_service.py",
+      "source_location": "L396",
+      "weight": 1.0,
+      "source": "scripts_router_service_routerhandler_do_get",
+      "target": "scripts_router_service_vision_model",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/router_service.py",
       "source_location": "L59",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "scripts_router_service_extract_last_user_text",
       "target": "scripts_router_service_message_to_text"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/router_service.py",
+      "source_location": "L115",
+      "weight": 1.0,
+      "source": "scripts_router_service_extract_recent_conversation_text",
+      "target": "scripts_router_service_message_to_text",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/router_service.py",
+      "source_location": "L129",
+      "weight": 1.0,
+      "source": "scripts_router_service_extract_recent_history",
+      "target": "scripts_router_service_message_to_text",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -4208,11 +5798,44 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "scripts/router_service.py",
+      "source_location": "L105",
+      "weight": 1.0,
+      "source": "scripts_router_service_extract_last_user_images",
+      "target": "scripts_router_service_message_image_refs",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/router_service.py",
       "source_location": "L145",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "scripts_router_service_build_chat_result",
       "target": "scripts_router_service_extract_last_user_text"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/router_service.py",
+      "source_location": "L306",
+      "weight": 1.0,
+      "source": "scripts_router_service_build_chat_result",
+      "target": "scripts_router_service_extract_last_user_images",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/router_service.py",
+      "source_location": "L238",
+      "weight": 1.0,
+      "source": "scripts_router_service_classify_route",
+      "target": "scripts_router_service_extract_recent_history",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -4230,11 +5853,77 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "scripts/router_service.py",
+      "source_location": "L156",
+      "weight": 1.0,
+      "source": "scripts_router_service_weighted_history_score",
+      "target": "scripts_router_service_count_keyword_hits",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/router_service.py",
+      "source_location": "L241",
+      "weight": 1.0,
+      "source": "scripts_router_service_classify_route",
+      "target": "scripts_router_service_count_keyword_hits",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/router_service.py",
+      "source_location": "L243",
+      "weight": 1.0,
+      "source": "scripts_router_service_classify_route",
+      "target": "scripts_router_service_weighted_history_score",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/router_service.py",
+      "source_location": "L239",
+      "weight": 1.0,
+      "source": "scripts_router_service_classify_route",
+      "target": "scripts_router_service_is_follow_up_query",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/router_service.py",
+      "source_location": "L270",
+      "weight": 1.0,
+      "source": "scripts_router_service_classify_route_with_images",
+      "target": "scripts_router_service_classify_route",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/router_service.py",
       "source_location": "L149",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "scripts_router_service_build_chat_result",
       "target": "scripts_router_service_classify_route"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/router_service.py",
+      "source_location": "L312",
+      "weight": 1.0,
+      "source": "scripts_router_service_build_chat_result",
+      "target": "scripts_router_service_classify_route_with_images",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -4257,6 +5946,17 @@
       "confidence_score": 1.0,
       "source": "scripts_router_service_build_chat_result",
       "target": "scripts_router_service_build_direct_response"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/router_service.py",
+      "source_location": "L318",
+      "weight": 1.0,
+      "source": "scripts_router_service_build_chat_result",
+      "target": "scripts_router_service_routerserver_index_exists",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -4395,6 +6095,16 @@
       "target": "scripts_router_service_routerserver_init"
     },
     {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/router_service.py",
+      "source_location": "L511",
+      "weight": 1.0,
+      "source": "scripts_router_service_routerserver",
+      "target": "scripts_router_service_routerserver_index_exists",
+      "confidence_score": 1.0
+    },
+    {
       "relation": "calls",
       "context": "call",
       "confidence": "EXTRACTED",
@@ -4441,9 +6151,9 @@
       "source_file": "README.md",
       "source_location": "L20",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "local_llm_readme_local_ai_node",
-      "target": "local_llm_readme_screenshots",
-      "confidence_score": 1.0
+      "target": "local_llm_readme_screenshots"
     },
     {
       "relation": "contains",
@@ -4609,11 +6319,11 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "README.md",
-      "source_location": "L517",
+      "source_location": "L543",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "local_llm_readme_local_ai_node",
-      "target": "local_llm_readme_future_work"
+      "target": "local_llm_readme_secondary_add_ons_and_future_work",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -4621,9 +6331,9 @@
       "source_file": "README.md",
       "source_location": "L528",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "local_llm_readme_local_ai_node",
-      "target": "local_llm_readme_quick_repo_summary",
-      "confidence_score": 1.0
+      "target": "local_llm_readme_quick_repo_summary"
     },
     {
       "relation": "contains",
@@ -4631,9 +6341,9 @@
       "source_file": "README.md",
       "source_location": "L535",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "local_llm_readme_local_ai_node",
-      "target": "local_llm_readme_llm_start_here",
-      "confidence_score": 1.0
+      "target": "local_llm_readme_llm_start_here"
     },
     {
       "relation": "contains",
@@ -4641,9 +6351,19 @@
       "source_file": "README.md",
       "source_location": "L541",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "local_llm_readme_local_ai_node",
-      "target": "local_llm_readme_license",
-      "confidence_score": 1.0
+      "target": "local_llm_readme_license"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L517",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "local_llm_readme_local_ai_node",
+      "target": "local_llm_readme_future_work"
     },
     {
       "relation": "contains",
@@ -4839,6 +6559,16 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "README.md",
+      "source_location": "L216",
+      "weight": 1.0,
+      "source": "local_llm_readme_step_3_verify_the_model_inventory",
+      "target": "local_llm_readme_codeblock_17",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
       "source_location": "L205",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -4879,6 +6609,16 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "README.md",
+      "source_location": "L250",
+      "weight": 1.0,
+      "source": "local_llm_readme_download_models_on_a_new_system",
+      "target": "local_llm_readme_codeblock_21",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
       "source_location": "L245",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -4909,6 +6649,16 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "README.md",
+      "source_location": "L277",
+      "weight": 1.0,
+      "source": "local_llm_readme_first_rag_workflow",
+      "target": "local_llm_readme_codeblock_24",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
       "source_location": "L301",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -4924,6 +6674,16 @@
       "confidence_score": 1.0,
       "source": "local_llm_readme_open_webui_relationship",
       "target": "local_llm_readme_codeblock_25"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L331",
+      "weight": 1.0,
+      "source": "local_llm_readme_open_webui_relationship",
+      "target": "local_llm_readme_codeblock_26",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -4979,6 +6739,46 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "README.md",
+      "source_location": "L368",
+      "weight": 1.0,
+      "source": "local_llm_readme_smart_router_api",
+      "target": "local_llm_readme_codeblock_31",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L376",
+      "weight": 1.0,
+      "source": "local_llm_readme_smart_router_api",
+      "target": "local_llm_readme_codeblock_32",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L387",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "local_llm_readme_recommended_startup_order",
+      "target": "local_llm_readme_codeblock_31"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L393",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "local_llm_readme_recommended_startup_order",
+      "target": "local_llm_readme_codeblock_32"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
       "source_location": "L382",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -5009,26 +6809,6 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "README.md",
-      "source_location": "L387",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "local_llm_readme_recommended_startup_order",
-      "target": "local_llm_readme_codeblock_31"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "README.md",
-      "source_location": "L393",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "local_llm_readme_recommended_startup_order",
-      "target": "local_llm_readme_codeblock_32"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "README.md",
       "source_location": "L399",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -5044,6 +6824,26 @@
       "confidence_score": 1.0,
       "source": "local_llm_readme_recommended_startup_order",
       "target": "local_llm_readme_codeblock_34"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L425",
+      "weight": 1.0,
+      "source": "local_llm_readme_recommended_startup_order",
+      "target": "local_llm_readme_codeblock_35",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L432",
+      "weight": 1.0,
+      "source": "local_llm_readme_recommended_startup_order",
+      "target": "local_llm_readme_codeblock_36",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -5069,11 +6869,41 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "README.md",
+      "source_location": "L440",
+      "weight": 1.0,
+      "source": "local_llm_readme_router_mode_open_webui_settings",
+      "target": "local_llm_readme_codeblock_37",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
       "source_location": "L442",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "local_llm_readme_step_4_verify_open_webui_connectivity",
       "target": "local_llm_readme_codeblock_37"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L462",
+      "weight": 1.0,
+      "source": "local_llm_readme_step_4_verify_open_webui_connectivity",
+      "target": "local_llm_readme_codeblock_38",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L468",
+      "weight": 1.0,
+      "source": "local_llm_readme_step_4_verify_open_webui_connectivity",
+      "target": "local_llm_readme_codeblock_39",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -5094,6 +6924,26 @@
       "confidence_score": 1.0,
       "source": "local_llm_readme_step_5_back_up_or_restore_the_ollama_model_store",
       "target": "local_llm_readme_codeblock_39"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L493",
+      "weight": 1.0,
+      "source": "local_llm_readme_step_5_back_up_or_restore_the_ollama_model_store",
+      "target": "local_llm_readme_codeblock_40",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L499",
+      "weight": 1.0,
+      "source": "local_llm_readme_step_5_back_up_or_restore_the_ollama_model_store",
+      "target": "local_llm_readme_codeblock_41",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -5144,6 +6994,26 @@
       "confidence_score": 1.0,
       "source": "local_llm_readme_backup_path_examples",
       "target": "local_llm_readme_codeblock_43"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L521",
+      "weight": 1.0,
+      "source": "local_llm_readme_backup_path_examples",
+      "target": "local_llm_readme_codeblock_44",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L527",
+      "weight": 1.0,
+      "source": "local_llm_readme_backup_path_examples",
+      "target": "local_llm_readme_codeblock_45",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -5361,9 +7231,9 @@
       "source_file": "docs/target-host-first-pass.md",
       "source_location": "L67",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "docs_target_host_first_pass_target_host_first_pass",
-      "target": "docs_target_host_first_pass_5_validate_or_restore_the_model_inventory"
+      "target": "docs_target_host_first_pass_5_pull_restore_or_verify_the_model_inventory",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -5394,6 +7264,16 @@
       "confidence_score": 1.0,
       "source": "docs_target_host_first_pass_target_host_first_pass",
       "target": "docs_target_host_first_pass_8_set_the_first_routing_defaults"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/target-host-first-pass.md",
+      "source_location": "L67",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "docs_target_host_first_pass_target_host_first_pass",
+      "target": "docs_target_host_first_pass_5_validate_or_restore_the_model_inventory"
     },
     {
       "relation": "contains",
@@ -5444,6 +7324,36 @@
       "confidence_score": 1.0,
       "source": "docs_target_host_first_pass_4_run_repo_preflight",
       "target": "docs_target_host_first_pass_codeblock_5"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/target-host-first-pass.md",
+      "source_location": "L79",
+      "weight": 1.0,
+      "source": "docs_target_host_first_pass_5_pull_restore_or_verify_the_model_inventory",
+      "target": "docs_target_host_first_pass_codeblock_6",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/target-host-first-pass.md",
+      "source_location": "L86",
+      "weight": 1.0,
+      "source": "docs_target_host_first_pass_5_pull_restore_or_verify_the_model_inventory",
+      "target": "docs_target_host_first_pass_codeblock_7",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/target-host-first-pass.md",
+      "source_location": "L93",
+      "weight": 1.0,
+      "source": "docs_target_host_first_pass_5_pull_restore_or_verify_the_model_inventory",
+      "target": "docs_target_host_first_pass_codeblock_8",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -5504,6 +7414,16 @@
       "confidence_score": 1.0,
       "source": "docs_target_host_first_pass_7_validate_the_stack",
       "target": "docs_target_host_first_pass_codeblock_11"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/target-host-first-pass.md",
+      "source_location": "L128",
+      "weight": 1.0,
+      "source": "docs_target_host_first_pass_7_validate_the_stack",
+      "target": "docs_target_host_first_pass_codeblock_12",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -5579,11 +7499,251 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "docs/model-router.md",
+      "source_location": "L85",
+      "weight": 1.0,
+      "source": "docs_model_router_model_router",
+      "target": "docs_model_router_open_webui_behavior_notes",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/model-router.md",
+      "source_location": "L96",
+      "weight": 1.0,
+      "source": "docs_model_router_model_router",
+      "target": "docs_model_router_router_mode_troubleshooting",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/model-router.md",
+      "source_location": "L109",
+      "weight": 1.0,
+      "source": "docs_model_router_model_router",
+      "target": "docs_model_router_step_by_step_validation_scenarios",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/model-router.md",
+      "source_location": "L355",
+      "weight": 1.0,
+      "source": "docs_model_router_model_router",
+      "target": "docs_model_router_detailed_test_plan",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/model-router.md",
+      "source_location": "L392",
+      "weight": 1.0,
+      "source": "docs_model_router_model_router",
+      "target": "docs_model_router_status",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/model-router.md",
       "source_location": "L78",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "docs_model_router_model_router",
       "target": "docs_model_router_todo"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/model-router.md",
+      "source_location": "L113",
+      "weight": 1.0,
+      "source": "docs_model_router_step_by_step_validation_scenarios",
+      "target": "docs_model_router_codeblock_1",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/model-router.md",
+      "source_location": "L120",
+      "weight": 1.0,
+      "source": "docs_model_router_step_by_step_validation_scenarios",
+      "target": "docs_model_router_scenario_1_general_chat_fallback",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/model-router.md",
+      "source_location": "L145",
+      "weight": 1.0,
+      "source": "docs_model_router_step_by_step_validation_scenarios",
+      "target": "docs_model_router_scenario_2_coding_route",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/model-router.md",
+      "source_location": "L170",
+      "weight": 1.0,
+      "source": "docs_model_router_step_by_step_validation_scenarios",
+      "target": "docs_model_router_scenario_3_light_short_route",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/model-router.md",
+      "source_location": "L195",
+      "weight": 1.0,
+      "source": "docs_model_router_step_by_step_validation_scenarios",
+      "target": "docs_model_router_scenario_4_rag_route_for_repo_knowledge",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/model-router.md",
+      "source_location": "L223",
+      "weight": 1.0,
+      "source": "docs_model_router_step_by_step_validation_scenarios",
+      "target": "docs_model_router_scenario_5_rag_fallback_when_index_is_missing",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/model-router.md",
+      "source_location": "L250",
+      "weight": 1.0,
+      "source": "docs_model_router_step_by_step_validation_scenarios",
+      "target": "docs_model_router_scenario_6_vision_route_with_image_input",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/model-router.md",
+      "source_location": "L282",
+      "weight": 1.0,
+      "source": "docs_model_router_step_by_step_validation_scenarios",
+      "target": "docs_model_router_scenario_7_recent_conversation_influences_routing",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/model-router.md",
+      "source_location": "L308",
+      "weight": 1.0,
+      "source": "docs_model_router_step_by_step_validation_scenarios",
+      "target": "docs_model_router_scenario_8_weak_keyword_should_not_force_rag",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/model-router.md",
+      "source_location": "L331",
+      "weight": 1.0,
+      "source": "docs_model_router_step_by_step_validation_scenarios",
+      "target": "docs_model_router_scenario_9_manual_model_override",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/model-router.md",
+      "source_location": "L124",
+      "weight": 1.0,
+      "source": "docs_model_router_scenario_1_general_chat_fallback",
+      "target": "docs_model_router_codeblock_2",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/model-router.md",
+      "source_location": "L149",
+      "weight": 1.0,
+      "source": "docs_model_router_scenario_2_coding_route",
+      "target": "docs_model_router_codeblock_3",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/model-router.md",
+      "source_location": "L174",
+      "weight": 1.0,
+      "source": "docs_model_router_scenario_3_light_short_route",
+      "target": "docs_model_router_codeblock_4",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/model-router.md",
+      "source_location": "L202",
+      "weight": 1.0,
+      "source": "docs_model_router_scenario_4_rag_route_for_repo_knowledge",
+      "target": "docs_model_router_codeblock_5",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/model-router.md",
+      "source_location": "L230",
+      "weight": 1.0,
+      "source": "docs_model_router_scenario_5_rag_fallback_when_index_is_missing",
+      "target": "docs_model_router_codeblock_6",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/model-router.md",
+      "source_location": "L257",
+      "weight": 1.0,
+      "source": "docs_model_router_scenario_6_vision_route_with_image_input",
+      "target": "docs_model_router_codeblock_7",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/model-router.md",
+      "source_location": "L286",
+      "weight": 1.0,
+      "source": "docs_model_router_scenario_7_recent_conversation_influences_routing",
+      "target": "docs_model_router_codeblock_8",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/model-router.md",
+      "source_location": "L312",
+      "weight": 1.0,
+      "source": "docs_model_router_scenario_8_weak_keyword_should_not_force_rag",
+      "target": "docs_model_router_codeblock_9",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/model-router.md",
+      "source_location": "L335",
+      "weight": 1.0,
+      "source": "docs_model_router_scenario_9_manual_model_override",
+      "target": "docs_model_router_codeblock_10",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -5614,6 +7774,16 @@
       "confidence_score": 1.0,
       "source": "docs_validation_checklist_validation_checklist",
       "target": "docs_validation_checklist_router_mode"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/validation-checklist.md",
+      "source_location": "L25",
+      "weight": 1.0,
+      "source": "docs_validation_checklist_validation_checklist",
+      "target": "docs_validation_checklist_scenario_checks",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -6309,5 +8479,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "90a4d9f5cb66822dfa893fe441e575dc142ba25a"
+  "built_at_commit": "a7ee6a5fe2aa37e3aa9f95558e1419f4c517112c"
 }

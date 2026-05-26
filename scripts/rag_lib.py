@@ -313,3 +313,87 @@ def build_existing_item_map(payload: dict) -> dict[tuple[str, str, int], dict]:
             continue
         existing[(path, source_hash, chunk_index)] = item
     return existing
+
+
+def build_items(root: Path, existing_items: dict[tuple[str, str, int], dict] | None = None) -> tuple[list[dict], int]:
+    items: list[dict] = []
+    reused_chunks = 0
+    existing_items = existing_items or {}
+    for path in iter_documents(root):
+        text = read_text_file(path)
+        chunks = split_text(text, chunk_size(), chunk_overlap())
+        if not chunks:
+            continue
+
+        relative_path = path.relative_to(root)
+        source_hash = file_fingerprint(path)
+        for chunk_index, chunk_text in enumerate(chunks):
+            existing_item = existing_items.get((str(relative_path), source_hash, chunk_index))
+            if existing_item and existing_item.get("text") == chunk_text and isinstance(existing_item.get("embedding"), list):
+                embedding = existing_item["embedding"]
+                reused_chunks += 1
+            else:
+                embedding = embed_text(chunk_text, embed_model())
+            items.append(
+                {
+                    "id": f"{relative_path}#chunk-{chunk_index}",
+                    "path": str(relative_path),
+                    "chunk_index": chunk_index,
+                    "source_hash": source_hash,
+                    "text": chunk_text,
+                    "embedding": embedding,
+                }
+            )
+    return items, reused_chunks
+
+
+class RagRuntime:
+    def __init__(self, documents_root: Path, index_file: Path, answer_model: str) -> None:
+        self.documents_root = documents_root
+        self.index_file = index_file
+        self.answer_model = answer_model
+
+    def load_index(self) -> dict:
+        if not self.index_file.exists():
+            raise FileNotFoundError(f"Index not found: {self.index_file}")
+        return load_json(self.index_file)
+
+    def rebuild_index(self) -> dict:
+        if not self.documents_root.is_dir():
+            raise FileNotFoundError(f"Documents directory not found: {self.documents_root}")
+
+        existing_items = {}
+        if self.index_file.exists():
+            existing_items = build_existing_item_map(load_json(self.index_file))
+
+        items, _ = build_items(self.documents_root, existing_items)
+        payload = build_index_payload(items)
+        save_json(self.index_file, payload)
+        return payload
+
+    def ensure_index(self, auto_build: bool) -> dict | None:
+        if self.index_file.exists():
+            return self.load_index()
+        if not auto_build:
+            return None
+        return self.rebuild_index()
+
+    def status(self) -> dict:
+        payload = self.load_index()
+        return {
+            "items": len(payload.get("items", [])),
+            "embedding_model": payload.get("embedding_model"),
+            "chunk_size": payload.get("chunk_size"),
+            "chunk_overlap": payload.get("chunk_overlap"),
+            "index_path": str(self.index_file),
+            "documents_dir": str(self.documents_root),
+        }
+
+    def query(self, query: str, limit: int) -> list[dict]:
+        payload = self.load_index()
+        return rank_items(query, payload.get("items", []), limit, payload.get("embedding_model"))
+
+    def answer(self, query: str, model: str | None = None, limit: int | None = None) -> tuple[str, list[dict]]:
+        chunks = self.query(query, limit or top_k())
+        prompt = build_answer_prompt(query, chunks)
+        return generate_text(prompt, model or self.answer_model), chunks

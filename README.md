@@ -257,7 +257,7 @@ This prints the manifest path plus every blob file referenced by that model.
 ## First RAG workflow
 
 The repo now includes a minimal local RAG path built on top of Ollama
-embeddings, a local JSON index, and a small local HTTP service.
+embeddings, a local JSON index, and a small local runtime layer.
 
 1. Put source files in `rag-data/documents/`.
 2. Build the index:
@@ -300,39 +300,11 @@ The current pipeline is:
 
 ## Open WebUI Relationship
 
-Open WebUI still works, but not automatically with this custom RAG path.
-
-What Open WebUI does right now:
-- lets you chat with Ollama models manually
-- lets you choose `llama3.1:8b`, `gemma4:31b`, `llava:13b`, and others
-
-What Open WebUI does not do yet in this repo:
-- call `build-rag-index.py`
-- call `query-rag.py`
-- call `rag-answer.py`
-- automatically use `rag-data/documents/` as grounded context
-
-That means the stronger system is now split into two layers:
-- Open WebUI for direct model access
-- local RAG scripts and service for grounded answers
-
-The bridge layer is the new local RAG service:
-
-```bash
-./scripts/start-rag-service.sh
-```
-
-It exposes local endpoints for health, index build, retrieval, and grounded
-answer generation. That service is what we can wire into future agent or UI
-integration.
-
-Example:
-
-```bash
-curl -X POST http://127.0.0.1:8787/answer \
-  -H "Content-Type: application/json" \
-  -d '{"query":"What is our deployment flow?","model":"gemma4:31b"}'
-```
+Open WebUI remains the UI layer. The current add-on direction is:
+- Open WebUI can keep talking to Ollama directly for the base node flow
+- or Open WebUI can talk to the router's OpenAI-compatible endpoint for routed and grounded behavior
+- the router remains the front door
+- RAG stays inside the same packaged runtime instead of depending on a second local HTTP hop
 
 ## Smart Router API
 
@@ -345,7 +317,13 @@ Start it:
 ./scripts/start-router-service.sh
 ```
 
-Packaged router + RAG operator flow:
+Single-process packaged router + RAG flow:
+
+```bash
+./scripts/start-local-ai-runtime.sh
+```
+
+Compatibility wrapper:
 
 ```bash
 ./scripts/start-router-rag-stack.sh
@@ -414,7 +392,13 @@ Repo defaults now support that mode through environment variables in
 python3 ./scripts/build-rag-index.py
 ```
 
-3. Start the packaged router + RAG stack:
+3. Start the single-process runtime:
+
+```bash
+./scripts/start-local-ai-runtime.sh
+```
+
+Or use the compatibility wrapper:
 
 ```bash
 ./scripts/start-router-rag-stack.sh
@@ -549,7 +533,7 @@ The base repo goal is still a reliable Ollama + Open WebUI node. The router and 
 - [docs/security-review.md](/Users/basho00/_github/_personal/Local-LLM/docs/security-review.md)
 - [docs/performance-tuning.md](/Users/basho00/_github/_personal/Local-LLM/docs/performance-tuning.md)
 
-RAG is intentionally not implemented here. When you add it, start with `nomic-embed-text` plus either Chroma or FAISS and keep ingestion/persistence separate from the base Ollama/Open WebUI stack.
+RAG is now implemented as a small local add-on path. Keep it narrow: local documents, local JSON index, and a single-process runtime behind the router.
 
 ## Quick Repo Summary
 
@@ -557,8 +541,8 @@ RAG is intentionally not implemented here. When you add it, start with `nomic-em
 - Primary path: host-based Ollama plus Dockerized Open WebUI.
 - Stack: Docker
 - Base node status: ready for the core Ollama + Open WebUI flow.
-- Add-on work still open: router signal improvements, `llava:13b` image routing, incremental index rebuilds, and a cleaner packaged router/RAG process.
-- Add-on work still open: heavier router/Open WebUI behavior docs.
+- Add-on status: router heuristics, image routing, incremental rebuilds, and single-process packaged runtime are implemented.
+- Next add-on step: validate router mode and the packaged runtime on another system.
 
 ## LLM Start Here
 - `README.md`
