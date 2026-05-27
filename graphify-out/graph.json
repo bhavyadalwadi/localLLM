@@ -144,7 +144,7 @@
       "source_file": "scripts/rag_lib.py",
       "source_location": "L83",
       "id": "scripts_rag_lib_top_k",
-      "community": 0,
+      "community": 2,
       "norm_label": "top_k()"
     },
     {
@@ -297,7 +297,7 @@
       "source_file": "scripts/rag_lib.py",
       "source_location": "L261",
       "id": "scripts_rag_lib_build_answer_prompt",
-      "community": 14,
+      "community": 0,
       "norm_label": "build_answer_prompt()"
     },
     {
@@ -342,7 +342,7 @@
       "source_file": "scripts/rag_lib.py",
       "source_location": "L350",
       "id": "scripts_rag_lib_ragruntime",
-      "community": 12,
+      "community": 0,
       "norm_label": "ragruntime"
     },
     {
@@ -351,7 +351,7 @@
       "source_file": "scripts/rag_lib.py",
       "source_location": "L351",
       "id": "scripts_rag_lib_ragruntime_init",
-      "community": 12,
+      "community": 0,
       "norm_label": ".__init__()"
     },
     {
@@ -360,7 +360,7 @@
       "source_file": "scripts/rag_lib.py",
       "source_location": "L356",
       "id": "scripts_rag_lib_ragruntime_load_index",
-      "community": 12,
+      "community": 0,
       "norm_label": ".load_index()"
     },
     {
@@ -378,7 +378,7 @@
       "source_file": "scripts/rag_lib.py",
       "source_location": "L374",
       "id": "scripts_rag_lib_ragruntime_ensure_index",
-      "community": 12,
+      "community": 0,
       "norm_label": ".ensure_index()"
     },
     {
@@ -387,7 +387,7 @@
       "source_file": "scripts/rag_lib.py",
       "source_location": "L381",
       "id": "scripts_rag_lib_ragruntime_status",
-      "community": 12,
+      "community": 0,
       "norm_label": ".status()"
     },
     {
@@ -396,7 +396,7 @@
       "source_file": "scripts/rag_lib.py",
       "source_location": "L392",
       "id": "scripts_rag_lib_ragruntime_query",
-      "community": 12,
+      "community": 0,
       "norm_label": ".query()"
     },
     {
@@ -405,7 +405,7 @@
       "source_file": "scripts/rag_lib.py",
       "source_location": "L396",
       "id": "scripts_rag_lib_ragruntime_answer",
-      "community": 12,
+      "community": 0,
       "norm_label": ".answer()"
     },
     {
@@ -441,7 +441,7 @@
       "source_file": "scripts/rag_service.py",
       "source_location": "L66",
       "id": "scripts_rag_service_answer_from_chunks",
-      "community": 14,
+      "community": 0,
       "norm_label": "answer_from_chunks()"
     },
     {
@@ -594,7 +594,7 @@
       "source_file": "scripts/local_ai_runtime.py",
       "source_location": "L1",
       "id": "scripts_local_ai_runtime_py",
-      "community": 12,
+      "community": 2,
       "norm_label": "local_ai_runtime.py"
     },
     {
@@ -639,7 +639,7 @@
       "source_file": "scripts/local_ai_runtime.py",
       "source_location": "L138",
       "id": "scripts_local_ai_runtime_localairuntimeserver",
-      "community": 12,
+      "community": 2,
       "norm_label": "localairuntimeserver"
     },
     {
@@ -648,7 +648,7 @@
       "source_file": "",
       "source_location": "",
       "id": "routerserver",
-      "community": 12,
+      "community": 2,
       "norm_label": "routerserver"
     },
     {
@@ -657,7 +657,7 @@
       "source_file": "scripts/local_ai_runtime.py",
       "source_location": "L139",
       "id": "scripts_local_ai_runtime_localairuntimeserver_init",
-      "community": 12,
+      "community": 2,
       "norm_label": ".__init__()"
     },
     {
@@ -666,7 +666,7 @@
       "source_file": "scripts/local_ai_runtime.py",
       "source_location": "L148",
       "id": "scripts_local_ai_runtime_localairuntimeserver_index_status_payload",
-      "community": 12,
+      "community": 2,
       "norm_label": ".index_status_payload()"
     },
     {
@@ -675,7 +675,7 @@
       "source_file": "scripts/local_ai_runtime.py",
       "source_location": "L160",
       "id": "scripts_local_ai_runtime_main",
-      "community": 12,
+      "community": 0,
       "norm_label": "main()"
     },
     {
@@ -1075,6 +1075,15 @@
       "norm_label": "load-env.sh"
     },
     {
+      "label": "start-local-ai-runtime.sh",
+      "file_type": "code",
+      "source_file": "scripts/start-local-ai-runtime.sh",
+      "source_location": "L1",
+      "id": "scripts_start_local_ai_runtime_sh",
+      "community": 58,
+      "norm_label": "start-local-ai-runtime.sh"
+    },
+    {
       "label": "start-router-rag-stack.sh",
       "file_type": "code",
       "source_file": "scripts/start-router-rag-stack.sh",
@@ -1188,7 +1197,7 @@
       "source_file": "README.md",
       "source_location": "L75",
       "id": "local_llm_readme_step_1_prepare_the_environment",
-      "community": 1,
+      "community": 48,
       "norm_label": "step 1: prepare the environment"
     },
     {
@@ -1197,7 +1206,7 @@
       "source_file": "README.md",
       "source_location": "L79",
       "id": "local_llm_readme_codeblock_2",
-      "community": 1,
+      "community": 48,
       "norm_label": "code:bash (cp .env.example .env)"
     },
     {
@@ -1206,7 +1215,7 @@
       "source_file": "README.md",
       "source_location": "L85",
       "id": "local_llm_readme_codeblock_3",
-      "community": 1,
+      "community": 48,
       "norm_label": "code:bash (cp .env.staging.example .env)"
     },
     {
@@ -1323,7 +1332,7 @@
       "source_file": "README.md",
       "source_location": "L172",
       "id": "local_llm_readme_step_3_verify_the_model_inventory",
-      "community": 1,
+      "community": 45,
       "norm_label": "step 3: verify the model inventory"
     },
     {
@@ -1332,7 +1341,7 @@
       "source_file": "README.md",
       "source_location": "L178",
       "id": "local_llm_readme_codeblock_12",
-      "community": 1,
+      "community": 45,
       "norm_label": "code:bash (./scripts/verify-ollama-models.sh)"
     },
     {
@@ -1341,7 +1350,7 @@
       "source_file": "README.md",
       "source_location": "L184",
       "id": "local_llm_readme_codeblock_13",
-      "community": 1,
+      "community": 45,
       "norm_label": "code:bash (./scripts/pull-required-models.sh)"
     },
     {
@@ -1350,7 +1359,7 @@
       "source_file": "README.md",
       "source_location": "L198",
       "id": "local_llm_readme_codeblock_14",
-      "community": 1,
+      "community": 45,
       "norm_label": "code:bash (./scripts/bootstrap-local-ai-node.sh)"
     },
     {
@@ -1359,7 +1368,7 @@
       "source_file": "README.md",
       "source_location": "L204",
       "id": "local_llm_readme_codeblock_15",
-      "community": 1,
+      "community": 45,
       "norm_label": "code:bash (expect_optional_models=\"gemma4:31b,llava:13b\" ./scripts/boot)"
     },
     {
@@ -1368,7 +1377,7 @@
       "source_file": "README.md",
       "source_location": "L210",
       "id": "local_llm_readme_codeblock_16",
-      "community": 1,
+      "community": 45,
       "norm_label": "code:bash (./scripts/preflight-target-host.sh)"
     },
     {
@@ -1377,7 +1386,7 @@
       "source_file": "README.md",
       "source_location": "L216",
       "id": "local_llm_readme_codeblock_17",
-      "community": 1,
+      "community": 42,
       "norm_label": "code:bash (run_smoke_tests=true ./scripts/verify-ollama-models.sh)"
     },
     {
@@ -1386,7 +1395,7 @@
       "source_file": "README.md",
       "source_location": "L221",
       "id": "local_llm_readme_download_models_on_a_new_system",
-      "community": 1,
+      "community": 42,
       "norm_label": "download models on a new system"
     },
     {
@@ -1395,7 +1404,7 @@
       "source_file": "README.md",
       "source_location": "L225",
       "id": "local_llm_readme_codeblock_18",
-      "community": 1,
+      "community": 42,
       "norm_label": "code:bash (./scripts/pull-required-models.sh)"
     },
     {
@@ -1404,7 +1413,7 @@
       "source_file": "README.md",
       "source_location": "L231",
       "id": "local_llm_readme_codeblock_19",
-      "community": 1,
+      "community": 42,
       "norm_label": "code:bash (optional_models=\"gemma4:31b\" ./scripts/pull-required-models.)"
     },
     {
@@ -1413,7 +1422,7 @@
       "source_file": "README.md",
       "source_location": "L237",
       "id": "local_llm_readme_codeblock_20",
-      "community": 1,
+      "community": 42,
       "norm_label": "code:bash (optional_models=\"qwen3:30b\" ./scripts/pull-required-models.s)"
     },
     {
@@ -1422,7 +1431,7 @@
       "source_file": "README.md",
       "source_location": "L250",
       "id": "local_llm_readme_codeblock_21",
-      "community": 1,
+      "community": 42,
       "norm_label": "code:bash (./scripts/show-model-files.sh gemma4:31b)"
     },
     {
@@ -1431,7 +1440,7 @@
       "source_file": "README.md",
       "source_location": "L257",
       "id": "local_llm_readme_first_rag_workflow",
-      "community": 1,
+      "community": 42,
       "norm_label": "first rag workflow"
     },
     {
@@ -1440,7 +1449,7 @@
       "source_file": "README.md",
       "source_location": "L265",
       "id": "local_llm_readme_codeblock_22",
-      "community": 1,
+      "community": 42,
       "norm_label": "code:bash (python3 ./scripts/build-rag-index.py)"
     },
     {
@@ -1449,7 +1458,7 @@
       "source_file": "README.md",
       "source_location": "L271",
       "id": "local_llm_readme_codeblock_23",
-      "community": 1,
+      "community": 42,
       "norm_label": "code:bash (python3 ./scripts/query-rag.py \"what models are part of the )"
     },
     {
@@ -1458,7 +1467,7 @@
       "source_file": "README.md",
       "source_location": "L277",
       "id": "local_llm_readme_codeblock_24",
-      "community": 1,
+      "community": 43,
       "norm_label": "code:bash (python3 ./scripts/rag-answer.py \"what is the deployment flow)"
     },
     {
@@ -1476,140 +1485,140 @@
       "source_file": "README.md",
       "source_location": "L301",
       "id": "local_llm_readme_open_webui_relationship",
-      "community": 1,
+      "community": 43,
       "norm_label": "open webui relationship"
-    },
-    {
-      "label": "code:bash (./scripts/start-rag-service.sh)",
-      "file_type": "document",
-      "source_file": "README.md",
-      "source_location": "L321",
-      "id": "local_llm_readme_codeblock_25",
-      "community": 1,
-      "norm_label": "code:bash (./scripts/start-rag-service.sh)"
-    },
-    {
-      "label": "code:bash (curl -X POST http://127.0.0.1:8787/answer \\)",
-      "file_type": "document",
-      "source_file": "README.md",
-      "source_location": "L331",
-      "id": "local_llm_readme_codeblock_26",
-      "community": 1,
-      "norm_label": "code:bash (curl -x post http://127.0.0.1:8787/answer \\)"
     },
     {
       "label": "Smart Router API",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L337",
+      "source_location": "L309",
       "id": "local_llm_readme_smart_router_api",
-      "community": 9,
+      "community": 43,
       "norm_label": "smart router api"
     },
     {
       "label": "code:bash (./scripts/start-router-service.sh)",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L344",
-      "id": "local_llm_readme_codeblock_27",
-      "community": 9,
+      "source_location": "L316",
+      "id": "local_llm_readme_codeblock_25",
+      "community": 43,
       "norm_label": "code:bash (./scripts/start-router-service.sh)"
+    },
+    {
+      "label": "code:bash (./scripts/start-local-ai-runtime.sh)",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L322",
+      "id": "local_llm_readme_codeblock_26",
+      "community": 43,
+      "norm_label": "code:bash (./scripts/start-local-ai-runtime.sh)"
     },
     {
       "label": "code:bash (./scripts/start-router-rag-stack.sh)",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L350",
-      "id": "local_llm_readme_codeblock_28",
-      "community": 9,
+      "source_location": "L328",
+      "id": "local_llm_readme_codeblock_27",
+      "community": 43,
       "norm_label": "code:bash (./scripts/start-router-rag-stack.sh)"
     },
     {
       "label": "code:bash (./scripts/check-router-connectivity.sh)",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L356",
-      "id": "local_llm_readme_codeblock_29",
-      "community": 9,
+      "source_location": "L334",
+      "id": "local_llm_readme_codeblock_28",
+      "community": 43,
       "norm_label": "code:bash (./scripts/check-router-connectivity.sh)"
     },
     {
       "label": "code:bash (curl http://127.0.0.1:8788/health)",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L362",
-      "id": "local_llm_readme_codeblock_30",
-      "community": 9,
+      "source_location": "L340",
+      "id": "local_llm_readme_codeblock_29",
+      "community": 43,
       "norm_label": "code:bash (curl http://127.0.0.1:8788/health)"
     },
     {
       "label": "code:bash (curl -X POST http://127.0.0.1:8788/chat \\)",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L368",
-      "id": "local_llm_readme_codeblock_31",
-      "community": 9,
+      "source_location": "L346",
+      "id": "local_llm_readme_codeblock_30",
+      "community": 43,
       "norm_label": "code:bash (curl -x post http://127.0.0.1:8788/chat \\)"
     },
     {
       "label": "code:bash (curl -X POST http://127.0.0.1:8788/v1/chat/completions \\)",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L376",
-      "id": "local_llm_readme_codeblock_32",
-      "community": 9,
+      "source_location": "L354",
+      "id": "local_llm_readme_codeblock_31",
+      "community": 41,
       "norm_label": "code:bash (curl -x post http://127.0.0.1:8788/v1/chat/completions \\)"
     },
     {
       "label": "Open WebUI Through The Router",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L397",
+      "source_location": "L375",
       "id": "local_llm_readme_open_webui_through_the_router",
-      "community": 9,
+      "community": 41,
       "norm_label": "open webui through the router"
     },
     {
       "label": "Recommended startup order",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L408",
+      "source_location": "L386",
       "id": "local_llm_readme_recommended_startup_order",
-      "community": 9,
+      "community": 41,
       "norm_label": "recommended startup order"
     },
     {
       "label": "code:bash (python3 ./scripts/build-rag-index.py)",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L413",
-      "id": "local_llm_readme_codeblock_33",
-      "community": 9,
+      "source_location": "L391",
+      "id": "local_llm_readme_codeblock_32",
+      "community": 41,
       "norm_label": "code:bash (python3 ./scripts/build-rag-index.py)"
+    },
+    {
+      "label": "code:bash (./scripts/start-local-ai-runtime.sh)",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L397",
+      "id": "local_llm_readme_codeblock_33",
+      "community": 41,
+      "norm_label": "code:bash (./scripts/start-local-ai-runtime.sh)"
     },
     {
       "label": "code:bash (./scripts/start-router-rag-stack.sh)",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L419",
+      "source_location": "L403",
       "id": "local_llm_readme_codeblock_34",
-      "community": 9,
+      "community": 41,
       "norm_label": "code:bash (./scripts/start-router-rag-stack.sh)"
     },
     {
       "label": "code:bash (./scripts/check-router-connectivity.sh)",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L425",
+      "source_location": "L409",
       "id": "local_llm_readme_codeblock_35",
-      "community": 9,
+      "community": 41,
       "norm_label": "code:bash (./scripts/check-router-connectivity.sh)"
     },
     {
       "label": "code:bash (docker compose up -d)",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L432",
+      "source_location": "L416",
       "id": "local_llm_readme_codeblock_36",
       "community": 9,
       "norm_label": "code:bash (docker compose up -d)"
@@ -1618,34 +1627,34 @@
       "label": "Router-mode Open WebUI settings",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L436",
+      "source_location": "L420",
       "id": "local_llm_readme_router_mode_open_webui_settings",
-      "community": 9,
+      "community": 41,
       "norm_label": "router-mode open webui settings"
     },
     {
       "label": "code:bash (ENABLE_OLLAMA_API=false)",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L440",
+      "source_location": "L424",
       "id": "local_llm_readme_codeblock_37",
-      "community": 9,
+      "community": 41,
       "norm_label": "code:bash (enable_ollama_api=false)"
     },
     {
       "label": "What you should see in the UI",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L447",
+      "source_location": "L431",
       "id": "local_llm_readme_what_you_should_see_in_the_ui",
-      "community": 9,
+      "community": 41,
       "norm_label": "what you should see in the ui"
     },
     {
       "label": "Step 4: verify Open WebUI connectivity",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L458",
+      "source_location": "L442",
       "id": "local_llm_readme_step_4_verify_open_webui_connectivity",
       "community": 9,
       "norm_label": "step 4: verify open webui connectivity"
@@ -1654,7 +1663,7 @@
       "label": "code:bash (./scripts/check-open-webui-connectivity.sh)",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L462",
+      "source_location": "L446",
       "id": "local_llm_readme_codeblock_38",
       "community": 9,
       "norm_label": "code:bash (./scripts/check-open-webui-connectivity.sh)"
@@ -1663,7 +1672,7 @@
       "label": "code:text (http://localhost:3000)",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L468",
+      "source_location": "L452",
       "id": "local_llm_readme_codeblock_39",
       "community": 9,
       "norm_label": "code:text (http://localhost:3000)"
@@ -1672,7 +1681,7 @@
       "label": "No-Docker note",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L472",
+      "source_location": "L456",
       "id": "local_llm_readme_no_docker_note",
       "community": 1,
       "norm_label": "no-docker note"
@@ -1681,7 +1690,7 @@
       "label": "Step 5: back up or restore the Ollama model store",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L489",
+      "source_location": "L473",
       "id": "local_llm_readme_step_5_back_up_or_restore_the_ollama_model_store",
       "community": 9,
       "norm_label": "step 5: back up or restore the ollama model store"
@@ -1690,7 +1699,7 @@
       "label": "code:bash (./scripts/backup-ollama-store.sh)",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L493",
+      "source_location": "L477",
       "id": "local_llm_readme_codeblock_40",
       "community": 9,
       "norm_label": "code:bash (./scripts/backup-ollama-store.sh)"
@@ -1699,7 +1708,7 @@
       "label": "code:bash (CONFIRM_RESTORE=true ./scripts/restore-ollama-store.sh /mnt/)",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L499",
+      "source_location": "L483",
       "id": "local_llm_readme_codeblock_41",
       "community": 9,
       "norm_label": "code:bash (confirm_restore=true ./scripts/restore-ollama-store.sh /mnt/)"
@@ -1708,7 +1717,7 @@
       "label": "Backup path examples",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L505",
+      "source_location": "L489",
       "id": "local_llm_readme_backup_path_examples",
       "community": 9,
       "norm_label": "backup path examples"
@@ -1717,7 +1726,7 @@
       "label": "code:bash (BACKUP_ROOT_DIR=$HOME/local-ai-node/backups)",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L509",
+      "source_location": "L493",
       "id": "local_llm_readme_codeblock_42",
       "community": 9,
       "norm_label": "code:bash (backup_root_dir=$home/local-ai-node/backups)"
@@ -1726,7 +1735,7 @@
       "label": "code:bash (BACKUP_ROOT_DIR=/Volumes/MyNAS/local-ai-node-backups)",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L515",
+      "source_location": "L499",
       "id": "local_llm_readme_codeblock_43",
       "community": 9,
       "norm_label": "code:bash (backup_root_dir=/volumes/mynas/local-ai-node-backups)"
@@ -1735,7 +1744,7 @@
       "label": "code:bash (BACKUP_ROOT_DIR=/mnt/nas/local-ai-node-backups)",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L521",
+      "source_location": "L505",
       "id": "local_llm_readme_codeblock_44",
       "community": 9,
       "norm_label": "code:bash (backup_root_dir=/mnt/nas/local-ai-node-backups)"
@@ -1744,7 +1753,7 @@
       "label": "code:bash (grep -E '^(BACKUP_ROOT_DIR|OLLAMA_HOME_DIR)=' .env)",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L527",
+      "source_location": "L511",
       "id": "local_llm_readme_codeblock_45",
       "community": 9,
       "norm_label": "code:bash (grep -e '^(backup_root_dir|ollama_home_dir)=' .env)"
@@ -1753,7 +1762,7 @@
       "label": "Notes on migration",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L531",
+      "source_location": "L515",
       "id": "local_llm_readme_notes_on_migration",
       "community": 1,
       "norm_label": "notes on migration"
@@ -1762,7 +1771,7 @@
       "label": "Secondary add-ons and future work",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L543",
+      "source_location": "L527",
       "id": "local_llm_readme_secondary_add_ons_and_future_work",
       "community": 1,
       "norm_label": "secondary add-ons and future work"
@@ -1771,7 +1780,7 @@
       "label": "Quick Repo Summary",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L554",
+      "source_location": "L538",
       "id": "local_llm_readme_quick_repo_summary",
       "community": 1,
       "norm_label": "quick repo summary"
@@ -1780,7 +1789,7 @@
       "label": "LLM Start Here",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L563",
+      "source_location": "L547",
       "id": "local_llm_readme_llm_start_here",
       "community": 1,
       "norm_label": "llm start here"
@@ -1789,10 +1798,1081 @@
       "label": "License",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L569",
+      "source_location": "L553",
       "id": "local_llm_readme_license",
       "community": 1,
       "norm_label": "license"
+    },
+    {
+      "label": "project_context.md",
+      "file_type": "document",
+      "source_file": ".claude/project_context.md",
+      "source_location": "L1",
+      "id": "claude_project_context_md",
+      "community": 12,
+      "norm_label": "project_context.md"
+    },
+    {
+      "label": "Local-LLM Project Context",
+      "file_type": "document",
+      "source_file": ".claude/project_context.md",
+      "source_location": "L1",
+      "id": "claude_project_context_local_llm_project_context",
+      "community": 12,
+      "norm_label": "local-llm project context"
+    },
+    {
+      "label": "Business Purpose",
+      "file_type": "document",
+      "source_file": ".claude/project_context.md",
+      "source_location": "L5",
+      "id": "claude_project_context_business_purpose",
+      "community": 12,
+      "norm_label": "business purpose"
+    },
+    {
+      "label": "System Overview",
+      "file_type": "document",
+      "source_file": ".claude/project_context.md",
+      "source_location": "L8",
+      "id": "claude_project_context_system_overview",
+      "community": 12,
+      "norm_label": "system overview"
+    },
+    {
+      "label": "Major Applications",
+      "file_type": "document",
+      "source_file": ".claude/project_context.md",
+      "source_location": "L11",
+      "id": "claude_project_context_major_applications",
+      "community": 12,
+      "norm_label": "major applications"
+    },
+    {
+      "label": "Environments",
+      "file_type": "document",
+      "source_file": ".claude/project_context.md",
+      "source_location": "L16",
+      "id": "claude_project_context_environments",
+      "community": 12,
+      "norm_label": "environments"
+    },
+    {
+      "label": "Tech Stack",
+      "file_type": "document",
+      "source_file": ".claude/project_context.md",
+      "source_location": "L21",
+      "id": "claude_project_context_tech_stack",
+      "community": 12,
+      "norm_label": "tech stack"
+    },
+    {
+      "label": "Critical Dependencies",
+      "file_type": "document",
+      "source_file": ".claude/project_context.md",
+      "source_location": "L28",
+      "id": "claude_project_context_critical_dependencies",
+      "community": 12,
+      "norm_label": "critical dependencies"
+    },
+    {
+      "label": "Major Workflows",
+      "file_type": "document",
+      "source_file": ".claude/project_context.md",
+      "source_location": "L31",
+      "id": "claude_project_context_major_workflows",
+      "community": 12,
+      "norm_label": "major workflows"
+    },
+    {
+      "label": "Operational Constraints",
+      "file_type": "document",
+      "source_file": ".claude/project_context.md",
+      "source_location": "L38",
+      "id": "claude_project_context_operational_constraints",
+      "community": 12,
+      "norm_label": "operational constraints"
+    },
+    {
+      "label": "Scaling Constraints",
+      "file_type": "document",
+      "source_file": ".claude/project_context.md",
+      "source_location": "L43",
+      "id": "claude_project_context_scaling_constraints",
+      "community": 12,
+      "norm_label": "scaling constraints"
+    },
+    {
+      "label": "Deployment Model",
+      "file_type": "document",
+      "source_file": ".claude/project_context.md",
+      "source_location": "L46",
+      "id": "claude_project_context_deployment_model",
+      "community": 12,
+      "norm_label": "deployment model"
+    },
+    {
+      "label": "Important APIs",
+      "file_type": "document",
+      "source_file": ".claude/project_context.md",
+      "source_location": "L49",
+      "id": "claude_project_context_important_apis",
+      "community": 12,
+      "norm_label": "important apis"
+    },
+    {
+      "label": "Important Databases",
+      "file_type": "document",
+      "source_file": ".claude/project_context.md",
+      "source_location": "L54",
+      "id": "claude_project_context_important_databases",
+      "community": 12,
+      "norm_label": "important databases"
+    },
+    {
+      "label": "Important Queues / Events",
+      "file_type": "document",
+      "source_file": ".claude/project_context.md",
+      "source_location": "L57",
+      "id": "claude_project_context_important_queues_events",
+      "community": 12,
+      "norm_label": "important queues / events"
+    },
+    {
+      "label": "Known Technical Debt",
+      "file_type": "document",
+      "source_file": ".claude/project_context.md",
+      "source_location": "L62",
+      "id": "claude_project_context_known_technical_debt",
+      "community": 12,
+      "norm_label": "known technical debt"
+    },
+    {
+      "label": "Current Architecture Themes",
+      "file_type": "document",
+      "source_file": ".claude/project_context.md",
+      "source_location": "L69",
+      "id": "claude_project_context_current_architecture_themes",
+      "community": 12,
+      "norm_label": "current architecture themes"
+    },
+    {
+      "label": "workflows.md",
+      "file_type": "document",
+      "source_file": ".claude/workflows.md",
+      "source_location": "L1",
+      "id": "claude_workflows_md",
+      "community": 39,
+      "norm_label": "workflows.md"
+    },
+    {
+      "label": "Local-LLM Workflows",
+      "file_type": "document",
+      "source_file": ".claude/workflows.md",
+      "source_location": "L1",
+      "id": "claude_workflows_local_llm_workflows",
+      "community": 39,
+      "norm_label": "local-llm workflows"
+    },
+    {
+      "label": "Local Development",
+      "file_type": "document",
+      "source_file": ".claude/workflows.md",
+      "source_location": "L3",
+      "id": "claude_workflows_local_development",
+      "community": 39,
+      "norm_label": "local development"
+    },
+    {
+      "label": "Testing",
+      "file_type": "document",
+      "source_file": ".claude/workflows.md",
+      "source_location": "L6",
+      "id": "claude_workflows_testing",
+      "community": 39,
+      "norm_label": "testing"
+    },
+    {
+      "label": "Deployment",
+      "file_type": "document",
+      "source_file": ".claude/workflows.md",
+      "source_location": "L9",
+      "id": "claude_workflows_deployment",
+      "community": 39,
+      "norm_label": "deployment"
+    },
+    {
+      "label": "Migrations",
+      "file_type": "document",
+      "source_file": ".claude/workflows.md",
+      "source_location": "L12",
+      "id": "claude_workflows_migrations",
+      "community": 39,
+      "norm_label": "migrations"
+    },
+    {
+      "label": "Feature Rollout",
+      "file_type": "document",
+      "source_file": ".claude/workflows.md",
+      "source_location": "L15",
+      "id": "claude_workflows_feature_rollout",
+      "community": 39,
+      "norm_label": "feature rollout"
+    },
+    {
+      "label": "Incident Response",
+      "file_type": "document",
+      "source_file": ".claude/workflows.md",
+      "source_location": "L19",
+      "id": "claude_workflows_incident_response",
+      "community": 39,
+      "norm_label": "incident response"
+    },
+    {
+      "label": "Debugging",
+      "file_type": "document",
+      "source_file": ".claude/workflows.md",
+      "source_location": "L24",
+      "id": "claude_workflows_debugging",
+      "community": 39,
+      "norm_label": "debugging"
+    },
+    {
+      "label": "Rollback",
+      "file_type": "document",
+      "source_file": ".claude/workflows.md",
+      "source_location": "L29",
+      "id": "claude_workflows_rollback",
+      "community": 39,
+      "norm_label": "rollback"
+    },
+    {
+      "label": "Observability Investigation",
+      "file_type": "document",
+      "source_file": ".claude/workflows.md",
+      "source_location": "L34",
+      "id": "claude_workflows_observability_investigation",
+      "community": 39,
+      "norm_label": "observability investigation"
+    },
+    {
+      "label": "architecture.md",
+      "file_type": "document",
+      "source_file": ".claude/architecture.md",
+      "source_location": "L1",
+      "id": "claude_architecture_md",
+      "community": 38,
+      "norm_label": "architecture.md"
+    },
+    {
+      "label": "Local-LLM Architecture",
+      "file_type": "document",
+      "source_file": ".claude/architecture.md",
+      "source_location": "L1",
+      "id": "claude_architecture_local_llm_architecture",
+      "community": 38,
+      "norm_label": "local-llm architecture"
+    },
+    {
+      "label": "End-to-End Request Flows",
+      "file_type": "document",
+      "source_file": ".claude/architecture.md",
+      "source_location": "L3",
+      "id": "claude_architecture_end_to_end_request_flows",
+      "community": 38,
+      "norm_label": "end-to-end request flows"
+    },
+    {
+      "label": "Frontend / Backend Interaction",
+      "file_type": "document",
+      "source_file": ".claude/architecture.md",
+      "source_location": "L6",
+      "id": "claude_architecture_frontend_backend_interaction",
+      "community": 38,
+      "norm_label": "frontend / backend interaction"
+    },
+    {
+      "label": "Service Boundaries",
+      "file_type": "document",
+      "source_file": ".claude/architecture.md",
+      "source_location": "L9",
+      "id": "claude_architecture_service_boundaries",
+      "community": 38,
+      "norm_label": "service boundaries"
+    },
+    {
+      "label": "Sync vs Async Flows",
+      "file_type": "document",
+      "source_file": ".claude/architecture.md",
+      "source_location": "L14",
+      "id": "claude_architecture_sync_vs_async_flows",
+      "community": 38,
+      "norm_label": "sync vs async flows"
+    },
+    {
+      "label": "Event-Driven Architecture",
+      "file_type": "document",
+      "source_file": ".claude/architecture.md",
+      "source_location": "L19",
+      "id": "claude_architecture_event_driven_architecture",
+      "community": 38,
+      "norm_label": "event-driven architecture"
+    },
+    {
+      "label": "Caching Layers",
+      "file_type": "document",
+      "source_file": ".claude/architecture.md",
+      "source_location": "L22",
+      "id": "claude_architecture_caching_layers",
+      "community": 38,
+      "norm_label": "caching layers"
+    },
+    {
+      "label": "Auth Flow",
+      "file_type": "document",
+      "source_file": ".claude/architecture.md",
+      "source_location": "L25",
+      "id": "claude_architecture_auth_flow",
+      "community": 38,
+      "norm_label": "auth flow"
+    },
+    {
+      "label": "Deployment Topology",
+      "file_type": "document",
+      "source_file": ".claude/architecture.md",
+      "source_location": "L28",
+      "id": "claude_architecture_deployment_topology",
+      "community": 38,
+      "norm_label": "deployment topology"
+    },
+    {
+      "label": "Scaling Behavior",
+      "file_type": "document",
+      "source_file": ".claude/architecture.md",
+      "source_location": "L31",
+      "id": "claude_architecture_scaling_behavior",
+      "community": 38,
+      "norm_label": "scaling behavior"
+    },
+    {
+      "label": "Resilience Mechanisms",
+      "file_type": "document",
+      "source_file": ".claude/architecture.md",
+      "source_location": "L35",
+      "id": "claude_architecture_resilience_mechanisms",
+      "community": 38,
+      "norm_label": "resilience mechanisms"
+    },
+    {
+      "label": "Failover Behavior",
+      "file_type": "document",
+      "source_file": ".claude/architecture.md",
+      "source_location": "L39",
+      "id": "claude_architecture_failover_behavior",
+      "community": 38,
+      "norm_label": "failover behavior"
+    },
+    {
+      "label": "Observability Architecture",
+      "file_type": "document",
+      "source_file": ".claude/architecture.md",
+      "source_location": "L42",
+      "id": "claude_architecture_observability_architecture",
+      "community": 38,
+      "norm_label": "observability architecture"
+    },
+    {
+      "label": "Retry / Idempotency Patterns",
+      "file_type": "document",
+      "source_file": ".claude/architecture.md",
+      "source_location": "L45",
+      "id": "claude_architecture_retry_idempotency_patterns",
+      "community": 38,
+      "norm_label": "retry / idempotency patterns"
+    },
+    {
+      "label": "repository_navigation.md",
+      "file_type": "document",
+      "source_file": ".claude/repository_navigation.md",
+      "source_location": "L1",
+      "id": "claude_repository_navigation_md",
+      "community": 47,
+      "norm_label": "repository_navigation.md"
+    },
+    {
+      "label": "Top-Level Modules",
+      "file_type": "document",
+      "source_file": ".claude/repository_navigation.md",
+      "source_location": "L1",
+      "id": "claude_repository_navigation_top_level_modules",
+      "community": 47,
+      "norm_label": "top-level modules"
+    },
+    {
+      "label": "Read First",
+      "file_type": "document",
+      "source_file": ".claude/repository_navigation.md",
+      "source_location": "L11",
+      "id": "claude_repository_navigation_read_first",
+      "community": 47,
+      "norm_label": "read first"
+    },
+    {
+      "label": "Critical Entrypoints",
+      "file_type": "document",
+      "source_file": ".claude/repository_navigation.md",
+      "source_location": "L18",
+      "id": "claude_repository_navigation_critical_entrypoints",
+      "community": 47,
+      "norm_label": "critical entrypoints"
+    },
+    {
+      "label": "graph_relationships.md",
+      "file_type": "document",
+      "source_file": ".claude/graph_relationships.md",
+      "source_location": "L1",
+      "id": "claude_graph_relationships_md",
+      "community": 49,
+      "norm_label": "graph_relationships.md"
+    },
+    {
+      "label": "Local-LLM Graph Relationships",
+      "file_type": "document",
+      "source_file": ".claude/graph_relationships.md",
+      "source_location": "L1",
+      "id": "claude_graph_relationships_local_llm_graph_relationships",
+      "community": 49,
+      "norm_label": "local-llm graph relationships"
+    },
+    {
+      "label": "decision_log.md",
+      "file_type": "document",
+      "source_file": ".claude/decision_log.md",
+      "source_location": "L1",
+      "id": "claude_decision_log_md",
+      "community": 46,
+      "norm_label": "decision_log.md"
+    },
+    {
+      "label": "Local-LLM Decision Log",
+      "file_type": "document",
+      "source_file": ".claude/decision_log.md",
+      "source_location": "L1",
+      "id": "claude_decision_log_local_llm_decision_log",
+      "community": 46,
+      "norm_label": "local-llm decision log"
+    },
+    {
+      "label": "Graphify-first repo discovery",
+      "file_type": "document",
+      "source_file": ".claude/decision_log.md",
+      "source_location": "L3",
+      "id": "claude_decision_log_graphify_first_repo_discovery",
+      "community": 46,
+      "norm_label": "graphify-first repo discovery"
+    },
+    {
+      "label": "Preserve repo separation",
+      "file_type": "document",
+      "source_file": ".claude/decision_log.md",
+      "source_location": "L9",
+      "id": "claude_decision_log_preserve_repo_separation",
+      "community": 46,
+      "norm_label": "preserve repo separation"
+    },
+    {
+      "label": "Router remains an add-on to a stable base node",
+      "file_type": "document",
+      "source_file": ".claude/decision_log.md",
+      "source_location": "L15",
+      "id": "claude_decision_log_router_remains_an_add_on_to_a_stable_base_node",
+      "community": 46,
+      "norm_label": "router remains an add-on to a stable base node"
+    },
+    {
+      "label": "known_pitfalls.md",
+      "file_type": "document",
+      "source_file": ".claude/known_pitfalls.md",
+      "source_location": "L1",
+      "id": "claude_known_pitfalls_md",
+      "community": 50,
+      "norm_label": "known_pitfalls.md"
+    },
+    {
+      "label": "Local-LLM Known Pitfalls",
+      "file_type": "document",
+      "source_file": ".claude/known_pitfalls.md",
+      "source_location": "L1",
+      "id": "claude_known_pitfalls_local_llm_known_pitfalls",
+      "community": 50,
+      "norm_label": "local-llm known pitfalls"
+    },
+    {
+      "label": "onboarding.md",
+      "file_type": "document",
+      "source_file": ".claude/onboarding.md",
+      "source_location": "L1",
+      "id": "claude_onboarding_md",
+      "community": 44,
+      "norm_label": "onboarding.md"
+    },
+    {
+      "label": "Local-LLM Onboarding",
+      "file_type": "document",
+      "source_file": ".claude/onboarding.md",
+      "source_location": "L1",
+      "id": "claude_onboarding_local_llm_onboarding",
+      "community": 44,
+      "norm_label": "local-llm onboarding"
+    },
+    {
+      "label": "First Read",
+      "file_type": "document",
+      "source_file": ".claude/onboarding.md",
+      "source_location": "L3",
+      "id": "claude_onboarding_first_read",
+      "community": 44,
+      "norm_label": "first read"
+    },
+    {
+      "label": "Critical Entrypoints",
+      "file_type": "document",
+      "source_file": ".claude/onboarding.md",
+      "source_location": "L10",
+      "id": "claude_onboarding_critical_entrypoints",
+      "community": 44,
+      "norm_label": "critical entrypoints"
+    },
+    {
+      "label": "Module Map",
+      "file_type": "document",
+      "source_file": ".claude/onboarding.md",
+      "source_location": "L18",
+      "id": "claude_onboarding_module_map",
+      "community": 44,
+      "norm_label": "module map"
+    },
+    {
+      "label": "How To Start Reasoning",
+      "file_type": "document",
+      "source_file": ".claude/onboarding.md",
+      "source_location": "L28",
+      "id": "claude_onboarding_how_to_start_reasoning",
+      "community": 44,
+      "norm_label": "how to start reasoning"
+    },
+    {
+      "label": "Local Run Baseline",
+      "file_type": "document",
+      "source_file": ".claude/onboarding.md",
+      "source_location": "L33",
+      "id": "claude_onboarding_local_run_baseline",
+      "community": 44,
+      "norm_label": "local run baseline"
+    },
+    {
+      "label": "coding_rules.md",
+      "file_type": "document",
+      "source_file": ".claude/coding_rules.md",
+      "source_location": "L1",
+      "id": "claude_coding_rules_md",
+      "community": 40,
+      "norm_label": "coding_rules.md"
+    },
+    {
+      "label": "Local-LLM Coding Rules",
+      "file_type": "document",
+      "source_file": ".claude/coding_rules.md",
+      "source_location": "L1",
+      "id": "claude_coding_rules_local_llm_coding_rules",
+      "community": 40,
+      "norm_label": "local-llm coding rules"
+    },
+    {
+      "label": "Naming / Structure",
+      "file_type": "document",
+      "source_file": ".claude/coding_rules.md",
+      "source_location": "L3",
+      "id": "claude_coding_rules_naming_structure",
+      "community": 40,
+      "norm_label": "naming / structure"
+    },
+    {
+      "label": "Architecture Patterns",
+      "file_type": "document",
+      "source_file": ".claude/coding_rules.md",
+      "source_location": "L7",
+      "id": "claude_coding_rules_architecture_patterns",
+      "community": 40,
+      "norm_label": "architecture patterns"
+    },
+    {
+      "label": "State Management",
+      "file_type": "document",
+      "source_file": ".claude/coding_rules.md",
+      "source_location": "L11",
+      "id": "claude_coding_rules_state_management",
+      "community": 40,
+      "norm_label": "state management"
+    },
+    {
+      "label": "Error Handling / Logging",
+      "file_type": "document",
+      "source_file": ".claude/coding_rules.md",
+      "source_location": "L14",
+      "id": "claude_coding_rules_error_handling_logging",
+      "community": 40,
+      "norm_label": "error handling / logging"
+    },
+    {
+      "label": "API Conventions",
+      "file_type": "document",
+      "source_file": ".claude/coding_rules.md",
+      "source_location": "L19",
+      "id": "claude_coding_rules_api_conventions",
+      "community": 40,
+      "norm_label": "api conventions"
+    },
+    {
+      "label": "Testing Conventions",
+      "file_type": "document",
+      "source_file": ".claude/coding_rules.md",
+      "source_location": "L23",
+      "id": "claude_coding_rules_testing_conventions",
+      "community": 40,
+      "norm_label": "testing conventions"
+    },
+    {
+      "label": "Typing / Abstractions",
+      "file_type": "document",
+      "source_file": ".claude/coding_rules.md",
+      "source_location": "L26",
+      "id": "claude_coding_rules_typing_abstractions",
+      "community": 40,
+      "norm_label": "typing / abstractions"
+    },
+    {
+      "label": "Database / Migration Patterns",
+      "file_type": "document",
+      "source_file": ".claude/coding_rules.md",
+      "source_location": "L30",
+      "id": "claude_coding_rules_database_migration_patterns",
+      "community": 40,
+      "norm_label": "database / migration patterns"
+    },
+    {
+      "label": "system_prompt.md",
+      "file_type": "document",
+      "source_file": ".claude/system_prompt.md",
+      "source_location": "L1",
+      "id": "claude_system_prompt_md",
+      "community": 57,
+      "norm_label": "system_prompt.md"
+    },
+    {
+      "label": "Local-LLM Claude System Prompt",
+      "file_type": "document",
+      "source_file": ".claude/system_prompt.md",
+      "source_location": "L1",
+      "id": "claude_system_prompt_local_llm_claude_system_prompt",
+      "community": 57,
+      "norm_label": "local-llm claude system prompt"
+    },
+    {
+      "label": "debug.md",
+      "file_type": "document",
+      "source_file": ".claude/prompts/debug.md",
+      "source_location": "L1",
+      "id": "claude_prompts_debug_md",
+      "community": 52,
+      "norm_label": "debug.md"
+    },
+    {
+      "label": "Debug Prompt",
+      "file_type": "document",
+      "source_file": ".claude/prompts/debug.md",
+      "source_location": "L1",
+      "id": "prompts_debug_debug_prompt",
+      "community": 52,
+      "norm_label": "debug prompt"
+    },
+    {
+      "label": "incident_response.md",
+      "file_type": "document",
+      "source_file": ".claude/prompts/incident_response.md",
+      "source_location": "L1",
+      "id": "claude_prompts_incident_response_md",
+      "community": 54,
+      "norm_label": "incident_response.md"
+    },
+    {
+      "label": "Incident Response Prompt",
+      "file_type": "document",
+      "source_file": ".claude/prompts/incident_response.md",
+      "source_location": "L1",
+      "id": "prompts_incident_response_incident_response_prompt",
+      "community": 54,
+      "norm_label": "incident response prompt"
+    },
+    {
+      "label": "architecture_review.md",
+      "file_type": "document",
+      "source_file": ".claude/prompts/architecture_review.md",
+      "source_location": "L1",
+      "id": "claude_prompts_architecture_review_md",
+      "community": 51,
+      "norm_label": "architecture_review.md"
+    },
+    {
+      "label": "Architecture Review Prompt",
+      "file_type": "document",
+      "source_file": ".claude/prompts/architecture_review.md",
+      "source_location": "L1",
+      "id": "prompts_architecture_review_architecture_review_prompt",
+      "community": 51,
+      "norm_label": "architecture review prompt"
+    },
+    {
+      "label": "refactor.md",
+      "file_type": "document",
+      "source_file": ".claude/prompts/refactor.md",
+      "source_location": "L1",
+      "id": "claude_prompts_refactor_md",
+      "community": 56,
+      "norm_label": "refactor.md"
+    },
+    {
+      "label": "Refactor Prompt",
+      "file_type": "document",
+      "source_file": ".claude/prompts/refactor.md",
+      "source_location": "L1",
+      "id": "prompts_refactor_refactor_prompt",
+      "community": 56,
+      "norm_label": "refactor prompt"
+    },
+    {
+      "label": "feature.md",
+      "file_type": "document",
+      "source_file": ".claude/prompts/feature.md",
+      "source_location": "L1",
+      "id": "claude_prompts_feature_md",
+      "community": 53,
+      "norm_label": "feature.md"
+    },
+    {
+      "label": "Feature Prompt",
+      "file_type": "document",
+      "source_file": ".claude/prompts/feature.md",
+      "source_location": "L1",
+      "id": "prompts_feature_feature_prompt",
+      "community": 53,
+      "norm_label": "feature prompt"
+    },
+    {
+      "label": "performance_analysis.md",
+      "file_type": "document",
+      "source_file": ".claude/prompts/performance_analysis.md",
+      "source_location": "L1",
+      "id": "claude_prompts_performance_analysis_md",
+      "community": 55,
+      "norm_label": "performance_analysis.md"
+    },
+    {
+      "label": "Performance Analysis Prompt",
+      "file_type": "document",
+      "source_file": ".claude/prompts/performance_analysis.md",
+      "source_location": "L1",
+      "id": "prompts_performance_analysis_performance_analysis_prompt",
+      "community": 55,
+      "norm_label": "performance analysis prompt"
+    },
+    {
+      "label": "router-runtime.md",
+      "file_type": "document",
+      "source_file": ".claude/services/router-runtime.md",
+      "source_location": "L1",
+      "id": "claude_services_router_runtime_md",
+      "community": 37,
+      "norm_label": "router-runtime.md"
+    },
+    {
+      "label": "Router Runtime",
+      "file_type": "document",
+      "source_file": ".claude/services/router-runtime.md",
+      "source_location": "L1",
+      "id": "services_router_runtime_router_runtime",
+      "community": 37,
+      "norm_label": "router runtime"
+    },
+    {
+      "label": "Responsibility",
+      "file_type": "document",
+      "source_file": ".claude/services/router-runtime.md",
+      "source_location": "L3",
+      "id": "services_router_runtime_responsibility",
+      "community": 37,
+      "norm_label": "responsibility"
+    },
+    {
+      "label": "Dependencies",
+      "file_type": "document",
+      "source_file": ".claude/services/router-runtime.md",
+      "source_location": "L6",
+      "id": "services_router_runtime_dependencies",
+      "community": 37,
+      "norm_label": "dependencies"
+    },
+    {
+      "label": "Inbound APIs",
+      "file_type": "document",
+      "source_file": ".claude/services/router-runtime.md",
+      "source_location": "L13",
+      "id": "services_router_runtime_inbound_apis",
+      "community": 37,
+      "norm_label": "inbound apis"
+    },
+    {
+      "label": "Outbound APIs",
+      "file_type": "document",
+      "source_file": ".claude/services/router-runtime.md",
+      "source_location": "L18",
+      "id": "services_router_runtime_outbound_apis",
+      "community": 37,
+      "norm_label": "outbound apis"
+    },
+    {
+      "label": "Databases Used",
+      "file_type": "document",
+      "source_file": ".claude/services/router-runtime.md",
+      "source_location": "L23",
+      "id": "services_router_runtime_databases_used",
+      "community": 37,
+      "norm_label": "databases used"
+    },
+    {
+      "label": "Queues / Topics",
+      "file_type": "document",
+      "source_file": ".claude/services/router-runtime.md",
+      "source_location": "L26",
+      "id": "services_router_runtime_queues_topics",
+      "community": 37,
+      "norm_label": "queues / topics"
+    },
+    {
+      "label": "Critical Workflows",
+      "file_type": "document",
+      "source_file": ".claude/services/router-runtime.md",
+      "source_location": "L31",
+      "id": "services_router_runtime_critical_workflows",
+      "community": 37,
+      "norm_label": "critical workflows"
+    },
+    {
+      "label": "Failure Modes",
+      "file_type": "document",
+      "source_file": ".claude/services/router-runtime.md",
+      "source_location": "L36",
+      "id": "services_router_runtime_failure_modes",
+      "community": 37,
+      "norm_label": "failure modes"
+    },
+    {
+      "label": "Scaling Concerns",
+      "file_type": "document",
+      "source_file": ".claude/services/router-runtime.md",
+      "source_location": "L41",
+      "id": "services_router_runtime_scaling_concerns",
+      "community": 37,
+      "norm_label": "scaling concerns"
+    },
+    {
+      "label": "Operational Concerns",
+      "file_type": "document",
+      "source_file": ".claude/services/router-runtime.md",
+      "source_location": "L45",
+      "id": "services_router_runtime_operational_concerns",
+      "community": 37,
+      "norm_label": "operational concerns"
+    },
+    {
+      "label": "Important Source Files",
+      "file_type": "document",
+      "source_file": ".claude/services/router-runtime.md",
+      "source_location": "L49",
+      "id": "services_router_runtime_important_source_files",
+      "community": 37,
+      "norm_label": "important source files"
+    },
+    {
+      "label": "Dangerous Code Paths",
+      "file_type": "document",
+      "source_file": ".claude/services/router-runtime.md",
+      "source_location": "L57",
+      "id": "services_router_runtime_dangerous_code_paths",
+      "community": 37,
+      "norm_label": "dangerous code paths"
+    },
+    {
+      "label": "Testing Strategy",
+      "file_type": "document",
+      "source_file": ".claude/services/router-runtime.md",
+      "source_location": "L62",
+      "id": "services_router_runtime_testing_strategy",
+      "community": 37,
+      "norm_label": "testing strategy"
+    },
+    {
+      "label": "Known Technical Debt",
+      "file_type": "document",
+      "source_file": ".claude/services/router-runtime.md",
+      "source_location": "L65",
+      "id": "services_router_runtime_known_technical_debt",
+      "community": 37,
+      "norm_label": "known technical debt"
+    },
+    {
+      "label": "base-node.md",
+      "file_type": "document",
+      "source_file": ".claude/services/base-node.md",
+      "source_location": "L1",
+      "id": "claude_services_base_node_md",
+      "community": 36,
+      "norm_label": "base-node.md"
+    },
+    {
+      "label": "Base Node",
+      "file_type": "document",
+      "source_file": ".claude/services/base-node.md",
+      "source_location": "L1",
+      "id": "services_base_node_base_node",
+      "community": 36,
+      "norm_label": "base node"
+    },
+    {
+      "label": "Responsibility",
+      "file_type": "document",
+      "source_file": ".claude/services/base-node.md",
+      "source_location": "L3",
+      "id": "services_base_node_responsibility",
+      "community": 36,
+      "norm_label": "responsibility"
+    },
+    {
+      "label": "Dependencies",
+      "file_type": "document",
+      "source_file": ".claude/services/base-node.md",
+      "source_location": "L6",
+      "id": "services_base_node_dependencies",
+      "community": 36,
+      "norm_label": "dependencies"
+    },
+    {
+      "label": "Inbound APIs",
+      "file_type": "document",
+      "source_file": ".claude/services/base-node.md",
+      "source_location": "L13",
+      "id": "services_base_node_inbound_apis",
+      "community": 36,
+      "norm_label": "inbound apis"
+    },
+    {
+      "label": "Outbound APIs",
+      "file_type": "document",
+      "source_file": ".claude/services/base-node.md",
+      "source_location": "L18",
+      "id": "services_base_node_outbound_apis",
+      "community": 36,
+      "norm_label": "outbound apis"
+    },
+    {
+      "label": "Databases Used",
+      "file_type": "document",
+      "source_file": ".claude/services/base-node.md",
+      "source_location": "L23",
+      "id": "services_base_node_databases_used",
+      "community": 36,
+      "norm_label": "databases used"
+    },
+    {
+      "label": "Queues / Topics",
+      "file_type": "document",
+      "source_file": ".claude/services/base-node.md",
+      "source_location": "L26",
+      "id": "services_base_node_queues_topics",
+      "community": 36,
+      "norm_label": "queues / topics"
+    },
+    {
+      "label": "Critical Workflows",
+      "file_type": "document",
+      "source_file": ".claude/services/base-node.md",
+      "source_location": "L31",
+      "id": "services_base_node_critical_workflows",
+      "community": 36,
+      "norm_label": "critical workflows"
+    },
+    {
+      "label": "Failure Modes",
+      "file_type": "document",
+      "source_file": ".claude/services/base-node.md",
+      "source_location": "L36",
+      "id": "services_base_node_failure_modes",
+      "community": 36,
+      "norm_label": "failure modes"
+    },
+    {
+      "label": "Scaling Concerns",
+      "file_type": "document",
+      "source_file": ".claude/services/base-node.md",
+      "source_location": "L41",
+      "id": "services_base_node_scaling_concerns",
+      "community": 36,
+      "norm_label": "scaling concerns"
+    },
+    {
+      "label": "Operational Concerns",
+      "file_type": "document",
+      "source_file": ".claude/services/base-node.md",
+      "source_location": "L45",
+      "id": "services_base_node_operational_concerns",
+      "community": 36,
+      "norm_label": "operational concerns"
+    },
+    {
+      "label": "Important Source Files",
+      "file_type": "document",
+      "source_file": ".claude/services/base-node.md",
+      "source_location": "L49",
+      "id": "services_base_node_important_source_files",
+      "community": 36,
+      "norm_label": "important source files"
+    },
+    {
+      "label": "Dangerous Code Paths",
+      "file_type": "document",
+      "source_file": ".claude/services/base-node.md",
+      "source_location": "L57",
+      "id": "services_base_node_dangerous_code_paths",
+      "community": 36,
+      "norm_label": "dangerous code paths"
+    },
+    {
+      "label": "Testing Strategy",
+      "file_type": "document",
+      "source_file": ".claude/services/base-node.md",
+      "source_location": "L62",
+      "id": "services_base_node_testing_strategy",
+      "community": 36,
+      "norm_label": "testing strategy"
+    },
+    {
+      "label": "Known Technical Debt",
+      "file_type": "document",
+      "source_file": ".claude/services/base-node.md",
+      "source_location": "L65",
+      "id": "services_base_node_known_technical_debt",
+      "community": 36,
+      "norm_label": "known technical debt"
     },
     {
       "label": "security-review.md",
@@ -2173,10 +3253,28 @@
       "norm_label": "model router"
     },
     {
-      "label": "Default assignments",
+      "label": "Current plan",
       "file_type": "document",
       "source_file": "docs/model-router.md",
       "source_location": "L7",
+      "id": "docs_model_router_current_plan",
+      "community": 7,
+      "norm_label": "current plan"
+    },
+    {
+      "label": "Current status",
+      "file_type": "document",
+      "source_file": "docs/model-router.md",
+      "source_location": "L14",
+      "id": "docs_model_router_current_status",
+      "community": 7,
+      "norm_label": "current status"
+    },
+    {
+      "label": "Default assignments",
+      "file_type": "document",
+      "source_file": "docs/model-router.md",
+      "source_location": "L25",
       "id": "docs_model_router_default_assignments",
       "community": 7,
       "norm_label": "default assignments"
@@ -2185,7 +3283,7 @@
       "label": "Operating rules",
       "file_type": "document",
       "source_file": "docs/model-router.md",
-      "source_location": "L16",
+      "source_location": "L34",
       "id": "docs_model_router_operating_rules",
       "community": 7,
       "norm_label": "operating rules"
@@ -2194,7 +3292,7 @@
       "label": "Current router service",
       "file_type": "document",
       "source_file": "docs/model-router.md",
-      "source_location": "L25",
+      "source_location": "L43",
       "id": "docs_model_router_current_router_service",
       "community": 7,
       "norm_label": "current router service"
@@ -2203,7 +3301,7 @@
       "label": "UI integration target",
       "file_type": "document",
       "source_file": "docs/model-router.md",
-      "source_location": "L41",
+      "source_location": "L61",
       "id": "docs_model_router_ui_integration_target",
       "community": 7,
       "norm_label": "ui integration target"
@@ -2212,7 +3310,7 @@
       "label": "Current routing behavior",
       "file_type": "document",
       "source_file": "docs/model-router.md",
-      "source_location": "L61",
+      "source_location": "L82",
       "id": "docs_model_router_current_routing_behavior",
       "community": 7,
       "norm_label": "current routing behavior"
@@ -2221,7 +3319,7 @@
       "label": "Recommended first-pass UI defaults",
       "file_type": "document",
       "source_file": "docs/model-router.md",
-      "source_location": "L77",
+      "source_location": "L98",
       "id": "docs_model_router_recommended_first_pass_ui_defaults",
       "community": 7,
       "norm_label": "recommended first-pass ui defaults"
@@ -2230,7 +3328,7 @@
       "label": "Open WebUI behavior notes",
       "file_type": "document",
       "source_file": "docs/model-router.md",
-      "source_location": "L85",
+      "source_location": "L106",
       "id": "docs_model_router_open_webui_behavior_notes",
       "community": 7,
       "norm_label": "open webui behavior notes"
@@ -2239,7 +3337,7 @@
       "label": "Router-mode troubleshooting",
       "file_type": "document",
       "source_file": "docs/model-router.md",
-      "source_location": "L96",
+      "source_location": "L117",
       "id": "docs_model_router_router_mode_troubleshooting",
       "community": 7,
       "norm_label": "router-mode troubleshooting"
@@ -2248,7 +3346,7 @@
       "label": "Step-by-step validation scenarios",
       "file_type": "document",
       "source_file": "docs/model-router.md",
-      "source_location": "L109",
+      "source_location": "L130",
       "id": "docs_model_router_step_by_step_validation_scenarios",
       "community": 7,
       "norm_label": "step-by-step validation scenarios"
@@ -2257,7 +3355,7 @@
       "label": "code:bash (./scripts/check-router-connectivity.sh)",
       "file_type": "document",
       "source_file": "docs/model-router.md",
-      "source_location": "L113",
+      "source_location": "L134",
       "id": "docs_model_router_codeblock_1",
       "community": 7,
       "norm_label": "code:bash (./scripts/check-router-connectivity.sh)"
@@ -2266,7 +3364,7 @@
       "label": "Scenario 1: General chat fallback",
       "file_type": "document",
       "source_file": "docs/model-router.md",
-      "source_location": "L120",
+      "source_location": "L141",
       "id": "docs_model_router_scenario_1_general_chat_fallback",
       "community": 7,
       "norm_label": "scenario 1: general chat fallback"
@@ -2275,7 +3373,7 @@
       "label": "code:bash (curl -X POST http://127.0.0.1:8788/v1/chat/completions \\)",
       "file_type": "document",
       "source_file": "docs/model-router.md",
-      "source_location": "L124",
+      "source_location": "L145",
       "id": "docs_model_router_codeblock_2",
       "community": 7,
       "norm_label": "code:bash (curl -x post http://127.0.0.1:8788/v1/chat/completions \\)"
@@ -2284,7 +3382,7 @@
       "label": "Scenario 2: Coding route",
       "file_type": "document",
       "source_file": "docs/model-router.md",
-      "source_location": "L145",
+      "source_location": "L166",
       "id": "docs_model_router_scenario_2_coding_route",
       "community": 7,
       "norm_label": "scenario 2: coding route"
@@ -2293,7 +3391,7 @@
       "label": "code:bash (curl -X POST http://127.0.0.1:8788/v1/chat/completions \\)",
       "file_type": "document",
       "source_file": "docs/model-router.md",
-      "source_location": "L149",
+      "source_location": "L170",
       "id": "docs_model_router_codeblock_3",
       "community": 7,
       "norm_label": "code:bash (curl -x post http://127.0.0.1:8788/v1/chat/completions \\)"
@@ -2302,7 +3400,7 @@
       "label": "Scenario 3: Light/short route",
       "file_type": "document",
       "source_file": "docs/model-router.md",
-      "source_location": "L170",
+      "source_location": "L191",
       "id": "docs_model_router_scenario_3_light_short_route",
       "community": 7,
       "norm_label": "scenario 3: light/short route"
@@ -2311,7 +3409,7 @@
       "label": "code:bash (curl -X POST http://127.0.0.1:8788/v1/chat/completions \\)",
       "file_type": "document",
       "source_file": "docs/model-router.md",
-      "source_location": "L174",
+      "source_location": "L195",
       "id": "docs_model_router_codeblock_4",
       "community": 7,
       "norm_label": "code:bash (curl -x post http://127.0.0.1:8788/v1/chat/completions \\)"
@@ -2320,7 +3418,7 @@
       "label": "Scenario 4: RAG route for repo knowledge",
       "file_type": "document",
       "source_file": "docs/model-router.md",
-      "source_location": "L195",
+      "source_location": "L216",
       "id": "docs_model_router_scenario_4_rag_route_for_repo_knowledge",
       "community": 7,
       "norm_label": "scenario 4: rag route for repo knowledge"
@@ -2329,7 +3427,7 @@
       "label": "code:bash (curl -X POST http://127.0.0.1:8788/v1/chat/completions \\)",
       "file_type": "document",
       "source_file": "docs/model-router.md",
-      "source_location": "L202",
+      "source_location": "L223",
       "id": "docs_model_router_codeblock_5",
       "community": 7,
       "norm_label": "code:bash (curl -x post http://127.0.0.1:8788/v1/chat/completions \\)"
@@ -2338,7 +3436,7 @@
       "label": "Scenario 5: RAG fallback when index is missing",
       "file_type": "document",
       "source_file": "docs/model-router.md",
-      "source_location": "L223",
+      "source_location": "L244",
       "id": "docs_model_router_scenario_5_rag_fallback_when_index_is_missing",
       "community": 7,
       "norm_label": "scenario 5: rag fallback when index is missing"
@@ -2347,7 +3445,7 @@
       "label": "code:bash (curl -X POST http://127.0.0.1:8788/v1/chat/completions \\)",
       "file_type": "document",
       "source_file": "docs/model-router.md",
-      "source_location": "L230",
+      "source_location": "L251",
       "id": "docs_model_router_codeblock_6",
       "community": 7,
       "norm_label": "code:bash (curl -x post http://127.0.0.1:8788/v1/chat/completions \\)"
@@ -2356,7 +3454,7 @@
       "label": "Scenario 6: Vision route with image input",
       "file_type": "document",
       "source_file": "docs/model-router.md",
-      "source_location": "L250",
+      "source_location": "L271",
       "id": "docs_model_router_scenario_6_vision_route_with_image_input",
       "community": 7,
       "norm_label": "scenario 6: vision route with image input"
@@ -2365,7 +3463,7 @@
       "label": "code:json ({)",
       "file_type": "document",
       "source_file": "docs/model-router.md",
-      "source_location": "L257",
+      "source_location": "L278",
       "id": "docs_model_router_codeblock_7",
       "community": 7,
       "norm_label": "code:json ({)"
@@ -2374,7 +3472,7 @@
       "label": "Scenario 7: Recent conversation influences routing",
       "file_type": "document",
       "source_file": "docs/model-router.md",
-      "source_location": "L282",
+      "source_location": "L303",
       "id": "docs_model_router_scenario_7_recent_conversation_influences_routing",
       "community": 7,
       "norm_label": "scenario 7: recent conversation influences routing"
@@ -2383,7 +3481,7 @@
       "label": "code:bash (curl -X POST http://127.0.0.1:8788/v1/chat/completions \\)",
       "file_type": "document",
       "source_file": "docs/model-router.md",
-      "source_location": "L286",
+      "source_location": "L307",
       "id": "docs_model_router_codeblock_8",
       "community": 7,
       "norm_label": "code:bash (curl -x post http://127.0.0.1:8788/v1/chat/completions \\)"
@@ -2392,7 +3490,7 @@
       "label": "Scenario 8: Weak keyword should not force RAG",
       "file_type": "document",
       "source_file": "docs/model-router.md",
-      "source_location": "L308",
+      "source_location": "L329",
       "id": "docs_model_router_scenario_8_weak_keyword_should_not_force_rag",
       "community": 7,
       "norm_label": "scenario 8: weak keyword should not force rag"
@@ -2401,7 +3499,7 @@
       "label": "code:bash (curl -X POST http://127.0.0.1:8788/v1/chat/completions \\)",
       "file_type": "document",
       "source_file": "docs/model-router.md",
-      "source_location": "L312",
+      "source_location": "L333",
       "id": "docs_model_router_codeblock_9",
       "community": 7,
       "norm_label": "code:bash (curl -x post http://127.0.0.1:8788/v1/chat/completions \\)"
@@ -2410,7 +3508,7 @@
       "label": "Scenario 9: Manual model override",
       "file_type": "document",
       "source_file": "docs/model-router.md",
-      "source_location": "L331",
+      "source_location": "L352",
       "id": "docs_model_router_scenario_9_manual_model_override",
       "community": 7,
       "norm_label": "scenario 9: manual model override"
@@ -2419,7 +3517,7 @@
       "label": "code:bash (curl -X POST http://127.0.0.1:8788/v1/chat/completions \\)",
       "file_type": "document",
       "source_file": "docs/model-router.md",
-      "source_location": "L335",
+      "source_location": "L356",
       "id": "docs_model_router_codeblock_10",
       "community": 7,
       "norm_label": "code:bash (curl -x post http://127.0.0.1:8788/v1/chat/completions \\)"
@@ -2428,7 +3526,7 @@
       "label": "Detailed test plan",
       "file_type": "document",
       "source_file": "docs/model-router.md",
-      "source_location": "L355",
+      "source_location": "L376",
       "id": "docs_model_router_detailed_test_plan",
       "community": 7,
       "norm_label": "detailed test plan"
@@ -2437,7 +3535,7 @@
       "label": "Status",
       "file_type": "document",
       "source_file": "docs/model-router.md",
-      "source_location": "L392",
+      "source_location": "L414",
       "id": "docs_model_router_status",
       "community": 7,
       "norm_label": "status"
@@ -3446,9 +4544,9 @@
       "source_file": "scripts/rag_lib.py",
       "source_location": "L139",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_rag_lib_py",
-      "target": "scripts_rag_lib_normalize_image_input",
-      "confidence_score": 1.0
+      "target": "scripts_rag_lib_normalize_image_input"
     },
     {
       "relation": "contains",
@@ -3456,9 +4554,9 @@
       "source_file": "scripts/rag_lib.py",
       "source_location": "L159",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_rag_lib_py",
-      "target": "scripts_rag_lib_generate_text_with_images",
-      "confidence_score": 1.0
+      "target": "scripts_rag_lib_generate_text_with_images"
     },
     {
       "relation": "contains",
@@ -3486,9 +4584,9 @@
       "source_file": "scripts/rag_lib.py",
       "source_location": "L190",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_rag_lib_py",
-      "target": "scripts_rag_lib_file_fingerprint",
-      "confidence_score": 1.0
+      "target": "scripts_rag_lib_file_fingerprint"
     },
     {
       "relation": "contains",
@@ -3566,9 +4664,9 @@
       "source_file": "scripts/rag_lib.py",
       "source_location": "L295",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_rag_lib_py",
-      "target": "scripts_rag_lib_index_settings_match",
-      "confidence_score": 1.0
+      "target": "scripts_rag_lib_index_settings_match"
     },
     {
       "relation": "contains",
@@ -3576,9 +4674,9 @@
       "source_file": "scripts/rag_lib.py",
       "source_location": "L303",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_rag_lib_py",
-      "target": "scripts_rag_lib_build_existing_item_map",
-      "confidence_score": 1.0
+      "target": "scripts_rag_lib_build_existing_item_map"
     },
     {
       "relation": "contains",
@@ -3586,9 +4684,9 @@
       "source_file": "scripts/rag_lib.py",
       "source_location": "L318",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_rag_lib_py",
-      "target": "scripts_rag_lib_build_items",
-      "confidence_score": 1.0
+      "target": "scripts_rag_lib_build_items"
     },
     {
       "relation": "contains",
@@ -3596,9 +4694,9 @@
       "source_file": "scripts/rag_lib.py",
       "source_location": "L350",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_rag_lib_py",
-      "target": "scripts_rag_lib_ragruntime",
-      "confidence_score": 1.0
+      "target": "scripts_rag_lib_ragruntime"
     },
     {
       "relation": "calls",
@@ -3651,9 +4749,9 @@
       "source_file": "scripts/rag_lib.py",
       "source_location": "L166",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_rag_lib_generate_text_with_images",
-      "target": "scripts_rag_lib_ollama_url",
-      "confidence_score": 1.0
+      "target": "scripts_rag_lib_ollama_url"
     },
     {
       "relation": "calls",
@@ -3684,9 +4782,9 @@
       "source_file": "scripts/rag_lib.py",
       "source_location": "L297",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_rag_lib_index_settings_match",
-      "target": "scripts_rag_lib_embed_model",
-      "confidence_score": 1.0
+      "target": "scripts_rag_lib_embed_model"
     },
     {
       "relation": "calls",
@@ -3695,9 +4793,9 @@
       "source_file": "scripts/rag_lib.py",
       "source_location": "L336",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_rag_lib_build_items",
-      "target": "scripts_rag_lib_embed_model",
-      "confidence_score": 1.0
+      "target": "scripts_rag_lib_embed_model"
     },
     {
       "relation": "calls",
@@ -3750,9 +4848,9 @@
       "source_file": "scripts/rag_lib.py",
       "source_location": "L161",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_rag_lib_generate_text_with_images",
-      "target": "scripts_rag_lib_chat_model",
-      "confidence_score": 1.0
+      "target": "scripts_rag_lib_chat_model"
     },
     {
       "relation": "calls",
@@ -3882,9 +4980,9 @@
       "source_file": "scripts/rag_lib.py",
       "source_location": "L298",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_rag_lib_index_settings_match",
-      "target": "scripts_rag_lib_chunk_size",
-      "confidence_score": 1.0
+      "target": "scripts_rag_lib_chunk_size"
     },
     {
       "relation": "calls",
@@ -3893,9 +4991,9 @@
       "source_file": "scripts/rag_lib.py",
       "source_location": "L324",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_rag_lib_build_items",
-      "target": "scripts_rag_lib_chunk_size",
-      "confidence_score": 1.0
+      "target": "scripts_rag_lib_chunk_size"
     },
     {
       "relation": "calls",
@@ -3937,9 +5035,9 @@
       "source_file": "scripts/rag_lib.py",
       "source_location": "L299",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_rag_lib_index_settings_match",
-      "target": "scripts_rag_lib_chunk_overlap",
-      "confidence_score": 1.0
+      "target": "scripts_rag_lib_chunk_overlap"
     },
     {
       "relation": "calls",
@@ -3948,9 +5046,9 @@
       "source_file": "scripts/rag_lib.py",
       "source_location": "L324",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_rag_lib_build_items",
-      "target": "scripts_rag_lib_chunk_overlap",
-      "confidence_score": 1.0
+      "target": "scripts_rag_lib_chunk_overlap"
     },
     {
       "relation": "calls",
@@ -3981,9 +5079,9 @@
       "source_file": "scripts/rag_lib.py",
       "source_location": "L397",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_rag_lib_ragruntime_answer",
-      "target": "scripts_rag_lib_top_k",
-      "confidence_score": 1.0
+      "target": "scripts_rag_lib_top_k"
     },
     {
       "relation": "calls",
@@ -4047,9 +5145,9 @@
       "source_file": "scripts/rag_lib.py",
       "source_location": "L359",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_rag_lib_ragruntime_load_index",
-      "target": "scripts_rag_lib_load_json",
-      "confidence_score": 1.0
+      "target": "scripts_rag_lib_load_json"
     },
     {
       "relation": "calls",
@@ -4058,9 +5156,9 @@
       "source_file": "scripts/rag_lib.py",
       "source_location": "L367",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_rag_lib_ragruntime_rebuild_index",
-      "target": "scripts_rag_lib_load_json",
-      "confidence_score": 1.0
+      "target": "scripts_rag_lib_load_json"
     },
     {
       "relation": "calls",
@@ -4113,9 +5211,9 @@
       "source_file": "scripts/rag_lib.py",
       "source_location": "L371",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_rag_lib_ragruntime_rebuild_index",
-      "target": "scripts_rag_lib_save_json",
-      "confidence_score": 1.0
+      "target": "scripts_rag_lib_save_json"
     },
     {
       "relation": "calls",
@@ -4168,9 +5266,9 @@
       "source_file": "scripts/rag_lib.py",
       "source_location": "L166",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_rag_lib_generate_text_with_images",
-      "target": "scripts_rag_lib_post_json",
-      "confidence_score": 1.0
+      "target": "scripts_rag_lib_post_json"
     },
     {
       "relation": "calls",
@@ -4190,9 +5288,9 @@
       "source_file": "scripts/rag_lib.py",
       "source_location": "L336",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_rag_lib_build_items",
-      "target": "scripts_rag_lib_embed_text",
-      "confidence_score": 1.0
+      "target": "scripts_rag_lib_embed_text"
     },
     {
       "relation": "calls",
@@ -4223,9 +5321,9 @@
       "source_file": "scripts/rag_lib.py",
       "source_location": "L399",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_rag_lib_ragruntime_answer",
-      "target": "scripts_rag_lib_generate_text",
-      "confidence_score": 1.0
+      "target": "scripts_rag_lib_generate_text"
     },
     {
       "relation": "calls",
@@ -4278,9 +5376,9 @@
       "source_file": "scripts/rag_lib.py",
       "source_location": "L163",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_rag_lib_generate_text_with_images",
-      "target": "scripts_rag_lib_normalize_image_input",
-      "confidence_score": 1.0
+      "target": "scripts_rag_lib_normalize_image_input"
     },
     {
       "relation": "calls",
@@ -4300,9 +5398,9 @@
       "source_file": "scripts/rag_lib.py",
       "source_location": "L322",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_rag_lib_build_items",
-      "target": "scripts_rag_lib_iter_documents",
-      "confidence_score": 1.0
+      "target": "scripts_rag_lib_iter_documents"
     },
     {
       "relation": "calls",
@@ -4333,9 +5431,9 @@
       "source_file": "scripts/rag_lib.py",
       "source_location": "L323",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_rag_lib_build_items",
-      "target": "scripts_rag_lib_read_text_file",
-      "confidence_score": 1.0
+      "target": "scripts_rag_lib_read_text_file"
     },
     {
       "relation": "calls",
@@ -4366,9 +5464,9 @@
       "source_file": "scripts/rag_lib.py",
       "source_location": "L329",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_rag_lib_build_items",
-      "target": "scripts_rag_lib_file_fingerprint",
-      "confidence_score": 1.0
+      "target": "scripts_rag_lib_file_fingerprint"
     },
     {
       "relation": "calls",
@@ -4388,9 +5486,9 @@
       "source_file": "scripts/rag_lib.py",
       "source_location": "L324",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_rag_lib_build_items",
-      "target": "scripts_rag_lib_split_text",
-      "confidence_score": 1.0
+      "target": "scripts_rag_lib_split_text"
     },
     {
       "relation": "calls",
@@ -4454,9 +5552,9 @@
       "source_file": "scripts/rag_lib.py",
       "source_location": "L394",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_rag_lib_ragruntime_query",
-      "target": "scripts_rag_lib_rank_items",
-      "confidence_score": 1.0
+      "target": "scripts_rag_lib_rank_items"
     },
     {
       "relation": "calls",
@@ -4487,9 +5585,9 @@
       "source_file": "scripts/rag_lib.py",
       "source_location": "L398",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_rag_lib_ragruntime_answer",
-      "target": "scripts_rag_lib_build_answer_prompt",
-      "confidence_score": 1.0
+      "target": "scripts_rag_lib_build_answer_prompt"
     },
     {
       "relation": "calls",
@@ -4520,9 +5618,9 @@
       "source_file": "scripts/rag_lib.py",
       "source_location": "L370",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_rag_lib_ragruntime_rebuild_index",
-      "target": "scripts_rag_lib_build_index_payload",
-      "confidence_score": 1.0
+      "target": "scripts_rag_lib_build_index_payload"
     },
     {
       "relation": "calls",
@@ -4553,9 +5651,9 @@
       "source_file": "scripts/rag_lib.py",
       "source_location": "L305",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_rag_lib_build_existing_item_map",
-      "target": "scripts_rag_lib_index_settings_match",
-      "confidence_score": 1.0
+      "target": "scripts_rag_lib_index_settings_match"
     },
     {
       "relation": "calls",
@@ -4564,9 +5662,9 @@
       "source_file": "scripts/rag_lib.py",
       "source_location": "L367",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_rag_lib_ragruntime_rebuild_index",
-      "target": "scripts_rag_lib_build_existing_item_map",
-      "confidence_score": 1.0
+      "target": "scripts_rag_lib_build_existing_item_map"
     },
     {
       "relation": "calls",
@@ -4597,9 +5695,9 @@
       "source_file": "scripts/rag_lib.py",
       "source_location": "L369",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_rag_lib_ragruntime_rebuild_index",
-      "target": "scripts_rag_lib_build_items",
-      "confidence_score": 1.0
+      "target": "scripts_rag_lib_build_items"
     },
     {
       "relation": "method",
@@ -4607,9 +5705,9 @@
       "source_file": "scripts/rag_lib.py",
       "source_location": "L351",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_rag_lib_ragruntime",
-      "target": "scripts_rag_lib_ragruntime_init",
-      "confidence_score": 1.0
+      "target": "scripts_rag_lib_ragruntime_init"
     },
     {
       "relation": "method",
@@ -4617,9 +5715,9 @@
       "source_file": "scripts/rag_lib.py",
       "source_location": "L356",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_rag_lib_ragruntime",
-      "target": "scripts_rag_lib_ragruntime_load_index",
-      "confidence_score": 1.0
+      "target": "scripts_rag_lib_ragruntime_load_index"
     },
     {
       "relation": "method",
@@ -4627,9 +5725,9 @@
       "source_file": "scripts/rag_lib.py",
       "source_location": "L361",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_rag_lib_ragruntime",
-      "target": "scripts_rag_lib_ragruntime_rebuild_index",
-      "confidence_score": 1.0
+      "target": "scripts_rag_lib_ragruntime_rebuild_index"
     },
     {
       "relation": "method",
@@ -4637,9 +5735,9 @@
       "source_file": "scripts/rag_lib.py",
       "source_location": "L374",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_rag_lib_ragruntime",
-      "target": "scripts_rag_lib_ragruntime_ensure_index",
-      "confidence_score": 1.0
+      "target": "scripts_rag_lib_ragruntime_ensure_index"
     },
     {
       "relation": "method",
@@ -4647,9 +5745,9 @@
       "source_file": "scripts/rag_lib.py",
       "source_location": "L381",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_rag_lib_ragruntime",
-      "target": "scripts_rag_lib_ragruntime_status",
-      "confidence_score": 1.0
+      "target": "scripts_rag_lib_ragruntime_status"
     },
     {
       "relation": "method",
@@ -4657,9 +5755,9 @@
       "source_file": "scripts/rag_lib.py",
       "source_location": "L392",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_rag_lib_ragruntime",
-      "target": "scripts_rag_lib_ragruntime_query",
-      "confidence_score": 1.0
+      "target": "scripts_rag_lib_ragruntime_query"
     },
     {
       "relation": "method",
@@ -4667,9 +5765,9 @@
       "source_file": "scripts/rag_lib.py",
       "source_location": "L396",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_rag_lib_ragruntime",
-      "target": "scripts_rag_lib_ragruntime_answer",
-      "confidence_score": 1.0
+      "target": "scripts_rag_lib_ragruntime_answer"
     },
     {
       "relation": "uses",
@@ -4677,9 +5775,9 @@
       "source_file": "scripts/local_ai_runtime.py",
       "source_location": "L10",
       "weight": 0.8,
+      "confidence_score": 0.5,
       "source": "scripts_local_ai_runtime_localairuntimehandler",
-      "target": "scripts_rag_lib_ragruntime",
-      "confidence_score": 0.5
+      "target": "scripts_rag_lib_ragruntime"
     },
     {
       "relation": "uses",
@@ -4687,9 +5785,9 @@
       "source_file": "scripts/local_ai_runtime.py",
       "source_location": "L10",
       "weight": 0.8,
+      "confidence_score": 0.5,
       "source": "scripts_local_ai_runtime_localairuntimeserver",
-      "target": "scripts_rag_lib_ragruntime",
-      "confidence_score": 0.5
+      "target": "scripts_rag_lib_ragruntime"
     },
     {
       "relation": "uses",
@@ -4697,9 +5795,9 @@
       "source_file": "scripts/router_service.py",
       "source_location": "L14",
       "weight": 0.8,
+      "confidence_score": 0.5,
       "source": "scripts_router_service_routerhandler",
-      "target": "scripts_rag_lib_ragruntime",
-      "confidence_score": 0.5
+      "target": "scripts_rag_lib_ragruntime"
     },
     {
       "relation": "uses",
@@ -4707,9 +5805,9 @@
       "source_file": "scripts/router_service.py",
       "source_location": "L14",
       "weight": 0.8,
+      "confidence_score": 0.5,
       "source": "scripts_router_service_routerserver",
-      "target": "scripts_rag_lib_ragruntime",
-      "confidence_score": 0.5
+      "target": "scripts_rag_lib_ragruntime"
     },
     {
       "relation": "calls",
@@ -4729,9 +5827,9 @@
       "source_file": "scripts/rag_lib.py",
       "source_location": "L376",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_rag_lib_ragruntime_ensure_index",
-      "target": "scripts_rag_lib_ragruntime_load_index",
-      "confidence_score": 1.0
+      "target": "scripts_rag_lib_ragruntime_load_index"
     },
     {
       "relation": "calls",
@@ -4740,9 +5838,9 @@
       "source_file": "scripts/rag_lib.py",
       "source_location": "L382",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_rag_lib_ragruntime_status",
-      "target": "scripts_rag_lib_ragruntime_load_index",
-      "confidence_score": 1.0
+      "target": "scripts_rag_lib_ragruntime_load_index"
     },
     {
       "relation": "calls",
@@ -4751,9 +5849,9 @@
       "source_file": "scripts/rag_lib.py",
       "source_location": "L393",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_rag_lib_ragruntime_query",
-      "target": "scripts_rag_lib_ragruntime_load_index",
-      "confidence_score": 1.0
+      "target": "scripts_rag_lib_ragruntime_load_index"
     },
     {
       "relation": "calls",
@@ -4762,9 +5860,9 @@
       "source_file": "scripts/rag_lib.py",
       "source_location": "L379",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_rag_lib_ragruntime_ensure_index",
-      "target": "scripts_rag_lib_ragruntime_rebuild_index",
-      "confidence_score": 1.0
+      "target": "scripts_rag_lib_ragruntime_rebuild_index"
     },
     {
       "relation": "calls",
@@ -4773,9 +5871,9 @@
       "source_file": "scripts/rag_lib.py",
       "source_location": "L397",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_rag_lib_ragruntime_answer",
-      "target": "scripts_rag_lib_ragruntime_query",
-      "confidence_score": 1.0
+      "target": "scripts_rag_lib_ragruntime_query"
     },
     {
       "relation": "contains",
@@ -5103,9 +6201,9 @@
       "source_file": "scripts/local_ai_runtime.py",
       "source_location": "L25",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_local_ai_runtime_py",
-      "target": "scripts_local_ai_runtime_localairuntimehandler",
-      "confidence_score": 1.0
+      "target": "scripts_local_ai_runtime_localairuntimehandler"
     },
     {
       "relation": "contains",
@@ -5113,9 +6211,9 @@
       "source_file": "scripts/local_ai_runtime.py",
       "source_location": "L138",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_local_ai_runtime_py",
-      "target": "scripts_local_ai_runtime_localairuntimeserver",
-      "confidence_score": 1.0
+      "target": "scripts_local_ai_runtime_localairuntimeserver"
     },
     {
       "relation": "contains",
@@ -5123,9 +6221,9 @@
       "source_file": "scripts/local_ai_runtime.py",
       "source_location": "L160",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_local_ai_runtime_py",
-      "target": "scripts_local_ai_runtime_main",
-      "confidence_score": 1.0
+      "target": "scripts_local_ai_runtime_main"
     },
     {
       "relation": "inherits",
@@ -5133,9 +6231,9 @@
       "source_file": "scripts/local_ai_runtime.py",
       "source_location": "L25",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_local_ai_runtime_localairuntimehandler",
-      "target": "routerhandler",
-      "confidence_score": 1.0
+      "target": "routerhandler"
     },
     {
       "relation": "method",
@@ -5143,9 +6241,9 @@
       "source_file": "scripts/local_ai_runtime.py",
       "source_location": "L28",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_local_ai_runtime_localairuntimehandler",
-      "target": "scripts_local_ai_runtime_localairuntimehandler_do_get",
-      "confidence_score": 1.0
+      "target": "scripts_local_ai_runtime_localairuntimehandler_do_get"
     },
     {
       "relation": "method",
@@ -5153,9 +6251,9 @@
       "source_file": "scripts/local_ai_runtime.py",
       "source_location": "L51",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_local_ai_runtime_localairuntimehandler",
-      "target": "scripts_local_ai_runtime_localairuntimehandler_do_post",
-      "confidence_score": 1.0
+      "target": "scripts_local_ai_runtime_localairuntimehandler_do_post"
     },
     {
       "relation": "uses",
@@ -5163,9 +6261,9 @@
       "source_file": "scripts/local_ai_runtime.py",
       "source_location": "L11",
       "weight": 0.8,
+      "confidence_score": 0.5,
       "source": "scripts_local_ai_runtime_localairuntimehandler",
-      "target": "scripts_router_service_routerhandler",
-      "confidence_score": 0.5
+      "target": "scripts_router_service_routerhandler"
     },
     {
       "relation": "uses",
@@ -5173,9 +6271,9 @@
       "source_file": "scripts/local_ai_runtime.py",
       "source_location": "L11",
       "weight": 0.8,
+      "confidence_score": 0.5,
       "source": "scripts_local_ai_runtime_localairuntimehandler",
-      "target": "scripts_router_service_routerserver",
-      "confidence_score": 0.5
+      "target": "scripts_router_service_routerserver"
     },
     {
       "relation": "calls",
@@ -5184,9 +6282,9 @@
       "source_file": "scripts/local_ai_runtime.py",
       "source_location": "L30",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_local_ai_runtime_localairuntimehandler_do_get",
-      "target": "scripts_local_ai_runtime_localairuntimeserver_index_status_payload",
-      "confidence_score": 1.0
+      "target": "scripts_local_ai_runtime_localairuntimeserver_index_status_payload"
     },
     {
       "relation": "calls",
@@ -5271,9 +6369,9 @@
       "source_file": "scripts/local_ai_runtime.py",
       "source_location": "L138",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_local_ai_runtime_localairuntimeserver",
-      "target": "routerserver",
-      "confidence_score": 1.0
+      "target": "routerserver"
     },
     {
       "relation": "method",
@@ -5281,9 +6379,9 @@
       "source_file": "scripts/local_ai_runtime.py",
       "source_location": "L139",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_local_ai_runtime_localairuntimeserver",
-      "target": "scripts_local_ai_runtime_localairuntimeserver_init",
-      "confidence_score": 1.0
+      "target": "scripts_local_ai_runtime_localairuntimeserver_init"
     },
     {
       "relation": "method",
@@ -5291,9 +6389,9 @@
       "source_file": "scripts/local_ai_runtime.py",
       "source_location": "L148",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_local_ai_runtime_localairuntimeserver",
-      "target": "scripts_local_ai_runtime_localairuntimeserver_index_status_payload",
-      "confidence_score": 1.0
+      "target": "scripts_local_ai_runtime_localairuntimeserver_index_status_payload"
     },
     {
       "relation": "calls",
@@ -5302,9 +6400,9 @@
       "source_file": "scripts/local_ai_runtime.py",
       "source_location": "L175",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_local_ai_runtime_main",
-      "target": "scripts_local_ai_runtime_localairuntimeserver",
-      "confidence_score": 1.0
+      "target": "scripts_local_ai_runtime_localairuntimeserver"
     },
     {
       "relation": "uses",
@@ -5312,9 +6410,9 @@
       "source_file": "scripts/local_ai_runtime.py",
       "source_location": "L11",
       "weight": 0.8,
+      "confidence_score": 0.5,
       "source": "scripts_local_ai_runtime_localairuntimeserver",
-      "target": "scripts_router_service_routerhandler",
-      "confidence_score": 0.5
+      "target": "scripts_router_service_routerhandler"
     },
     {
       "relation": "uses",
@@ -5322,9 +6420,9 @@
       "source_file": "scripts/local_ai_runtime.py",
       "source_location": "L11",
       "weight": 0.8,
+      "confidence_score": 0.5,
       "source": "scripts_local_ai_runtime_localairuntimeserver",
-      "target": "scripts_router_service_routerserver",
-      "confidence_score": 0.5
+      "target": "scripts_router_service_routerserver"
     },
     {
       "relation": "calls",
@@ -5434,9 +6532,9 @@
       "source_file": "scripts/router_service.py",
       "source_location": "L54",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_router_service_py",
-      "target": "scripts_router_service_vision_model",
-      "confidence_score": 1.0
+      "target": "scripts_router_service_vision_model"
     },
     {
       "relation": "contains",
@@ -5454,9 +6552,9 @@
       "source_file": "scripts/router_service.py",
       "source_location": "L73",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_router_service_py",
-      "target": "scripts_router_service_message_image_refs",
-      "confidence_score": 1.0
+      "target": "scripts_router_service_message_image_refs"
     },
     {
       "relation": "contains",
@@ -5474,9 +6572,9 @@
       "source_file": "scripts/router_service.py",
       "source_location": "L102",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_router_service_py",
-      "target": "scripts_router_service_extract_last_user_images",
-      "confidence_score": 1.0
+      "target": "scripts_router_service_extract_last_user_images"
     },
     {
       "relation": "contains",
@@ -5484,9 +6582,9 @@
       "source_file": "scripts/router_service.py",
       "source_location": "L111",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_router_service_py",
-      "target": "scripts_router_service_extract_recent_conversation_text",
-      "confidence_score": 1.0
+      "target": "scripts_router_service_extract_recent_conversation_text"
     },
     {
       "relation": "contains",
@@ -5494,9 +6592,9 @@
       "source_file": "scripts/router_service.py",
       "source_location": "L122",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_router_service_py",
-      "target": "scripts_router_service_extract_recent_history",
-      "confidence_score": 1.0
+      "target": "scripts_router_service_extract_recent_history"
     },
     {
       "relation": "contains",
@@ -5514,9 +6612,9 @@
       "source_file": "scripts/router_service.py",
       "source_location": "L146",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_router_service_py",
-      "target": "scripts_router_service_count_keyword_hits",
-      "confidence_score": 1.0
+      "target": "scripts_router_service_count_keyword_hits"
     },
     {
       "relation": "contains",
@@ -5524,9 +6622,9 @@
       "source_file": "scripts/router_service.py",
       "source_location": "L150",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_router_service_py",
-      "target": "scripts_router_service_weighted_history_score",
-      "confidence_score": 1.0
+      "target": "scripts_router_service_weighted_history_score"
     },
     {
       "relation": "contains",
@@ -5534,9 +6632,9 @@
       "source_file": "scripts/router_service.py",
       "source_location": "L160",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_router_service_py",
-      "target": "scripts_router_service_is_follow_up_query",
-      "confidence_score": 1.0
+      "target": "scripts_router_service_is_follow_up_query"
     },
     {
       "relation": "contains",
@@ -5554,9 +6652,9 @@
       "source_file": "scripts/router_service.py",
       "source_location": "L267",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_router_service_py",
-      "target": "scripts_router_service_classify_route_with_images",
-      "confidence_score": 1.0
+      "target": "scripts_router_service_classify_route_with_images"
     },
     {
       "relation": "contains",
@@ -5734,9 +6832,9 @@
       "source_file": "scripts/router_service.py",
       "source_location": "L269",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_router_service_classify_route_with_images",
-      "target": "scripts_router_service_vision_model",
-      "confidence_score": 1.0
+      "target": "scripts_router_service_vision_model"
     },
     {
       "relation": "calls",
@@ -5745,9 +6843,9 @@
       "source_file": "scripts/router_service.py",
       "source_location": "L396",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_router_service_routerhandler_do_get",
-      "target": "scripts_router_service_vision_model",
-      "confidence_score": 1.0
+      "target": "scripts_router_service_vision_model"
     },
     {
       "relation": "calls",
@@ -5767,9 +6865,9 @@
       "source_file": "scripts/router_service.py",
       "source_location": "L115",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_router_service_extract_recent_conversation_text",
-      "target": "scripts_router_service_message_to_text",
-      "confidence_score": 1.0
+      "target": "scripts_router_service_message_to_text"
     },
     {
       "relation": "calls",
@@ -5778,9 +6876,9 @@
       "source_file": "scripts/router_service.py",
       "source_location": "L129",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_router_service_extract_recent_history",
-      "target": "scripts_router_service_message_to_text",
-      "confidence_score": 1.0
+      "target": "scripts_router_service_message_to_text"
     },
     {
       "relation": "calls",
@@ -5800,9 +6898,9 @@
       "source_file": "scripts/router_service.py",
       "source_location": "L105",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_router_service_extract_last_user_images",
-      "target": "scripts_router_service_message_image_refs",
-      "confidence_score": 1.0
+      "target": "scripts_router_service_message_image_refs"
     },
     {
       "relation": "calls",
@@ -5822,9 +6920,9 @@
       "source_file": "scripts/router_service.py",
       "source_location": "L306",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_router_service_build_chat_result",
-      "target": "scripts_router_service_extract_last_user_images",
-      "confidence_score": 1.0
+      "target": "scripts_router_service_extract_last_user_images"
     },
     {
       "relation": "calls",
@@ -5833,9 +6931,9 @@
       "source_file": "scripts/router_service.py",
       "source_location": "L238",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_router_service_classify_route",
-      "target": "scripts_router_service_extract_recent_history",
-      "confidence_score": 1.0
+      "target": "scripts_router_service_extract_recent_history"
     },
     {
       "relation": "calls",
@@ -5855,9 +6953,9 @@
       "source_file": "scripts/router_service.py",
       "source_location": "L156",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_router_service_weighted_history_score",
-      "target": "scripts_router_service_count_keyword_hits",
-      "confidence_score": 1.0
+      "target": "scripts_router_service_count_keyword_hits"
     },
     {
       "relation": "calls",
@@ -5866,9 +6964,9 @@
       "source_file": "scripts/router_service.py",
       "source_location": "L241",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_router_service_classify_route",
-      "target": "scripts_router_service_count_keyword_hits",
-      "confidence_score": 1.0
+      "target": "scripts_router_service_count_keyword_hits"
     },
     {
       "relation": "calls",
@@ -5877,9 +6975,9 @@
       "source_file": "scripts/router_service.py",
       "source_location": "L243",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_router_service_classify_route",
-      "target": "scripts_router_service_weighted_history_score",
-      "confidence_score": 1.0
+      "target": "scripts_router_service_weighted_history_score"
     },
     {
       "relation": "calls",
@@ -5888,9 +6986,9 @@
       "source_file": "scripts/router_service.py",
       "source_location": "L239",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_router_service_classify_route",
-      "target": "scripts_router_service_is_follow_up_query",
-      "confidence_score": 1.0
+      "target": "scripts_router_service_is_follow_up_query"
     },
     {
       "relation": "calls",
@@ -5899,9 +6997,9 @@
       "source_file": "scripts/router_service.py",
       "source_location": "L270",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_router_service_classify_route_with_images",
-      "target": "scripts_router_service_classify_route",
-      "confidence_score": 1.0
+      "target": "scripts_router_service_classify_route"
     },
     {
       "relation": "calls",
@@ -5921,9 +7019,9 @@
       "source_file": "scripts/router_service.py",
       "source_location": "L312",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_router_service_build_chat_result",
-      "target": "scripts_router_service_classify_route_with_images",
-      "confidence_score": 1.0
+      "target": "scripts_router_service_classify_route_with_images"
     },
     {
       "relation": "calls",
@@ -5954,9 +7052,9 @@
       "source_file": "scripts/router_service.py",
       "source_location": "L318",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_router_service_build_chat_result",
-      "target": "scripts_router_service_routerserver_index_exists",
-      "confidence_score": 1.0
+      "target": "scripts_router_service_routerserver_index_exists"
     },
     {
       "relation": "calls",
@@ -6100,9 +7198,9 @@
       "source_file": "scripts/router_service.py",
       "source_location": "L511",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_router_service_routerserver",
-      "target": "scripts_router_service_routerserver_index_exists",
-      "confidence_score": 1.0
+      "target": "scripts_router_service_routerserver_index_exists"
     },
     {
       "relation": "calls",
@@ -6321,9 +7419,9 @@
       "source_file": "README.md",
       "source_location": "L543",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "local_llm_readme_local_ai_node",
-      "target": "local_llm_readme_secondary_add_ons_and_future_work",
-      "confidence_score": 1.0
+      "target": "local_llm_readme_secondary_add_ons_and_future_work"
     },
     {
       "relation": "contains",
@@ -6561,9 +7659,9 @@
       "source_file": "README.md",
       "source_location": "L216",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "local_llm_readme_step_3_verify_the_model_inventory",
-      "target": "local_llm_readme_codeblock_17",
-      "confidence_score": 1.0
+      "target": "local_llm_readme_codeblock_17"
     },
     {
       "relation": "contains",
@@ -6611,9 +7709,9 @@
       "source_file": "README.md",
       "source_location": "L250",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "local_llm_readme_download_models_on_a_new_system",
-      "target": "local_llm_readme_codeblock_21",
-      "confidence_score": 1.0
+      "target": "local_llm_readme_codeblock_21"
     },
     {
       "relation": "contains",
@@ -6651,9 +7749,9 @@
       "source_file": "README.md",
       "source_location": "L277",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "local_llm_readme_first_rag_workflow",
-      "target": "local_llm_readme_codeblock_24",
-      "confidence_score": 1.0
+      "target": "local_llm_readme_codeblock_24"
     },
     {
       "relation": "contains",
@@ -6681,8 +7779,18 @@
       "source_file": "README.md",
       "source_location": "L331",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "local_llm_readme_open_webui_relationship",
-      "target": "local_llm_readme_codeblock_26",
+      "target": "local_llm_readme_codeblock_26"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L316",
+      "weight": 1.0,
+      "source": "local_llm_readme_smart_router_api",
+      "target": "local_llm_readme_codeblock_25",
       "confidence_score": 1.0
     },
     {
@@ -6741,9 +7849,9 @@
       "source_file": "README.md",
       "source_location": "L368",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "local_llm_readme_smart_router_api",
-      "target": "local_llm_readme_codeblock_31",
-      "confidence_score": 1.0
+      "target": "local_llm_readme_codeblock_31"
     },
     {
       "relation": "contains",
@@ -6751,9 +7859,9 @@
       "source_file": "README.md",
       "source_location": "L376",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "local_llm_readme_smart_router_api",
-      "target": "local_llm_readme_codeblock_32",
-      "confidence_score": 1.0
+      "target": "local_llm_readme_codeblock_32"
     },
     {
       "relation": "contains",
@@ -6764,16 +7872,6 @@
       "confidence_score": 1.0,
       "source": "local_llm_readme_recommended_startup_order",
       "target": "local_llm_readme_codeblock_31"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "README.md",
-      "source_location": "L393",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "local_llm_readme_recommended_startup_order",
-      "target": "local_llm_readme_codeblock_32"
     },
     {
       "relation": "contains",
@@ -6809,6 +7907,16 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "README.md",
+      "source_location": "L393",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "local_llm_readme_recommended_startup_order",
+      "target": "local_llm_readme_codeblock_32"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
       "source_location": "L399",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -6831,9 +7939,9 @@
       "source_file": "README.md",
       "source_location": "L425",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "local_llm_readme_recommended_startup_order",
-      "target": "local_llm_readme_codeblock_35",
-      "confidence_score": 1.0
+      "target": "local_llm_readme_codeblock_35"
     },
     {
       "relation": "contains",
@@ -6841,9 +7949,9 @@
       "source_file": "README.md",
       "source_location": "L432",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "local_llm_readme_recommended_startup_order",
-      "target": "local_llm_readme_codeblock_36",
-      "confidence_score": 1.0
+      "target": "local_llm_readme_codeblock_36"
     },
     {
       "relation": "contains",
@@ -6871,9 +7979,9 @@
       "source_file": "README.md",
       "source_location": "L440",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "local_llm_readme_router_mode_open_webui_settings",
-      "target": "local_llm_readme_codeblock_37",
-      "confidence_score": 1.0
+      "target": "local_llm_readme_codeblock_37"
     },
     {
       "relation": "contains",
@@ -6891,9 +7999,9 @@
       "source_file": "README.md",
       "source_location": "L462",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "local_llm_readme_step_4_verify_open_webui_connectivity",
-      "target": "local_llm_readme_codeblock_38",
-      "confidence_score": 1.0
+      "target": "local_llm_readme_codeblock_38"
     },
     {
       "relation": "contains",
@@ -6901,9 +8009,9 @@
       "source_file": "README.md",
       "source_location": "L468",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "local_llm_readme_step_4_verify_open_webui_connectivity",
-      "target": "local_llm_readme_codeblock_39",
-      "confidence_score": 1.0
+      "target": "local_llm_readme_codeblock_39"
     },
     {
       "relation": "contains",
@@ -6931,9 +8039,9 @@
       "source_file": "README.md",
       "source_location": "L493",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "local_llm_readme_step_5_back_up_or_restore_the_ollama_model_store",
-      "target": "local_llm_readme_codeblock_40",
-      "confidence_score": 1.0
+      "target": "local_llm_readme_codeblock_40"
     },
     {
       "relation": "contains",
@@ -6941,9 +8049,9 @@
       "source_file": "README.md",
       "source_location": "L499",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "local_llm_readme_step_5_back_up_or_restore_the_ollama_model_store",
-      "target": "local_llm_readme_codeblock_41",
-      "confidence_score": 1.0
+      "target": "local_llm_readme_codeblock_41"
     },
     {
       "relation": "contains",
@@ -7001,9 +8109,9 @@
       "source_file": "README.md",
       "source_location": "L521",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "local_llm_readme_backup_path_examples",
-      "target": "local_llm_readme_codeblock_44",
-      "confidence_score": 1.0
+      "target": "local_llm_readme_codeblock_44"
     },
     {
       "relation": "contains",
@@ -7011,8 +8119,1018 @@
       "source_file": "README.md",
       "source_location": "L527",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "local_llm_readme_backup_path_examples",
-      "target": "local_llm_readme_codeblock_45",
+      "target": "local_llm_readme_codeblock_45"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/project_context.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "claude_project_context_md",
+      "target": "claude_project_context_local_llm_project_context",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/project_context.md",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "claude_project_context_local_llm_project_context",
+      "target": "claude_project_context_business_purpose",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/project_context.md",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "claude_project_context_local_llm_project_context",
+      "target": "claude_project_context_system_overview",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/project_context.md",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "claude_project_context_local_llm_project_context",
+      "target": "claude_project_context_major_applications",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/project_context.md",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "claude_project_context_local_llm_project_context",
+      "target": "claude_project_context_environments",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/project_context.md",
+      "source_location": "L21",
+      "weight": 1.0,
+      "source": "claude_project_context_local_llm_project_context",
+      "target": "claude_project_context_tech_stack",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/project_context.md",
+      "source_location": "L28",
+      "weight": 1.0,
+      "source": "claude_project_context_local_llm_project_context",
+      "target": "claude_project_context_critical_dependencies",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/project_context.md",
+      "source_location": "L31",
+      "weight": 1.0,
+      "source": "claude_project_context_local_llm_project_context",
+      "target": "claude_project_context_major_workflows",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/project_context.md",
+      "source_location": "L38",
+      "weight": 1.0,
+      "source": "claude_project_context_local_llm_project_context",
+      "target": "claude_project_context_operational_constraints",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/project_context.md",
+      "source_location": "L43",
+      "weight": 1.0,
+      "source": "claude_project_context_local_llm_project_context",
+      "target": "claude_project_context_scaling_constraints",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/project_context.md",
+      "source_location": "L46",
+      "weight": 1.0,
+      "source": "claude_project_context_local_llm_project_context",
+      "target": "claude_project_context_deployment_model",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/project_context.md",
+      "source_location": "L49",
+      "weight": 1.0,
+      "source": "claude_project_context_local_llm_project_context",
+      "target": "claude_project_context_important_apis",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/project_context.md",
+      "source_location": "L54",
+      "weight": 1.0,
+      "source": "claude_project_context_local_llm_project_context",
+      "target": "claude_project_context_important_databases",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/project_context.md",
+      "source_location": "L57",
+      "weight": 1.0,
+      "source": "claude_project_context_local_llm_project_context",
+      "target": "claude_project_context_important_queues_events",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/project_context.md",
+      "source_location": "L62",
+      "weight": 1.0,
+      "source": "claude_project_context_local_llm_project_context",
+      "target": "claude_project_context_known_technical_debt",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/project_context.md",
+      "source_location": "L69",
+      "weight": 1.0,
+      "source": "claude_project_context_local_llm_project_context",
+      "target": "claude_project_context_current_architecture_themes",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/workflows.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "claude_workflows_md",
+      "target": "claude_workflows_local_llm_workflows",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/workflows.md",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "claude_workflows_local_llm_workflows",
+      "target": "claude_workflows_local_development",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/workflows.md",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "claude_workflows_local_llm_workflows",
+      "target": "claude_workflows_testing",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/workflows.md",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "claude_workflows_local_llm_workflows",
+      "target": "claude_workflows_deployment",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/workflows.md",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "claude_workflows_local_llm_workflows",
+      "target": "claude_workflows_migrations",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/workflows.md",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "claude_workflows_local_llm_workflows",
+      "target": "claude_workflows_feature_rollout",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/workflows.md",
+      "source_location": "L19",
+      "weight": 1.0,
+      "source": "claude_workflows_local_llm_workflows",
+      "target": "claude_workflows_incident_response",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/workflows.md",
+      "source_location": "L24",
+      "weight": 1.0,
+      "source": "claude_workflows_local_llm_workflows",
+      "target": "claude_workflows_debugging",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/workflows.md",
+      "source_location": "L29",
+      "weight": 1.0,
+      "source": "claude_workflows_local_llm_workflows",
+      "target": "claude_workflows_rollback",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/workflows.md",
+      "source_location": "L34",
+      "weight": 1.0,
+      "source": "claude_workflows_local_llm_workflows",
+      "target": "claude_workflows_observability_investigation",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/architecture.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "claude_architecture_md",
+      "target": "claude_architecture_local_llm_architecture",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/architecture.md",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "claude_architecture_local_llm_architecture",
+      "target": "claude_architecture_end_to_end_request_flows",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/architecture.md",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "claude_architecture_local_llm_architecture",
+      "target": "claude_architecture_frontend_backend_interaction",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/architecture.md",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "claude_architecture_local_llm_architecture",
+      "target": "claude_architecture_service_boundaries",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/architecture.md",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "claude_architecture_local_llm_architecture",
+      "target": "claude_architecture_sync_vs_async_flows",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/architecture.md",
+      "source_location": "L19",
+      "weight": 1.0,
+      "source": "claude_architecture_local_llm_architecture",
+      "target": "claude_architecture_event_driven_architecture",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/architecture.md",
+      "source_location": "L22",
+      "weight": 1.0,
+      "source": "claude_architecture_local_llm_architecture",
+      "target": "claude_architecture_caching_layers",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/architecture.md",
+      "source_location": "L25",
+      "weight": 1.0,
+      "source": "claude_architecture_local_llm_architecture",
+      "target": "claude_architecture_auth_flow",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/architecture.md",
+      "source_location": "L28",
+      "weight": 1.0,
+      "source": "claude_architecture_local_llm_architecture",
+      "target": "claude_architecture_deployment_topology",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/architecture.md",
+      "source_location": "L31",
+      "weight": 1.0,
+      "source": "claude_architecture_local_llm_architecture",
+      "target": "claude_architecture_scaling_behavior",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/architecture.md",
+      "source_location": "L35",
+      "weight": 1.0,
+      "source": "claude_architecture_local_llm_architecture",
+      "target": "claude_architecture_resilience_mechanisms",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/architecture.md",
+      "source_location": "L39",
+      "weight": 1.0,
+      "source": "claude_architecture_local_llm_architecture",
+      "target": "claude_architecture_failover_behavior",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/architecture.md",
+      "source_location": "L42",
+      "weight": 1.0,
+      "source": "claude_architecture_local_llm_architecture",
+      "target": "claude_architecture_observability_architecture",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/architecture.md",
+      "source_location": "L45",
+      "weight": 1.0,
+      "source": "claude_architecture_local_llm_architecture",
+      "target": "claude_architecture_retry_idempotency_patterns",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/repository_navigation.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "claude_repository_navigation_md",
+      "target": "claude_repository_navigation_top_level_modules",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/repository_navigation.md",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "claude_repository_navigation_md",
+      "target": "claude_repository_navigation_read_first",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/repository_navigation.md",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "claude_repository_navigation_md",
+      "target": "claude_repository_navigation_critical_entrypoints",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/graph_relationships.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "claude_graph_relationships_md",
+      "target": "claude_graph_relationships_local_llm_graph_relationships",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/decision_log.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "claude_decision_log_md",
+      "target": "claude_decision_log_local_llm_decision_log",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/decision_log.md",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "claude_decision_log_local_llm_decision_log",
+      "target": "claude_decision_log_graphify_first_repo_discovery",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/decision_log.md",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "claude_decision_log_local_llm_decision_log",
+      "target": "claude_decision_log_preserve_repo_separation",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/decision_log.md",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "claude_decision_log_local_llm_decision_log",
+      "target": "claude_decision_log_router_remains_an_add_on_to_a_stable_base_node",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/known_pitfalls.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "claude_known_pitfalls_md",
+      "target": "claude_known_pitfalls_local_llm_known_pitfalls",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/onboarding.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "claude_onboarding_md",
+      "target": "claude_onboarding_local_llm_onboarding",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/onboarding.md",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "claude_onboarding_local_llm_onboarding",
+      "target": "claude_onboarding_first_read",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/onboarding.md",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "claude_onboarding_local_llm_onboarding",
+      "target": "claude_onboarding_critical_entrypoints",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/onboarding.md",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "claude_onboarding_local_llm_onboarding",
+      "target": "claude_onboarding_module_map",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/onboarding.md",
+      "source_location": "L28",
+      "weight": 1.0,
+      "source": "claude_onboarding_local_llm_onboarding",
+      "target": "claude_onboarding_how_to_start_reasoning",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/onboarding.md",
+      "source_location": "L33",
+      "weight": 1.0,
+      "source": "claude_onboarding_local_llm_onboarding",
+      "target": "claude_onboarding_local_run_baseline",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/coding_rules.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "claude_coding_rules_md",
+      "target": "claude_coding_rules_local_llm_coding_rules",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/coding_rules.md",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "claude_coding_rules_local_llm_coding_rules",
+      "target": "claude_coding_rules_naming_structure",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/coding_rules.md",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "claude_coding_rules_local_llm_coding_rules",
+      "target": "claude_coding_rules_architecture_patterns",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/coding_rules.md",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "claude_coding_rules_local_llm_coding_rules",
+      "target": "claude_coding_rules_state_management",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/coding_rules.md",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "claude_coding_rules_local_llm_coding_rules",
+      "target": "claude_coding_rules_error_handling_logging",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/coding_rules.md",
+      "source_location": "L19",
+      "weight": 1.0,
+      "source": "claude_coding_rules_local_llm_coding_rules",
+      "target": "claude_coding_rules_api_conventions",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/coding_rules.md",
+      "source_location": "L23",
+      "weight": 1.0,
+      "source": "claude_coding_rules_local_llm_coding_rules",
+      "target": "claude_coding_rules_testing_conventions",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/coding_rules.md",
+      "source_location": "L26",
+      "weight": 1.0,
+      "source": "claude_coding_rules_local_llm_coding_rules",
+      "target": "claude_coding_rules_typing_abstractions",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/coding_rules.md",
+      "source_location": "L30",
+      "weight": 1.0,
+      "source": "claude_coding_rules_local_llm_coding_rules",
+      "target": "claude_coding_rules_database_migration_patterns",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/system_prompt.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "claude_system_prompt_md",
+      "target": "claude_system_prompt_local_llm_claude_system_prompt",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/prompts/debug.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "claude_prompts_debug_md",
+      "target": "prompts_debug_debug_prompt",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/prompts/incident_response.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "claude_prompts_incident_response_md",
+      "target": "prompts_incident_response_incident_response_prompt",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/prompts/architecture_review.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "claude_prompts_architecture_review_md",
+      "target": "prompts_architecture_review_architecture_review_prompt",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/prompts/refactor.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "claude_prompts_refactor_md",
+      "target": "prompts_refactor_refactor_prompt",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/prompts/feature.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "claude_prompts_feature_md",
+      "target": "prompts_feature_feature_prompt",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/prompts/performance_analysis.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "claude_prompts_performance_analysis_md",
+      "target": "prompts_performance_analysis_performance_analysis_prompt",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/services/router-runtime.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "claude_services_router_runtime_md",
+      "target": "services_router_runtime_router_runtime",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/services/router-runtime.md",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "services_router_runtime_router_runtime",
+      "target": "services_router_runtime_responsibility",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/services/router-runtime.md",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "services_router_runtime_router_runtime",
+      "target": "services_router_runtime_dependencies",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/services/router-runtime.md",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "services_router_runtime_router_runtime",
+      "target": "services_router_runtime_inbound_apis",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/services/router-runtime.md",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "services_router_runtime_router_runtime",
+      "target": "services_router_runtime_outbound_apis",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/services/router-runtime.md",
+      "source_location": "L23",
+      "weight": 1.0,
+      "source": "services_router_runtime_router_runtime",
+      "target": "services_router_runtime_databases_used",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/services/router-runtime.md",
+      "source_location": "L26",
+      "weight": 1.0,
+      "source": "services_router_runtime_router_runtime",
+      "target": "services_router_runtime_queues_topics",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/services/router-runtime.md",
+      "source_location": "L31",
+      "weight": 1.0,
+      "source": "services_router_runtime_router_runtime",
+      "target": "services_router_runtime_critical_workflows",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/services/router-runtime.md",
+      "source_location": "L36",
+      "weight": 1.0,
+      "source": "services_router_runtime_router_runtime",
+      "target": "services_router_runtime_failure_modes",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/services/router-runtime.md",
+      "source_location": "L41",
+      "weight": 1.0,
+      "source": "services_router_runtime_router_runtime",
+      "target": "services_router_runtime_scaling_concerns",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/services/router-runtime.md",
+      "source_location": "L45",
+      "weight": 1.0,
+      "source": "services_router_runtime_router_runtime",
+      "target": "services_router_runtime_operational_concerns",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/services/router-runtime.md",
+      "source_location": "L49",
+      "weight": 1.0,
+      "source": "services_router_runtime_router_runtime",
+      "target": "services_router_runtime_important_source_files",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/services/router-runtime.md",
+      "source_location": "L57",
+      "weight": 1.0,
+      "source": "services_router_runtime_router_runtime",
+      "target": "services_router_runtime_dangerous_code_paths",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/services/router-runtime.md",
+      "source_location": "L62",
+      "weight": 1.0,
+      "source": "services_router_runtime_router_runtime",
+      "target": "services_router_runtime_testing_strategy",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/services/router-runtime.md",
+      "source_location": "L65",
+      "weight": 1.0,
+      "source": "services_router_runtime_router_runtime",
+      "target": "services_router_runtime_known_technical_debt",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/services/base-node.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "claude_services_base_node_md",
+      "target": "services_base_node_base_node",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/services/base-node.md",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "services_base_node_base_node",
+      "target": "services_base_node_responsibility",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/services/base-node.md",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "services_base_node_base_node",
+      "target": "services_base_node_dependencies",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/services/base-node.md",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "services_base_node_base_node",
+      "target": "services_base_node_inbound_apis",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/services/base-node.md",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "services_base_node_base_node",
+      "target": "services_base_node_outbound_apis",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/services/base-node.md",
+      "source_location": "L23",
+      "weight": 1.0,
+      "source": "services_base_node_base_node",
+      "target": "services_base_node_databases_used",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/services/base-node.md",
+      "source_location": "L26",
+      "weight": 1.0,
+      "source": "services_base_node_base_node",
+      "target": "services_base_node_queues_topics",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/services/base-node.md",
+      "source_location": "L31",
+      "weight": 1.0,
+      "source": "services_base_node_base_node",
+      "target": "services_base_node_critical_workflows",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/services/base-node.md",
+      "source_location": "L36",
+      "weight": 1.0,
+      "source": "services_base_node_base_node",
+      "target": "services_base_node_failure_modes",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/services/base-node.md",
+      "source_location": "L41",
+      "weight": 1.0,
+      "source": "services_base_node_base_node",
+      "target": "services_base_node_scaling_concerns",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/services/base-node.md",
+      "source_location": "L45",
+      "weight": 1.0,
+      "source": "services_base_node_base_node",
+      "target": "services_base_node_operational_concerns",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/services/base-node.md",
+      "source_location": "L49",
+      "weight": 1.0,
+      "source": "services_base_node_base_node",
+      "target": "services_base_node_important_source_files",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/services/base-node.md",
+      "source_location": "L57",
+      "weight": 1.0,
+      "source": "services_base_node_base_node",
+      "target": "services_base_node_dangerous_code_paths",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/services/base-node.md",
+      "source_location": "L62",
+      "weight": 1.0,
+      "source": "services_base_node_base_node",
+      "target": "services_base_node_testing_strategy",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/services/base-node.md",
+      "source_location": "L65",
+      "weight": 1.0,
+      "source": "services_base_node_base_node",
+      "target": "services_base_node_known_technical_debt",
       "confidence_score": 1.0
     },
     {
@@ -7231,9 +9349,9 @@
       "source_file": "docs/target-host-first-pass.md",
       "source_location": "L67",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_target_host_first_pass_target_host_first_pass",
-      "target": "docs_target_host_first_pass_5_pull_restore_or_verify_the_model_inventory",
-      "confidence_score": 1.0
+      "target": "docs_target_host_first_pass_5_pull_restore_or_verify_the_model_inventory"
     },
     {
       "relation": "contains",
@@ -7331,9 +9449,9 @@
       "source_file": "docs/target-host-first-pass.md",
       "source_location": "L79",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_target_host_first_pass_5_pull_restore_or_verify_the_model_inventory",
-      "target": "docs_target_host_first_pass_codeblock_6",
-      "confidence_score": 1.0
+      "target": "docs_target_host_first_pass_codeblock_6"
     },
     {
       "relation": "contains",
@@ -7341,9 +9459,9 @@
       "source_file": "docs/target-host-first-pass.md",
       "source_location": "L86",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_target_host_first_pass_5_pull_restore_or_verify_the_model_inventory",
-      "target": "docs_target_host_first_pass_codeblock_7",
-      "confidence_score": 1.0
+      "target": "docs_target_host_first_pass_codeblock_7"
     },
     {
       "relation": "contains",
@@ -7351,9 +9469,9 @@
       "source_file": "docs/target-host-first-pass.md",
       "source_location": "L93",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_target_host_first_pass_5_pull_restore_or_verify_the_model_inventory",
-      "target": "docs_target_host_first_pass_codeblock_8",
-      "confidence_score": 1.0
+      "target": "docs_target_host_first_pass_codeblock_8"
     },
     {
       "relation": "contains",
@@ -7421,9 +9539,9 @@
       "source_file": "docs/target-host-first-pass.md",
       "source_location": "L128",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_target_host_first_pass_7_validate_the_stack",
-      "target": "docs_target_host_first_pass_codeblock_12",
-      "confidence_score": 1.0
+      "target": "docs_target_host_first_pass_codeblock_12"
     },
     {
       "relation": "contains",
@@ -7434,6 +9552,26 @@
       "confidence_score": 1.0,
       "source": "docs_model_router_md",
       "target": "docs_model_router_model_router"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/model-router.md",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "docs_model_router_model_router",
+      "target": "docs_model_router_current_plan",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/model-router.md",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "docs_model_router_model_router",
+      "target": "docs_model_router_current_status",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -7501,9 +9639,9 @@
       "source_file": "docs/model-router.md",
       "source_location": "L85",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_model_router_model_router",
-      "target": "docs_model_router_open_webui_behavior_notes",
-      "confidence_score": 1.0
+      "target": "docs_model_router_open_webui_behavior_notes"
     },
     {
       "relation": "contains",
@@ -7511,9 +9649,9 @@
       "source_file": "docs/model-router.md",
       "source_location": "L96",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_model_router_model_router",
-      "target": "docs_model_router_router_mode_troubleshooting",
-      "confidence_score": 1.0
+      "target": "docs_model_router_router_mode_troubleshooting"
     },
     {
       "relation": "contains",
@@ -7521,9 +9659,9 @@
       "source_file": "docs/model-router.md",
       "source_location": "L109",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_model_router_model_router",
-      "target": "docs_model_router_step_by_step_validation_scenarios",
-      "confidence_score": 1.0
+      "target": "docs_model_router_step_by_step_validation_scenarios"
     },
     {
       "relation": "contains",
@@ -7531,9 +9669,9 @@
       "source_file": "docs/model-router.md",
       "source_location": "L355",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_model_router_model_router",
-      "target": "docs_model_router_detailed_test_plan",
-      "confidence_score": 1.0
+      "target": "docs_model_router_detailed_test_plan"
     },
     {
       "relation": "contains",
@@ -7541,9 +9679,9 @@
       "source_file": "docs/model-router.md",
       "source_location": "L392",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_model_router_model_router",
-      "target": "docs_model_router_status",
-      "confidence_score": 1.0
+      "target": "docs_model_router_status"
     },
     {
       "relation": "contains",
@@ -7561,9 +9699,9 @@
       "source_file": "docs/model-router.md",
       "source_location": "L113",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_model_router_step_by_step_validation_scenarios",
-      "target": "docs_model_router_codeblock_1",
-      "confidence_score": 1.0
+      "target": "docs_model_router_codeblock_1"
     },
     {
       "relation": "contains",
@@ -7571,9 +9709,9 @@
       "source_file": "docs/model-router.md",
       "source_location": "L120",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_model_router_step_by_step_validation_scenarios",
-      "target": "docs_model_router_scenario_1_general_chat_fallback",
-      "confidence_score": 1.0
+      "target": "docs_model_router_scenario_1_general_chat_fallback"
     },
     {
       "relation": "contains",
@@ -7581,9 +9719,9 @@
       "source_file": "docs/model-router.md",
       "source_location": "L145",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_model_router_step_by_step_validation_scenarios",
-      "target": "docs_model_router_scenario_2_coding_route",
-      "confidence_score": 1.0
+      "target": "docs_model_router_scenario_2_coding_route"
     },
     {
       "relation": "contains",
@@ -7591,9 +9729,9 @@
       "source_file": "docs/model-router.md",
       "source_location": "L170",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_model_router_step_by_step_validation_scenarios",
-      "target": "docs_model_router_scenario_3_light_short_route",
-      "confidence_score": 1.0
+      "target": "docs_model_router_scenario_3_light_short_route"
     },
     {
       "relation": "contains",
@@ -7601,9 +9739,9 @@
       "source_file": "docs/model-router.md",
       "source_location": "L195",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_model_router_step_by_step_validation_scenarios",
-      "target": "docs_model_router_scenario_4_rag_route_for_repo_knowledge",
-      "confidence_score": 1.0
+      "target": "docs_model_router_scenario_4_rag_route_for_repo_knowledge"
     },
     {
       "relation": "contains",
@@ -7611,9 +9749,9 @@
       "source_file": "docs/model-router.md",
       "source_location": "L223",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_model_router_step_by_step_validation_scenarios",
-      "target": "docs_model_router_scenario_5_rag_fallback_when_index_is_missing",
-      "confidence_score": 1.0
+      "target": "docs_model_router_scenario_5_rag_fallback_when_index_is_missing"
     },
     {
       "relation": "contains",
@@ -7621,9 +9759,9 @@
       "source_file": "docs/model-router.md",
       "source_location": "L250",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_model_router_step_by_step_validation_scenarios",
-      "target": "docs_model_router_scenario_6_vision_route_with_image_input",
-      "confidence_score": 1.0
+      "target": "docs_model_router_scenario_6_vision_route_with_image_input"
     },
     {
       "relation": "contains",
@@ -7631,9 +9769,9 @@
       "source_file": "docs/model-router.md",
       "source_location": "L282",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_model_router_step_by_step_validation_scenarios",
-      "target": "docs_model_router_scenario_7_recent_conversation_influences_routing",
-      "confidence_score": 1.0
+      "target": "docs_model_router_scenario_7_recent_conversation_influences_routing"
     },
     {
       "relation": "contains",
@@ -7641,9 +9779,9 @@
       "source_file": "docs/model-router.md",
       "source_location": "L308",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_model_router_step_by_step_validation_scenarios",
-      "target": "docs_model_router_scenario_8_weak_keyword_should_not_force_rag",
-      "confidence_score": 1.0
+      "target": "docs_model_router_scenario_8_weak_keyword_should_not_force_rag"
     },
     {
       "relation": "contains",
@@ -7651,9 +9789,9 @@
       "source_file": "docs/model-router.md",
       "source_location": "L331",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_model_router_step_by_step_validation_scenarios",
-      "target": "docs_model_router_scenario_9_manual_model_override",
-      "confidence_score": 1.0
+      "target": "docs_model_router_scenario_9_manual_model_override"
     },
     {
       "relation": "contains",
@@ -7661,9 +9799,9 @@
       "source_file": "docs/model-router.md",
       "source_location": "L124",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_model_router_scenario_1_general_chat_fallback",
-      "target": "docs_model_router_codeblock_2",
-      "confidence_score": 1.0
+      "target": "docs_model_router_codeblock_2"
     },
     {
       "relation": "contains",
@@ -7671,9 +9809,9 @@
       "source_file": "docs/model-router.md",
       "source_location": "L149",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_model_router_scenario_2_coding_route",
-      "target": "docs_model_router_codeblock_3",
-      "confidence_score": 1.0
+      "target": "docs_model_router_codeblock_3"
     },
     {
       "relation": "contains",
@@ -7681,9 +9819,9 @@
       "source_file": "docs/model-router.md",
       "source_location": "L174",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_model_router_scenario_3_light_short_route",
-      "target": "docs_model_router_codeblock_4",
-      "confidence_score": 1.0
+      "target": "docs_model_router_codeblock_4"
     },
     {
       "relation": "contains",
@@ -7691,9 +9829,9 @@
       "source_file": "docs/model-router.md",
       "source_location": "L202",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_model_router_scenario_4_rag_route_for_repo_knowledge",
-      "target": "docs_model_router_codeblock_5",
-      "confidence_score": 1.0
+      "target": "docs_model_router_codeblock_5"
     },
     {
       "relation": "contains",
@@ -7701,9 +9839,9 @@
       "source_file": "docs/model-router.md",
       "source_location": "L230",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_model_router_scenario_5_rag_fallback_when_index_is_missing",
-      "target": "docs_model_router_codeblock_6",
-      "confidence_score": 1.0
+      "target": "docs_model_router_codeblock_6"
     },
     {
       "relation": "contains",
@@ -7711,9 +9849,9 @@
       "source_file": "docs/model-router.md",
       "source_location": "L257",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_model_router_scenario_6_vision_route_with_image_input",
-      "target": "docs_model_router_codeblock_7",
-      "confidence_score": 1.0
+      "target": "docs_model_router_codeblock_7"
     },
     {
       "relation": "contains",
@@ -7721,9 +9859,9 @@
       "source_file": "docs/model-router.md",
       "source_location": "L286",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_model_router_scenario_7_recent_conversation_influences_routing",
-      "target": "docs_model_router_codeblock_8",
-      "confidence_score": 1.0
+      "target": "docs_model_router_codeblock_8"
     },
     {
       "relation": "contains",
@@ -7731,9 +9869,9 @@
       "source_file": "docs/model-router.md",
       "source_location": "L312",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_model_router_scenario_8_weak_keyword_should_not_force_rag",
-      "target": "docs_model_router_codeblock_9",
-      "confidence_score": 1.0
+      "target": "docs_model_router_codeblock_9"
     },
     {
       "relation": "contains",
@@ -7741,9 +9879,9 @@
       "source_file": "docs/model-router.md",
       "source_location": "L335",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_model_router_scenario_9_manual_model_override",
-      "target": "docs_model_router_codeblock_10",
-      "confidence_score": 1.0
+      "target": "docs_model_router_codeblock_10"
     },
     {
       "relation": "contains",
@@ -7781,9 +9919,9 @@
       "source_file": "docs/validation-checklist.md",
       "source_location": "L25",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_validation_checklist_validation_checklist",
-      "target": "docs_validation_checklist_scenario_checks",
-      "confidence_score": 1.0
+      "target": "docs_validation_checklist_scenario_checks"
     },
     {
       "relation": "contains",
@@ -8479,5 +10617,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "a7ee6a5fe2aa37e3aa9f95558e1419f4c517112c"
+  "built_at_commit": "1df2c54c7504f1be43658b2906365c6ed74e6714"
 }
